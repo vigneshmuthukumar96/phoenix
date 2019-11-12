@@ -1,0 +1,584 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  main {
+    margin-top: 80px;
+    margin-left: 12px;
+    padding-bottom: 40px;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+
+  .img-responsive{
+    width: 100%;
+}
+
+.brochure-wrapper{
+  width: 100%;
+  min-height: 100%;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.brochure-wrapper .brochure-header{
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.brochure-wrapper .brochure-content{
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.brochure-wrapper .text-content{
+  font-family:Arial,serif;
+  color:rgb(43,41,41);
+  font-weight:normal;
+  font-style:normal;
+  text-decoration: none;
+  padding:15px 15px;
+}
+
+.brochure-wrapper .brochure-footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.brochure-wrapper .footer-color{
+  width: 100%;
+  height: 20px;
+}
+
+.brochure-container .col-md-6{
+  margin-bottom: 20px;
+}
+
+.side-img-wrapper{
+  position: absolute;
+  width: 36%;
+  height: 93%;
+  display: inline-block;
+  z-index: 10;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  right: 0;
+  top: -30px;
+  border-top: 15px solid #fff;
+  border-left: 10px solid #fff;
+  border-radius: 35px 0 0 35px;
+}
+.corn-bg {
+  background-image: url("assets/images/corn.png");
+  border-bottom: 15px solid #e4c538;
+}
+
+.soya-meal-bg {
+  background-image: url("assets/images/soya-meal.png");
+  border-bottom: 15px solid #e4c538;
+}
+
+.seed-cake-bg {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  z-index: 10;
+  background-image: url("assets/images/seed-cake.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+  right: 0;
+  top: 155px;
+}
+
+.rapesed-cake-bg {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  z-index: 10;
+  background-image: url("assets/images/rapesed-cake.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 448px;
+  border-radius: 35px;
+}
+
+.rapesed-meal-bg {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  z-index: 10;
+  background-image: url("assets/images/rapesed-meal.png");
+  background-position: center;
+  background-repeat: no-repeat;  
+  right: -65px;
+  bottom: 0;
+  border-radius: 35px;
+}
+
+.guar-meal-bg {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  z-index: 10;
+  background-image: url("assets/images/guar-meal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  right: -0;
+  bottom: 0;
+  border-radius: 35px;
+}
+
+.aqua-sure-bg{
+  background-image: url("assets/images/aqua-sure.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.aquavit-bg{
+  background-image: url("assets/images/aquavit.png");
+  border-bottom: 15px solid #0b5c93;
+}
+  
+.groliv-a-bg{
+  background-image: url("assets/images/aquavit.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.calgro-a-bg{
+  background-image: url("assets/images/calgro-a.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.fish-care-bg{
+  background-image: url("assets/images/fish-care.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.panacea-bg{
+  background-image: url("assets/images/panacea.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.hull-bg{
+  background-image: url("assets/images/hull.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.boon-bg{
+  background-image: url("assets/images/boon.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.booster-bg{
+  background-image: url("assets/images/booster.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.oph-bg{
+  background-image: url("assets/images/oph.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.protect-bg{
+  background-image: url("assets/images/protect.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.randmin-bg{
+  background-image: url("assets/images/randmin.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.oammonia-bg{
+  background-image: url("assets/images/oammonia.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.multipro-bg{
+  background-image: url("assets/images/multipro.png");
+  border-bottom: 15px solid #0b5c93;
+}
+
+.avilyte-bg{
+  background-image: url("assets/images/avilyte.png");
+  border-bottom: 15px solid #e74723;
+}
+
+.astromin-bg{
+  background-image: url("assets/images/astromin.png");
+  border-bottom: 15px solid #e74723;
+}
+
+.phxliv-bg{
+  background-image: url("assets/images/phxliv.png");
+  border-bottom: 15px solid #e74723;
+}
+
+.pcomplex-bg{
+  background-image: url("assets/images/pcomplex.png");
+  border-bottom: 15px solid #e74723;
+}
+
+.tricophx-bg{
+  background-image: url("assets/images/tricophx.png");
+  border-bottom: 15px solid #e74723;
+}
+
+.phxcal-d-bg{
+  background-image: url("assets/images/phxcal-d.png");
+  border-bottom: 15px solid #e74723;
+}
+
+.mycophx-plr-bg{
+  background-image: url("assets/images/mycophx-plr.png");
+  border-bottom: 15px solid #e74723;
+}
+  // generate css for phoenix
+
+
+  span.cls_002{font-family:Arial,serif;font-size:7.5px;color:rgb(43,41,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:7.5px;color:rgb(43,41,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:12.1px;color:rgb(114,114,113);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:12.1px;color:rgb(114,114,113);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:16.6px;color:rgb(114,114,113);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:16.6px;color:rgb(114,114,113);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:18.1px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:18.1px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Courier New,serif;font-size:16.1px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Courier New,serif;font-size:16.1px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Courier New,serif;font-size:8.7px;color:rgb(114,114,113);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Courier New,serif;font-size:8.7px;color:rgb(114,114,113);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:5.0px;color:rgb(43,41,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:5.0px;color:rgb(43,41,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Courier New,serif;font-size:18.1px;color:rgb(114,114,113);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Courier New,serif;font-size:18.1px;color:rgb(114,114,113);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:11.1px;color:rgb(43,41,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:11.1px;color:rgb(43,41,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:13.1px;color:rgb(236,189,7);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:13.1px;color:rgb(236,189,7);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:21.1px;color:rgb(236,189,7);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:21.1px;color:rgb(236,189,7);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Courier New,serif;font-size:4.8px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Courier New,serif;font-size:4.8px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:55.5px;color:rgb(229,9,127);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:55.5px;color:rgb(229,9,127);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:13.9px;color:rgb(95,158,50);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:13.9px;color:rgb(95,158,50);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:31.2px;color:rgb(95,158,50);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:31.2px;color:rgb(95,158,50);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:12.1px;color:rgb(236,189,7);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:12.1px;color:rgb(236,189,7);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:26.1px;color:rgb(236,189,7);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:26.1px;color:rgb(236,189,7);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:11.1px;color:rgb(236,189,7);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:11.1px;color:rgb(236,189,7);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Arial,serif;font-size:13.1px;color:rgb(242,193,7);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Arial,serif;font-size:13.1px;color:rgb(242,193,7);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:26.1px;color:rgb(242,193,7);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:26.1px;color:rgb(242,193,7);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:13.1px;color:rgb(10,92,146);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:13.1px;color:rgb(10,92,146);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:12.1px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:12.1px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:24.8px;color:rgb(10,92,146);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:24.8px;color:rgb(10,92,146);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_025{font-family:Arial,serif;font-size:10.1px;color:rgb(43,41,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Arial,serif;font-size:10.1px;color:rgb(43,41,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:8.1px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:8.1px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:24.8px;color:rgb(10,92,146);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:24.8px;color:rgb(10,92,146);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:13.1px;color:rgb(231,70,34);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:13.1px;color:rgb(231,70,34);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:24.8px;color:rgb(227,29,35);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:24.8px;color:rgb(227,29,35);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:24.8px;color:rgb(231,70,34);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:24.8px;color:rgb(231,70,34);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_031{font-family:Arial,serif;font-size:13.1px;color:rgb(109,96,145);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Arial,serif;font-size:13.1px;color:rgb(109,96,145);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:13.1px;color:rgb(119,170,47);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:13.1px;color:rgb(119,170,47);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:24.8px;color:rgb(119,170,47);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:24.8px;color:rgb(119,170,47);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_034{font-family:Courier New,serif;font-size:23.2px;color:rgb(119,170,47);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Courier New,serif;font-size:23.2px;color:rgb(119,170,47);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Courier New,serif;font-size:33.2px;color:rgb(119,170,47);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Courier New,serif;font-size:33.2px;color:rgb(119,170,47);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:36.1px;color:rgb(119,170,47);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:36.1px;color:rgb(119,170,47);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_037{font-family:Courier New,serif;font-size:18.1px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_037{font-family:Courier New,serif;font-size:18.1px;color:rgb(254,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_038{font-family:Arial,serif;font-size:11.1px;color:rgb(109,96,145);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_038{font-family:Arial,serif;font-size:11.1px;color:rgb(109,96,145);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_039{font-family:Arial,serif;font-size:24.8px;color:rgb(109,96,145);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_039{font-family:Arial,serif;font-size:24.8px;color:rgb(109,96,145);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_040{font-family:Times,serif;font-size:21.1px;color:rgb(117,135,161);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_040{font-family:Times,serif;font-size:21.1px;color:rgb(117,135,161);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_052{font-family:Times,serif;font-size:22.2px;color:rgb(158,149,43);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_052{font-family:Times,serif;font-size:22.2px;color:rgb(158,149,43);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_061{font-family:Times,serif;font-size:22.2px;color:rgb(107,28,61);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_061{font-family:Times,serif;font-size:22.2px;color:rgb(107,28,61);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_041{font-family:Times,serif;font-size:7.9px;color:rgb(117,135,161);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_041{font-family:Times,serif;font-size:7.9px;color:rgb(117,135,161);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_053{font-family:Times,serif;font-size:8.0px;color:rgb(158,149,43);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_053{font-family:Times,serif;font-size:8.0px;color:rgb(158,149,43);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_066{font-family:Times,serif;font-size:8.0px;color:rgb(107,28,61);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_066{font-family:Times,serif;font-size:8.0px;color:rgb(107,28,61);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_042{font-family:Times,serif;font-size:22.2px;color:rgb(43,58,123);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_042{font-family:Times,serif;font-size:22.2px;color:rgb(43,58,123);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_054{font-family:Times,serif;font-size:20.7px;color:rgb(81,165,97);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_054{font-family:Times,serif;font-size:20.7px;color:rgb(81,165,97);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_067{font-family:Times,serif;font-size:22.0px;color:rgb(41,100,45);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_067{font-family:Times,serif;font-size:22.0px;color:rgb(41,100,45);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_043{font-family:Times,serif;font-size:8.0px;color:rgb(43,58,123);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_043{font-family:Times,serif;font-size:8.0px;color:rgb(43,58,123);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_055{font-family:Times,serif;font-size:8.0px;color:rgb(81,165,97);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_055{font-family:Times,serif;font-size:8.0px;color:rgb(81,165,97);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_068{font-family:Times,serif;font-size:7.9px;color:rgb(41,100,45);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_068{font-family:Times,serif;font-size:7.9px;color:rgb(41,100,45);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_044{font-family:Times,serif;font-size:22.2px;color:rgb(101,82,95);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_044{font-family:Times,serif;font-size:22.2px;color:rgb(101,82,95);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_056{font-family:Times,serif;font-size:22.2px;color:rgb(166,82,82);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_056{font-family:Times,serif;font-size:22.2px;color:rgb(166,82,82);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_072{font-family:Times,serif;font-size:20.1px;color:rgb(212,46,17);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_072{font-family:Times,serif;font-size:20.1px;color:rgb(212,46,17);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_045{font-family:Times,serif;font-size:8.0px;color:rgb(101,82,95);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_045{font-family:Times,serif;font-size:8.0px;color:rgb(101,82,95);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_057{font-family:Times,serif;font-size:8.0px;color:rgb(166,82,82);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_057{font-family:Times,serif;font-size:8.0px;color:rgb(166,82,82);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_073{font-family:Times,serif;font-size:7.8px;color:rgb(212,46,17);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_073{font-family:Times,serif;font-size:7.8px;color:rgb(212,46,17);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_046{font-family:Times,serif;font-size:22.2px;color:rgb(79,51,26);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_046{font-family:Times,serif;font-size:22.2px;color:rgb(79,51,26);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_058{font-family:Times,serif;font-size:20.9px;color:rgb(116,97,61);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_058{font-family:Times,serif;font-size:20.9px;color:rgb(116,97,61);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_074{font-family:Times,serif;font-size:19.9px;color:rgb(54,88,151);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_074{font-family:Times,serif;font-size:19.9px;color:rgb(54,88,151);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_047{font-family:Times,serif;font-size:8.0px;color:rgb(79,51,26);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_047{font-family:Times,serif;font-size:8.0px;color:rgb(79,51,26);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_059{font-family:Times,serif;font-size:7.8px;color:rgb(116,97,61);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_059{font-family:Times,serif;font-size:7.8px;color:rgb(116,97,61);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_075{font-family:Times,serif;font-size:8.0px;color:rgb(54,88,151);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_075{font-family:Times,serif;font-size:8.0px;color:rgb(54,88,151);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_048{font-family:Times,serif;font-size:19.6px;color:rgb(43,58,123);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_048{font-family:Times,serif;font-size:19.6px;color:rgb(43,58,123);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_069{font-family:Times,serif;font-size:22.2px;color:rgb(193,124,45);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_069{font-family:Times,serif;font-size:22.2px;color:rgb(193,124,45);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_049{font-family:Times,serif;font-size:7.9px;color:rgb(43,58,123);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_049{font-family:Times,serif;font-size:7.9px;color:rgb(43,58,123);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_062{font-family:Times,serif;font-size:6.9px;color:rgb(107,28,61);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_062{font-family:Times,serif;font-size:6.9px;color:rgb(107,28,61);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_070{font-family:Times,serif;font-size:7.2px;color:rgb(193,124,45);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_070{font-family:Times,serif;font-size:7.2px;color:rgb(193,124,45);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_050{font-family:Times,serif;font-size:22.2px;color:rgb(63,114,80);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_050{font-family:Times,serif;font-size:22.2px;color:rgb(63,114,80);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_060{font-family:Times,serif;font-size:22.2px;color:rgb(206,97,37);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_060{font-family:Times,serif;font-size:22.2px;color:rgb(206,97,37);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_071{font-family:Times,serif;font-size:20.9px;color:rgb(81,49,133);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_071{font-family:Times,serif;font-size:20.9px;color:rgb(81,49,133);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_051{font-family:Times,serif;font-size:8.0px;color:rgb(63,114,80);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_051{font-family:Times,serif;font-size:8.0px;color:rgb(63,114,80);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_063{font-family:Times,serif;font-size:8.0px;color:rgb(206,97,37);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_063{font-family:Times,serif;font-size:8.0px;color:rgb(206,97,37);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_076{font-family:Times,serif;font-size:8.0px;color:rgb(81,49,133);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_076{font-family:Times,serif;font-size:8.0px;color:rgb(81,49,133);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_064{font-family:Times,serif;font-size:21.4px;color:rgb(57,49,133);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_064{font-family:Times,serif;font-size:21.4px;color:rgb(57,49,133);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_065{font-family:Times,serif;font-size:22.2px;color:rgb(91,84,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_065{font-family:Times,serif;font-size:22.2px;color:rgb(91,84,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_077{font-family:Times,serif;font-size:22.2px;color:rgb(209,148,99);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_077{font-family:Times,serif;font-size:22.2px;color:rgb(209,148,99);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_078{font-family:Times,serif;font-size:8.2px;color:rgb(57,49,133);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_078{font-family:Times,serif;font-size:8.2px;color:rgb(57,49,133);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_079{font-family:Times,serif;font-size:8.0px;color:rgb(91,84,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_079{font-family:Times,serif;font-size:8.0px;color:rgb(91,84,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_080{font-family:Times,serif;font-size:8.0px;color:rgb(209,148,99);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_080{font-family:Times,serif;font-size:8.0px;color:rgb(209,148,99);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_081{font-family:Times,serif;font-size:22.5px;color:rgb(137,134,120);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_081{font-family:Times,serif;font-size:22.5px;color:rgb(137,134,120);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_103{font-family:Times,serif;font-size:22.5px;color:rgb(205,114,114);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_103{font-family:Times,serif;font-size:22.5px;color:rgb(205,114,114);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_123{font-family:Times,serif;font-size:22.5px;color:rgb(122,88,128);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_123{font-family:Times,serif;font-size:22.5px;color:rgb(122,88,128);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_082{font-family:Times,serif;font-size:8.1px;color:rgb(137,134,120);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_082{font-family:Times,serif;font-size:8.1px;color:rgb(137,134,120);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_104{font-family:Times,serif;font-size:8.1px;color:rgb(205,114,114);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_104{font-family:Times,serif;font-size:8.1px;color:rgb(205,114,114);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_124{font-family:Times,serif;font-size:8.1px;color:rgb(122,88,128);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_124{font-family:Times,serif;font-size:8.1px;color:rgb(122,88,128);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_083{font-family:Times,serif;font-size:21.8px;color:rgb(64,72,89);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_083{font-family:Times,serif;font-size:21.8px;color:rgb(64,72,89);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_105{font-family:Times,serif;font-size:22.5px;color:rgb(74,101,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_105{font-family:Times,serif;font-size:22.5px;color:rgb(74,101,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_125{font-family:Times,serif;font-size:22.5px;color:rgb(163,112,75);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_125{font-family:Times,serif;font-size:22.5px;color:rgb(163,112,75);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_084{font-family:Times,serif;font-size:8.1px;color:rgb(64,72,89);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_084{font-family:Times,serif;font-size:8.1px;color:rgb(64,72,89);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_106{font-family:Times,serif;font-size:8.1px;color:rgb(61,88,36);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_106{font-family:Times,serif;font-size:8.1px;color:rgb(61,88,36);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_126{font-family:Times,serif;font-size:8.1px;color:rgb(163,112,75);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_126{font-family:Times,serif;font-size:8.1px;color:rgb(163,112,75);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_085{font-family:Times,serif;font-size:22.5px;color:rgb(187,100,29);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_085{font-family:Times,serif;font-size:22.5px;color:rgb(187,100,29);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_107{font-family:Times,serif;font-size:22.5px;color:rgb(76,137,124);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_107{font-family:Times,serif;font-size:22.5px;color:rgb(76,137,124);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_127{font-family:Times,serif;font-size:22.5px;color:rgb(99,92,65);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_127{font-family:Times,serif;font-size:22.5px;color:rgb(99,92,65);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_086{font-family:Times,serif;font-size:8.1px;color:rgb(187,100,29);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_086{font-family:Times,serif;font-size:8.1px;color:rgb(187,100,29);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_108{font-family:Times,serif;font-size:8.1px;color:rgb(76,137,124);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_108{font-family:Times,serif;font-size:8.1px;color:rgb(76,137,124);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_128{font-family:Times,serif;font-size:8.1px;color:rgb(99,92,65);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_128{font-family:Times,serif;font-size:8.1px;color:rgb(99,92,65);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_087{font-family:Times,serif;font-size:22.5px;color:rgb(133,73,75);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_087{font-family:Times,serif;font-size:22.5px;color:rgb(133,73,75);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_109{font-family:Times,serif;font-size:22.5px;color:rgb(64,60,161);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_109{font-family:Times,serif;font-size:22.5px;color:rgb(64,60,161);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_129{font-family:Times,serif;font-size:22.5px;color:rgb(83,139,82);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_129{font-family:Times,serif;font-size:22.5px;color:rgb(83,139,82);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_088{font-family:Times,serif;font-size:8.1px;color:rgb(133,73,75);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_088{font-family:Times,serif;font-size:8.1px;color:rgb(133,73,75);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_110{font-family:Times,serif;font-size:8.1px;color:rgb(64,60,161);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_110{font-family:Times,serif;font-size:8.1px;color:rgb(64,60,161);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_130{font-family:Times,serif;font-size:8.1px;color:rgb(83,139,82);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_130{font-family:Times,serif;font-size:8.1px;color:rgb(83,139,82);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_089{font-family:Times,serif;font-size:20.6px;color:rgb(15,114,111);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_089{font-family:Times,serif;font-size:20.6px;color:rgb(15,114,111);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_111{font-family:Times,serif;font-size:22.5px;color:rgb(143,51,31);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_111{font-family:Times,serif;font-size:22.5px;color:rgb(143,51,31);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_131{font-family:Times,serif;font-size:21.3px;color:rgb(68,42,107);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_131{font-family:Times,serif;font-size:21.3px;color:rgb(68,42,107);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_090{font-family:Times,serif;font-size:8.1px;color:rgb(15,114,111);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_090{font-family:Times,serif;font-size:8.1px;color:rgb(15,114,111);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_112{font-family:Times,serif;font-size:8.1px;color:rgb(143,51,31);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_112{font-family:Times,serif;font-size:8.1px;color:rgb(143,51,31);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_132{font-family:Times,serif;font-size:8.1px;color:rgb(68,42,107);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_132{font-family:Times,serif;font-size:8.1px;color:rgb(68,42,107);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_091{font-family:Times,serif;font-size:22.5px;color:rgb(51,70,94);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_091{font-family:Times,serif;font-size:22.5px;color:rgb(51,70,94);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_113{font-family:Times,serif;font-size:22.5px;color:rgb(85,143,102);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_113{font-family:Times,serif;font-size:22.5px;color:rgb(85,143,102);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_092{font-family:Times,serif;font-size:8.1px;color:rgb(51,70,94);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_092{font-family:Times,serif;font-size:8.1px;color:rgb(51,70,94);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_114{font-family:Times,serif;font-size:8.1px;color:rgb(85,143,102);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_114{font-family:Times,serif;font-size:8.1px;color:rgb(85,143,102);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_093{font-family:Times,serif;font-size:22.5px;color:rgb(54,65,99);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_093{font-family:Times,serif;font-size:22.5px;color:rgb(54,65,99);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_115{font-family:Times,serif;font-size:22.5px;color:rgb(84,116,172);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_115{font-family:Times,serif;font-size:22.5px;color:rgb(84,116,172);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_133{font-family:Times,serif;font-size:22.5px;color:rgb(18,93,168);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_133{font-family:Times,serif;font-size:22.5px;color:rgb(18,93,168);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_094{font-family:Times,serif;font-size:8.1px;color:rgb(54,65,99);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_094{font-family:Times,serif;font-size:8.1px;color:rgb(54,65,99);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_116{font-family:Times,serif;font-size:8.1px;color:rgb(84,116,172);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_116{font-family:Times,serif;font-size:8.1px;color:rgb(84,116,172);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_134{font-family:Times,serif;font-size:8.1px;color:rgb(18,93,168);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_134{font-family:Times,serif;font-size:8.1px;color:rgb(18,93,168);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_095{font-family:Times,serif;font-size:22.5px;color:rgb(187,42,54);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_095{font-family:Times,serif;font-size:22.5px;color:rgb(187,42,54);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_117{font-family:Times,serif;font-size:22.0px;color:rgb(213,137,60);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_117{font-family:Times,serif;font-size:22.0px;color:rgb(213,137,60);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_135{font-family:Times,serif;font-size:22.5px;color:rgb(167,94,74);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_135{font-family:Times,serif;font-size:22.5px;color:rgb(167,94,74);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_096{font-family:Times,serif;font-size:8.1px;color:rgb(187,42,54);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_096{font-family:Times,serif;font-size:8.1px;color:rgb(187,42,54);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_118{font-family:Times,serif;font-size:8.1px;color:rgb(213,137,60);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_118{font-family:Times,serif;font-size:8.1px;color:rgb(213,137,60);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_136{font-family:Times,serif;font-size:8.1px;color:rgb(167,94,74);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_136{font-family:Times,serif;font-size:8.1px;color:rgb(167,94,74);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_097{font-family:Times,serif;font-size:22.5px;color:rgb(49,77,123);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_097{font-family:Times,serif;font-size:22.5px;color:rgb(49,77,123);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_119{font-family:Times,serif;font-size:22.5px;color:rgb(0,118,155);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_119{font-family:Times,serif;font-size:22.5px;color:rgb(0,118,155);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_137{font-family:Times,serif;font-size:21.7px;color:rgb(18,165,77);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_137{font-family:Times,serif;font-size:21.7px;color:rgb(18,165,77);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_099{font-family:Times,serif;font-size:8.1px;color:rgb(49,77,123);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_099{font-family:Times,serif;font-size:8.1px;color:rgb(49,77,123);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_120{font-family:Times,serif;font-size:8.1px;color:rgb(0,118,155);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_120{font-family:Times,serif;font-size:8.1px;color:rgb(0,118,155);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_138{font-family:Times,serif;font-size:7.3px;color:rgb(18,165,77);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_138{font-family:Times,serif;font-size:7.3px;color:rgb(18,165,77);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_100{font-family:Times,serif;font-size:22.5px;color:rgb(63,129,74);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_100{font-family:Times,serif;font-size:22.5px;color:rgb(63,129,74);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_121{font-family:Times,serif;font-size:22.5px;color:rgb(28,70,117);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_121{font-family:Times,serif;font-size:22.5px;color:rgb(28,70,117);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_139{font-family:Times,serif;font-size:20.2px;color:rgb(152,100,27);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_139{font-family:Times,serif;font-size:20.2px;color:rgb(152,100,27);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_101{font-family:Times,serif;font-size:8.1px;color:rgb(63,129,74);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_101{font-family:Times,serif;font-size:8.1px;color:rgb(63,129,74);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_122{font-family:Times,serif;font-size:8.1px;color:rgb(28,70,117);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_122{font-family:Times,serif;font-size:8.1px;color:rgb(28,70,117);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_140{font-family:Times,serif;font-size:8.1px;color:rgb(152,100,27);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_140{font-family:Times,serif;font-size:8.1px;color:rgb(152,100,27);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_102{font-family:Times,serif;font-size:20.4px;color:rgb(68,66,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_102{font-family:Times,serif;font-size:20.4px;color:rgb(68,66,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_141{font-family:Times,serif;font-size:8.1px;color:rgb(68,66,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_141{font-family:Times,serif;font-size:8.1px;color:rgb(68,66,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_142{font-family:Times,serif;font-size:8.1px;color:rgb(74,101,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_142{font-family:Times,serif;font-size:8.1px;color:rgb(74,101,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_143{font-family:Arial,serif;font-size:11.4px;color:rgb(43,41,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_143{font-family:Arial,serif;font-size:11.4px;color:rgb(43,41,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_144{font-family:Arial,serif;font-size:10.5px;color:rgb(174,73,132);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_144{font-family:Arial,serif;font-size:10.5px;color:rgb(174,73,132);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_146{font-family:Arial,serif;font-size:7.0px;color:rgb(66,65,65);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_146{font-family:Arial,serif;font-size:7.0px;color:rgb(66,65,65);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_145{font-family:Arial,serif;font-size:7.0px;color:rgb(91,91,91);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_145{font-family:Arial,serif;font-size:7.0px;color:rgb(91,91,91);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_147{font-family:Arial,serif;font-size:7.2px;color:rgb(66,65,65);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_147{font-family:Arial,serif;font-size:7.2px;color:rgb(66,65,65);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_149{font-family:Arial,serif;font-size:24.8px;color:rgb(109,96,145);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_149{font-family:Arial,serif;font-size:24.8px;color:rgb(109,96,145);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_151{font-family:Arial,serif;font-size:7.1px;color:rgb(43,41,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_151{font-family:Arial,serif;font-size:7.1px;color:rgb(43,41,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_152{font-family:Arial,serif;font-size:10.1px;color:rgb(66,65,65);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_152{font-family:Arial,serif;font-size:10.1px;color:rgb(66,65,65);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_153{font-family:Arial,serif;font-size:10.1px;color:rgb(43,41,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_153{font-family:Arial,serif;font-size:10.1px;color:rgb(43,41,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_150{font-family:Arial,serif;font-size:12.1px;color:rgb(0,160,227);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_150{font-family:Arial,serif;font-size:12.1px;color:rgb(0,160,227);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_154{font-family:Arial,serif;font-size:10.1px;color:rgb(66,65,65);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_154{font-family:Arial,serif;font-size:10.1px;color:rgb(66,65,65);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_155{font-family:Arial,serif;font-size:12.1px;color:rgb(66,65,65);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_155{font-family:Arial,serif;font-size:12.1px;color:rgb(66,65,65);font-weight:normal;font-style:normal;text-decoration: none}
+
+
+.pdf-view{
+    position:absolute;
+    left:50%;
+    margin-left:-297px;
+    top:0px;
+    width:595px;
+    height:841px;
+    border-style:outset;
+    overflow:hidden
+}

@@ -1,0 +1,23 @@
+.aqua-page1{
+    .brochure-header{
+        background: #0b5c93;
+    }
+    .brochure-content{
+        .text-content{
+            width: 64%;
+            .badge-color{
+                color: #fff;
+                background-color: #0b5c93;
+            }
+            h4,h5{
+                color:#0b5c93;
+            }
+        }
+    }
+    .brochure-footer{
+        color: #0b5c93;
+        .footer-color{
+            background:#0b5c93;
+        }
+    }
+}

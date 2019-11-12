@@ -1,0 +1,38 @@
+{
+    "HEADER": {
+      "SELECT": "Tukar bahasa",
+      "HOME":"Rumah",
+      "FEED":"Suapan",
+      "AQUACULTURE":"Akuakultur",
+      "AVIAN":"Burung",
+      "BOVINE":"Lembu",
+      "CAPRINE":"Caprine & Ovine",
+      "CAMEL":"Unta",
+      "EQUINE":"Equine"
+    },
+    "FEED":{
+      "PAGE-1-TEXT-1":"We offer Indian yellow corn, which is procured from the hinterland of India.With uniform grain sizes our corn variety has excellent resistant to blight.Our maize are used as livestock feed, forage, silage etc",
+      "PAGE-1-HEADER-1":"Product Category:",
+      "PAGE-1-TEXT-2":"Animal Feed",
+      "PAGE-1-TEXT-3":"Cattle Feed",
+      "PAGE-1-TEXT-4":"Poultry Feed",
+      "PAGE-1-HEADER-2":"Indian Yellow Corn Specification:",
+      "PAGE-1-TEXT-5":"Moisture - 14% max",
+      "PAGE-1-TEXT-6":"Weevil led Damaged - 2% max",
+      "PAGE-1-TEXT-7":"Broken - 3% max",
+      "PAGE-1-TEXT-8":"Foreign Matter - 1% max",
+      "PAGE-1-TEXT-9":"Discoloured/Immature - 3% max",
+      "PAGE-1-TEXT-10":"Admixture - 1% max",
+      "PAGE-1-TEXT-11":"Aflatoxin - 20 PPB max",
+      "PAGE-1-HEADER-3":"Quality:",
+      "PAGE-1-TEXT-12":"Free from live insects",
+      "PAGE-1-HEADER-4":"Packing:",
+      "PAGE-1-TEXT-13":"40 kg pp bags",
+      "PAGE-1-FOOTER-1":"YELLOW CORN & CORN SILAGE",
+      "PAGE-2-TEXT-1":"Bypass protein, Bypass fat and Vitamin AD3 enriched pellet which is recommended for high yielding cows like HF,Jersey,Etc.,",
+      "PAGE-2-TEXT-2":"It improves good milk yield, Fat and SNF.",
+      "PAGE-2-TEXT-3":"Live yeast in it will help improves quality of milk by reducing Somatic CellCounts in milk.",
+      "PAGE-2-TEXT-4":"Helps in digestibility of the animal by preventing it from Rumen acidosis.",
+      "PAGE-2-TEXT-5":"It helps cow reproductive ability"
+  }
+  }
