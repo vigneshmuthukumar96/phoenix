@@ -15,23 +15,23 @@
                 <ul class="navbar-nav navbar-left">
                     <li class="nav-item" (click)="curTab='home'">
                         <a class="nav-link" [class.active]="curTab=='home'"
-                            [routerLink]="['/home']">{{ 'HEADER.HOME' | translate }}</a>
+                            [routerLink]="['/home']" skipLocationChange>{{ 'HEADER.HOME' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='feed'">
                         <a class="nav-link" [class.active]="curTab=='feed'"
-                            [routerLink]="['/feed']">{{ 'HEADER.FEED' | translate }}</a>
+                            [routerLink]="['/feed']" skipLocationChange>{{ 'HEADER.FEED' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='aquaculture'">
                         <a class="nav-link" [class.active]="curTab=='aquaculture'"
-                            [routerLink]="['/aquaculture']">{{ 'HEADER.AQUACULTURE' | translate }}</a>
+                            [routerLink]="['/aquaculture']" skipLocationChange>{{ 'HEADER.AQUACULTURE' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='avian'">
                         <a class="nav-link" [class.active]="curTab=='avian'"
-                            [routerLink]="['/avian']">{{ 'HEADER.AVIAN' | translate }}</a>
+                            [routerLink]="['/avian'] " skipLocationChange>{{ 'HEADER.AVIAN' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='bovine'">
                         <a class="nav-link" [class.active]="curTab=='bovine'"
-                            [routerLink]="['/bovine']">{{ 'HEADER.BOVINE' | translate }}</a>
+                            [routerLink]="['/bovine']" skipLocationChange>{{ 'HEADER.BOVINE' | translate }}</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" [routerLink]="['/caprine']">{{ 'HEADER.CAPRINE' | translate }}
