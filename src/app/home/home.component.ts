@@ -9,10 +9,27 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   imageUrls: (string | IImage)[] = [
-    { url: 'assets/images/background03.jpg', caption: 'Feed',backgroundSize: 'contain', backgroundPosition: 'center',clickAction: () => this.route('feed') },
-    { url: 'assets/images/background13.jpg', caption: 'Aquaculture',backgroundSize: 'contain', backgroundPosition: 'center',clickAction: () => this.route('aquaculture')  },
-    { url: 'assets/images/background28.jpg', caption: 'Avian',backgroundSize: 'contain', backgroundPosition: 'center',clickAction: () => this.route('avian')  },
-    { url: 'assets/images/background36.jpg', caption: 'Bovine',backgroundSize: 'contain', backgroundPosition: 'center',clickAction: () => this.route('bovine')  },
+    { url: 'assets/images/1.jpg'},
+    { url: 'assets/images/2.jpg'},
+    { url: 'assets/images/3.jpg'},
+    { url: 'assets/images/4.jpg'},
+    { url: 'assets/images/5.jpg'},
+    { url: 'assets/images/6.jpg'},
+    { url: 'assets/images/7.jpg'},
+    { url: 'assets/images/8.jpg'},
+    { url: 'assets/images/9.jpg'},
+    { url: 'assets/images/10.jpg'},
+    { url: 'assets/images/11.jpg'},
+    { url: 'assets/images/12.jpg'},
+    { url: 'assets/images/13.jpg'},
+    { url: 'assets/images/14.jpg'},
+    { url: 'assets/images/15.jpg'},
+    { url: 'assets/images/16.jpg'},
+    { url: 'assets/images/17.jpg'},
+    { url: 'assets/images/18.jpg'},
+    { url: 'assets/images/19.jpg'},
+    { url: 'assets/images/20.jpg'},
+    
     // { url: 'assets/images/background57.jpg', caption: 'Caprine & Ovine',backgroundSize: 'contain', backgroundPosition: 'center' },
     // { url: 'assets/images/background58.jpg', caption: 'Camel',backgroundSize: 'contain', backgroundPosition: 'center' },
     // { url: 'assets/images/background59.jpg', caption: 'Equine',backgroundSize: 'contain', backgroundPosition: 'center' }

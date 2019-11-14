@@ -14,7 +14,8 @@ export class MainHeadersComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.curTab = "home"
+    this.curTab = "home";
+    this.backToTopButtonShow();
   }
 
   setLang(value) {
@@ -43,5 +44,17 @@ export class MainHeadersComponent implements OnInit {
       case 'malay': return "flag-icon-my";
       default: return "flag-icon-us";
     }
+  }
+
+  backToTopButtonShow() {
+    $(document).scroll(function() {
+      if ($(document).scrollTop() > 200)
+       $('.back-to-top').fadeIn();
+      else $('.back-to-top').fadeOut();
+    });
+
+    $('.back-to-top').click(function() {
+      $("html").animate({ scrollTop : 0 }, 600);
+    });
   }
 }
