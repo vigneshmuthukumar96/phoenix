@@ -15,6 +15,8 @@ import {SlideshowModule} from 'ng-simple-slideshow';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TestComponent } from './test/test.component';
+import { TestViewComponent } from './test-view/test-view.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -31,7 +33,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     DisinfectantComponent,
     CaprineOvineComponent,
     CamelComponent,
-    EquineComponent
+    EquineComponent,
+    TestComponent,
+    TestViewComponent
   ],
   imports: [
     CommonModule,

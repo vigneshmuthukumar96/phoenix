@@ -19,5 +19,6 @@ export class AppComponent {
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang.match(/en|malay/) ? browserLang : 'en');
     this.util.setObservable('lang',translate.currentLang)
+    // window.history.pushState()
   }
 }
