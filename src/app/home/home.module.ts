@@ -17,7 +17,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TestComponent } from './test/test.component';
 import { TestViewComponent } from './test-view/test-view.component';
-
+import { FormsModule } from '@angular/forms';
+import { PipesModule } from '../pipes/pipes.module';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -39,8 +40,10 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   ],
   imports: [
     CommonModule,
+    FormsModule,
     HomeRoutingModule,
     SlideshowModule,
+    PipesModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

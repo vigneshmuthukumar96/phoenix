@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { UtilService } from '../services/util.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-headers',
@@ -9,7 +10,22 @@ import { UtilService } from '../services/util.service';
 })
 export class MainHeadersComponent implements OnInit {
   curTab: any;
-  constructor(public translate: TranslateService, private util: UtilService) {
+  url: string;
+  constructor(public translate: TranslateService, private util: UtilService,router: Router) {
+
+    window.onpopstate = (e) => {
+
+      setTimeout(() => {
+        switch(true){
+          case router.url.includes('home'):this.curTab = "home";break;
+          case router.url.includes('feed'):this.curTab = "feed";break;
+          case router.url.includes('aquaculture'):this.curTab = "aquaculture";break;
+          case router.url.includes('avian'):this.curTab = "avian";break;
+          case router.url.includes('bovine'):this.curTab = "bovine";break;
+        }
+      }, 300);
+    
+      }
 
   }
 
