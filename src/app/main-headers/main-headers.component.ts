@@ -73,4 +73,11 @@ export class MainHeadersComponent implements OnInit {
       $("html").animate({ scrollTop : 0 }, 600);
     });
   }
+
+
+  route(url){
+    $("#collapsibleNavbar").removeClass('show')
+    $(".navbar-toggler").addClass('collapsed')
+    this.util.route(url)
+  }
 }

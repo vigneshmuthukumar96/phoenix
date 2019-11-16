@@ -280,6 +280,13 @@
   // generate css for phoenix
 
 
+.mobile-view {
+    text-align: center;
+    display: none;
+    img{
+        width: 50%;
+    }
+}
   
 /********** Back To Top ***************/
 .back-to-top{
@@ -308,3 +315,23 @@
   }
 }
 /************** End ****************/
+
+
+
+// ************************
+
+@media screen and (max-width: 767px) {
+  .mobile-view {
+    display: block !important;
+  }
+
+  .feed-page1 {
+    .text-content{
+      width: 100% !important;
+    }
+    .side-img-wrapper{
+      display: none !important;
+    }
+  }
+
+}

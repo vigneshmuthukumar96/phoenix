@@ -14,24 +14,19 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav navbar-left">
                     <li class="nav-item" (click)="curTab='home'">
-                        <a class="nav-link" [class.active]="curTab=='home'"
-                            [routerLink]="['/home']">{{ 'HEADER.HOME' | translate }}</a>
+                        <a class="nav-link" [class.active]="curTab=='home'" (click)="route('home')">{{ 'HEADER.HOME' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='feed'">
-                        <a class="nav-link" [class.active]="curTab=='feed'"
-                            [routerLink]="['/feed']">{{ 'HEADER.FEED' | translate }}</a>
+                        <a class="nav-link" [class.active]="curTab=='feed'" (click)="route('feed')">{{ 'HEADER.FEED' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='aquaculture'">
-                        <a class="nav-link" [class.active]="curTab=='aquaculture'"
-                            [routerLink]="['/aquaculture']">{{ 'HEADER.AQUACULTURE' | translate }}</a>
+                        <a class="nav-link" [class.active]="curTab=='aquaculture'" (click)="route('aquaculture')">{{ 'HEADER.AQUACULTURE' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='avian'">
-                        <a class="nav-link" [class.active]="curTab=='avian'"
-                            [routerLink]="['/avian'] ">{{ 'HEADER.AVIAN' | translate }}</a>
+                        <a class="nav-link" [class.active]="curTab=='avian'" (click)="route('avian')">{{ 'HEADER.AVIAN' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='bovine'">
-                        <a class="nav-link" [class.active]="curTab=='bovine'"
-                            [routerLink]="['/bovine']">{{ 'HEADER.BOVINE' | translate }}</a>
+                        <a class="nav-link" [class.active]="curTab=='bovine'" (click)="route('bovine')">{{ 'HEADER.BOVINE' | translate }}</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" [routerLink]="['/caprine']">{{ 'HEADER.CAPRINE' | translate }}
