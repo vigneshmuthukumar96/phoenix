@@ -27,6 +27,10 @@
     margin: 0;
   }
 
+  .full-width{
+    width: 100% !important;
+  }
+
   .brochure-container {
     margin-top: 110px;
     margin-left: 12px;
@@ -262,7 +266,7 @@
 }
 
 
-.card{
+.brochure-container .card{
   // height: 250px;
   border-radius: 10px;
   box-shadow: 0 2px 17px 0 #e6e6e6;

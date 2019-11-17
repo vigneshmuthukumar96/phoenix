@@ -21,3 +21,18 @@
 .banner{
     margin-top: 63px;
 }
+
+.company-details{
+    .company-img{
+        text-align: center;
+        margin-bottom: 20px;
+        // width: 50%;
+    }
+    h6{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #007dc2;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+}
