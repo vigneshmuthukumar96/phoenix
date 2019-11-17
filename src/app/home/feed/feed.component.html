@@ -1,673 +1,1000 @@
 <div class="brochure-container">
-        <div class="container-fluid no-padding">
+        <div class="container">
                 <div class="row">
-                        <div class="col-md-12 col-sm-12">
-                                <div class="brochure-wrapper feed-page1">
-                                        <div class="brochure-header"></div>
-                                        <div class="brochure-content">
-                                                <div class="text-content">
-                                                        <p>{{ 'FEED.PAGE-1-TEXT-1' | translate }}</p>
-                                                        <h5 class="font-weight-bold">
-                                                                {{ 'FEED.PAGE-1-HEADER-1' | translate }}</h5>
-                                                        <ul>
-                                                                <li>{{ 'FEED.PAGE-1-TEXT-2' | translate }}</li>
-                                                                <li>{{ 'FEED.PAGE-1-TEXT-3' | translate }}</li>
-                                                                <li>{{ 'FEED.PAGE-1-TEXT-4' | translate }}</li>
-                                                        </ul>
-                                                        <h5 class="font-weight-bold">
-                                                                {{ 'FEED.PAGE-1-HEADER-2' | translate }}</h5>
-                                                        <ul>
-                                                                <li>{{ 'FEED.PAGE-1-TEXT-5' | translate }}</li>
-                                                                <li>{{ 'FEED.PAGE-1-TEXT-6' | translate }}</li>
-                                                                <li>{{ 'FEED.PAGE-1-TEXT-7' | translate }}</li>
-                                                                <li>{{ 'FEED.PAGE-1-TEXT-8' | translate }}</li>
-                                                                <li>{{ 'FEED.PAGE-1-TEXT-9' | translate }}</li>
-                                                                <li>{{ 'FEED.PAGE-1-TEXT-10' | translate }}</li>
-                                                                <li>{{ 'FEED.PAGE-1-TEXT-11' | translate }}</li>
-                                                        </ul>
-                                                        <h5 class="font-weight-bold">
-                                                                {{ 'FEED.PAGE-1-HEADER-3' | translate }}</h5>
-                                                        <p>{{ 'FEED.PAGE-1-TEXT-12' | translate }}</p>
-                                                        <h5 class="font-weight-bold">
-                                                                {{ 'FEED.PAGE-1-HEADER-4' | translate }}</h5>
-                                                        <p>{{ 'FEED.PAGE-1-TEXT-13' | translate }}</p>
-                                                </div>
-                                                <div class="side-img-wrapper corn-bg"></div>
-                                        </div>
-                                        <div class="brochure-footer">
-                                                <h4 class="font-weight-bold text-uppercase text-center">
-                                                        {{ 'FEED.PAGE-1-FOOTER-1' | translate }}</h4>
-                                                <div class="footer-color"></div>
-                                        </div>
 
-                                </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                                <div class="brochure-wrapper feed-page2">
-                                        <div class="brochure-header"></div>
-                                        <div class="brochure-content">
-                                                <div class="col-md-12">
-                                                        <div class="top-img">
-                                                                <img src="assets/images/pro-plus-logo.jpg"
-                                                                        style="float: right;width: 35%;" />
-                                                                <img src="assets/images/pro-rich-logo.jpg"
-                                                                        style="float: left;width: 35%;" />
+                        <ng-container [ngSwitch]="template">
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'corn'">
+                                        <div class="brochure-wrapper feed-page1">
+                                                <div class="brochure-header">
+                                                        <div class="header-text">
+                                                                <h4 class="font-weight-bold text-uppercase text-center">
+                                                                        {{ 'FEED.PAGE-1-FOOTER-1' | translate }}</h4>
                                                         </div>
-
+                                                </div>
+                                                <div class="brochure-content">
                                                         <div class="text-content">
+                                                                <p>{{ 'FEED.PAGE-1-TEXT-1' | translate }}</p>
+                                                                <h5 class="font-weight-bold">
+                                                                        {{ 'FEED.PAGE-1-HEADER-1' | translate }}</h5>
                                                                 <ul>
-                                                                        <li>{{ 'FEED.PAGE-2-TEXT-1' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-2-TEXT-2' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-2-TEXT-3' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-2-TEXT-4' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-2-TEXT-5' | translate }}</li>
+                                                                        <li>{{ 'FEED.PAGE-1-TEXT-2' | translate }}</li>
+                                                                        <li>{{ 'FEED.PAGE-1-TEXT-3' | translate }}</li>
+                                                                        <li>{{ 'FEED.PAGE-1-TEXT-4' | translate }}</li>
                                                                 </ul>
+                                                                <h5 class="font-weight-bold">
+                                                                        {{ 'FEED.PAGE-1-HEADER-2' | translate }}</h5>
+                                                                <ul>
+                                                                        <li>{{ 'FEED.PAGE-1-TEXT-5' | translate }}</li>
+                                                                        <li>{{ 'FEED.PAGE-1-TEXT-6' | translate }}</li>
+                                                                        <li>{{ 'FEED.PAGE-1-TEXT-7' | translate }}</li>
+                                                                        <li>{{ 'FEED.PAGE-1-TEXT-8' | translate }}</li>
+                                                                        <li>{{ 'FEED.PAGE-1-TEXT-9' | translate }}</li>
+                                                                        <li>{{ 'FEED.PAGE-1-TEXT-10' | translate }}</li>
+                                                                        <li>{{ 'FEED.PAGE-1-TEXT-11' | translate }}</li>
+                                                                </ul>
+                                                                <h5 class="font-weight-bold">
+                                                                        {{ 'FEED.PAGE-1-HEADER-3' | translate }}</h5>
+                                                                <p>{{ 'FEED.PAGE-1-TEXT-12' | translate }}</p>
+                                                                <h5 class="font-weight-bold">
+                                                                        {{ 'FEED.PAGE-1-HEADER-4' | translate }}</h5>
+                                                                <p>{{ 'FEED.PAGE-1-TEXT-13' | translate }}</p>
+                                                        </div>
+                                                        <div class="side-img-wrapper corn-bg"></div>
+                                                        <div class="mobile-view">
+                                                                <img src="assets/images/corn.jpg" />
                                                         </div>
                                                 </div>
-                                                <div class="row">
-                                                        <div class="col-sm-6">
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
+
+                                        </div>
+                                </div>
+
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'pro-plus'">
+                                        <div class="brochure-wrapper feed-page2">
+                                                <div class="brochure-header"></div>
+                                                <div class="brochure-content">
+                                                        <div class="col-md-12">
+                                                                <div class="text-content">
+                                                                        <img src="assets/images/pro-rich-logo.jpg"
+                                                                                class="image-header" />
+                                                                        <ul>
+                                                                                <li>{{ 'FEED.PAGE-2-TEXT-1' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-2-TEXT-2' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-2-TEXT-3' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-2-TEXT-4' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-2-TEXT-5' | translate }}
+                                                                                </li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-12">
                                                                 <img src="assets/images/pro-plus-1.JPG"
-                                                                        class="img-height-50" />
+                                                                        class="img-width-50" />
                                                                 <img src="assets/images/pro-plus-2.JPG"
-                                                                        class="img-height-50" />
-                                                        </div>
-                                                        <div class="col-sm-6"></div>
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-sm-6"></div>
-                                                        <div class="col-sm-6">
-                                                                <img src="assets/images/pro-rich-1.JPG"
-                                                                        class="img-height-50" />
-                                                                <img src="assets/images/pro-rich-2.JPG"
-                                                                        class="img-height-50" />
+                                                                        class="img-width-50" />
                                                         </div>
                                                 </div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
                                         </div>
-                                        <div class="brochure-footer">
-                                                <div class="footer-color"></div>
-                                        </div>
-
                                 </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                                <div class="brochure-wrapper feed-page3">
-                                        <div class="brochure-header"></div>
-                                        <div class="brochure-content">
-                                                <div class="row">
-                                                        <div class="col-md-6">
-                                                                <div class="text-content">
-                                                                        <img src="assets/images/pro-pellet-logo.jpg"
-                                                                                class="image-header" />
-                                                                        <ul>
-                                                                                <li>{{ 'FEED.PAGE-3-TEXT-1' | translate }}
-                                                                                </li>
-                                                                                <li>{{ 'FEED.PAGE-3-TEXT-2' | translate }}
-                                                                                </li>
-                                                                                <li>{{ 'FEED.PAGE-3-TEXT-3' | translate }}
-                                                                                </li>
-                                                                        </ul>
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'pro-rich'">
+                                        <div class="brochure-wrapper feed-page2">
+                                                <div class="brochure-header"></div>
+                                                <div class="brochure-content">
+                                                        <div class="row">
+                                                                <div class="col-md-12">
+                                                                        <div class="text-content">
+                                                                                <img src="assets/images/pro-rich-logo.jpg"
+                                                                                        class="image-header" />
+                                                                                <ul>
+                                                                                        <li>{{ 'FEED.PAGE-2-TEXT-1' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-2-TEXT-2' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-2-TEXT-3' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-2-TEXT-4' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-2-TEXT-5' | translate }}
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                        <img src="assets/images/pro-rich-1.JPG"
+                                                                                class="img-width-50" />
+                                                                        <img src="assets/images/pro-rich-2.JPG"
+                                                                                class="img-width-50" />
+                                                                </div>
+
                                                         </div>
-                                                        <div class="col-md-6">
-                                                                <div class="pro-pellet-img">
+                                                </div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'pro-pellet'">
+                                        <div class="brochure-wrapper feed-page3">
+                                                <div class="brochure-header"></div>
+                                                <div class="brochure-content">
+                                                        <div class="row">
+                                                                <div class="col-md-12">
+                                                                        <div class="text-content">
+                                                                                <img src="assets/images/pro-pellet-logo.jpg"
+                                                                                        class="image-header" />
+                                                                                <ul>
+                                                                                        <li>{{ 'FEED.PAGE-3-TEXT-1' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-3-TEXT-2' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-3-TEXT-3' | translate }}
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-12">
                                                                         <img src="assets/images/pro-pellet-1.JPG"
-                                                                                class="img-height-50" />
+                                                                                class="img-width-50" />
                                                                         <img src="assets/images/pro-pellet-2.JPG"
-                                                                                class="img-height-50" />
+                                                                                class="img-width-50" />
                                                                 </div>
                                                         </div>
+                                                </div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
+                                        </div>
+                                </div>
 
-                                                        <div class="col-md-6">
-                                                                <div class="pass-pellet-img">
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'pass-pellet'">
+                                        <div class="brochure-wrapper feed-page3">
+                                                <div class="brochure-header"></div>
+                                                <div class="brochure-content">
+                                                        <div class="row">
+                                                                <div class="col-md-12">
+                                                                        <div class="text-content">
+                                                                                <img src="assets/images/pass-pellet-logo.jpg"
+                                                                                        class="image-header" />
+                                                                                <ul>
+                                                                                        <li>{{ 'FEED.PAGE-3-TEXT-4' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-3-TEXT-5' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-3-TEXT-6' | translate }}
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+
+                                                                <div class="col-md-12">
                                                                         <img src="assets/images/pass-pellet-1.JPG"
-                                                                                class="img-height-50" />
+                                                                                class="img-width-50" />
                                                                         <img src="assets/images/pass-pellet-2.JPG"
-                                                                                class="img-height-50" />
-                                                                </div>
-                                                        </div>
-
-                                                        <div class="col-md-6">
-                                                                <div class="text-content" style="float: right;">
-                                                                        <img src="assets/images/pass-pellet-logo.jpg"
-                                                                                class="image-header" />
-                                                                        <ul>
-                                                                                <li>{{ 'FEED.PAGE-3-TEXT-4' | translate }}
-                                                                                </li>
-                                                                                <li>{{ 'FEED.PAGE-3-TEXT-5' | translate }}
-                                                                                </li>
-                                                                                <li>{{ 'FEED.PAGE-3-TEXT-6' | translate }}
-                                                                                </li>
-                                                                        </ul>
+                                                                                class="img-width-50" />
                                                                 </div>
                                                         </div>
                                                 </div>
-                                        </div>
-                                        <div class="brochure-footer">
-                                                <div class="footer-color"></div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
                                         </div>
                                 </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                                <div class="brochure-wrapper feed-page4">
-                                        <div class="brochure-header"></div>
-                                        <div class="brochure-content">
-                                                <div class="row">
-                                                        <div class="col-md-6">
-                                                                <div class="text-content">
-                                                                        <img src="assets/images/calf-starter-logo.jpg"
-                                                                                class="image-header" />
-                                                                        <ul>
-                                                                                <li>{{ 'FEED.PAGE-4-TEXT-1' | translate }}
-                                                                                </li>
-                                                                                <li>{{ 'FEED.PAGE-4-TEXT-2' | translate }}
-                                                                                </li>
-                                                                                <li>{{ 'FEED.PAGE-4-TEXT-3' | translate }}
-                                                                                </li>
-                                                                                <li>{{ 'FEED.PAGE-4-TEXT-4' | translate }}
-                                                                                </li>
-                                                                        </ul>
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'calf-starter'">
+                                        <div class="brochure-wrapper feed-page4">
+                                                <div class="brochure-header"></div>
+                                                <div class="brochure-content">
+                                                        <div class="row">
+                                                                <div class="col-md-12">
+                                                                        <div class="text-content">
+                                                                                <img src="assets/images/calf-starter-logo.jpg"
+                                                                                        class="image-header" />
+                                                                                <ul>
+                                                                                        <li>{{ 'FEED.PAGE-4-TEXT-1' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-4-TEXT-2' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-4-TEXT-3' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-4-TEXT-4' | translate }}
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
                                                                 </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                                <div class="pro-pellet-img">
+                                                                <div class="col-md-12">
                                                                         <img src="assets/images/calf-starter-1.JPG"
-                                                                                class="img-height-50" />
+                                                                                class="img-width-50" />
                                                                         <img src="assets/images/calf-starter-2.JPG"
-                                                                                class="img-height-50" />
+                                                                                class="img-width-50" />
                                                                 </div>
                                                         </div>
+                                                </div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
+                                        </div>
+                                </div>
 
-                                                        <div class="col-md-6">
-                                                                <div class="pass-pellet-img">
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'goat-feed'">
+                                        <div class="brochure-wrapper feed-page4">
+                                                <div class="brochure-header"></div>
+                                                <div class="brochure-content">
+                                                        <div class="row">
+                                                                <div class="col-md-12">
+                                                                        <div class="text-content">
+                                                                                <img src="assets/images/goat-feed-logo.jpg"
+                                                                                        class="image-header" />
+                                                                                <ul>
+                                                                                        <li>{{ 'FEED.PAGE-4-TEXT-5' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-4-TEXT-6' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-4-TEXT-7' | translate }}
+                                                                                        </li>
+                                                                                        <li>{{ 'FEED.PAGE-4-TEXT-8' | translate }}
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-12">
                                                                         <img src="assets/images/goat-feed-1.JPG"
-                                                                                class="img-height-50" />
+                                                                                class="img-width-50" />
                                                                         <img src="assets/images/goat-feed-2.JPG"
-                                                                                class="img-height-50" />
+                                                                                class="img-width-50" />
                                                                 </div>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                </div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
+                                        </div>
+                                </div>
+
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'vin-aqua'">
+                                        <div class="brochure-wrapper feed-page5">
+                                                <div class="brochure-header"></div>
+                                                <div class="brochure-content">
+                                                        <div class="col-md-12">
                                                                 <div class="text-content">
-                                                                        <img src="assets/images/goat-feed-logo.jpg"
+                                                                        <img src="assets/images/vin-aqua-logo.jpg"
                                                                                 class="image-header" />
                                                                         <ul>
-                                                                                <li>{{ 'FEED.PAGE-4-TEXT-5' | translate }}
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-1' | translate }}
                                                                                 </li>
-                                                                                <li>{{ 'FEED.PAGE-4-TEXT-6' | translate }}
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-2' | translate }}
                                                                                 </li>
-                                                                                <li>{{ 'FEED.PAGE-4-TEXT-7' | translate }}
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-3' | translate }}
                                                                                 </li>
-                                                                                <li>{{ 'FEED.PAGE-4-TEXT-8' | translate }}
+                                                                        </ul>
+                                                                        <p>{{ 'FEED.PAGE-5-TEXT-4' | translate }}
+                                                                        </p>
+                                                                        <ul>
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-5' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-6' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-7' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-8' | translate }}
+                                                                                </li>
+                                                                        </ul>
+                                                                        <h5 class="font-weight-bold">
+                                                                                {{ 'FEED.PAGE-5-HEADER-2' | translate }}
+                                                                        </h5>
+                                                                        <ul>
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-9' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-10' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-11' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-12' | translate }}
+                                                                                </li>
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-13' | translate }}
+                                                                                </li>
+                                                                        </ul>
+                                                                        <h5 class="font-weight-bold">
+                                                                                {{ 'FEED.PAGE-5-HEADER-3' | translate }}
+                                                                        </h5>
+                                                                        <ul>
+                                                                                <li>{{ 'FEED.PAGE-5-TEXT-14' | translate }}
                                                                                 </li>
                                                                         </ul>
                                                                 </div>
                                                         </div>
+                                                        <div class="col-md-12">
+                                                                <div class="text-center">
+                                                                        <img src="assets/images/vin-aqua-1.JPG"
+                                                                                class="img-width-50" />
+                                                                        <img src="assets/images/vin-aqua-2.JPG"
+                                                                                class="img-width-50" />
+                                                                </div>
+                                                        </div>
                                                 </div>
-                                        </div>
-                                        <div class="brochure-footer">
-                                                <div class="footer-color"></div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
+
                                         </div>
                                 </div>
-                        </div>
 
-                        <div class="col-md-6 col-sm-12">
-                                <div class="brochure-wrapper feed-page5">
-                                        <div class="brochure-header"></div>
-                                        <div class="brochure-content">
-                                                <div class="col-md-12">
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'cotton-seed'">
+                                        <div class="brochure-wrapper feed-page6">
+                                                <div class="brochure-header">
+                                                        <div class="header-text">
+                                                                <h4 class="font-weight-bold text-uppercase text-center">
+                                                                        COTTON
+                                                                        SEED CAKE
+                                                                </h4>
+                                                        </div>
+                                                </div>
+                                                <div class="brochure-content">
                                                         <div class="text-content">
-                                                                <h5 class="font-weight-bold">
-                                                                        {{ 'FEED.PAGE-5-HEADER-1' | translate }}</h5>
+                                                                <p>We offer cotton seed cakes that remains solid
+                                                                        once
+                                                                        oil has
+                                                                        been extracted and pressed from cotton
+                                                                        seeds.
+                                                                        These
+                                                                        cotton seed cakes are widely used in the
+                                                                        industry for
+                                                                        feeding cattle. We offer at competitive
+                                                                        rates,
+                                                                        our
+                                                                        cotton seed cakes can be supplied to
+                                                                        different
+                                                                        parts of
+                                                                        the world.
+                                                                </p>
+                                                                <h5 class="font-weight-bold">Product Category:
+                                                                </h5>
                                                                 <ul>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-1' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-2' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-3' | translate }}</li>
+                                                                        <li>Agricultural</li>
+                                                                        <li>Animal Feed</li>
+                                                                        <li>Cattle Feed</li>
+                                                                        <li>Poultry Feed</li>
                                                                 </ul>
-                                                                <p>{{ 'FEED.PAGE-5-TEXT-4' | translate }}</p>
+                                                                <h5 class="font-weight-bold">Cotton Seed Cake
+                                                                        Specification:
+                                                                </h5>
+                                                                <div class="row">
+                                                                        <div class="col-md-8">
+                                                                                <ul>
+                                                                                        <li>Protein - 20-22%
+                                                                                        </li>
+                                                                                        <li>Oil7 - 8%</li>
+                                                                                        <li>Fibre - 12-14%</li>
+                                                                                        <li>Moisure - 10% Max
+                                                                                        </li>
+                                                                                        <li>Sand & Silica - 2.5%
+                                                                                                Max
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                                <img src="assets/images/seed-cake.png"
+                                                                                        class="img-max-width">
+
+                                                                        </div>
+                                                                </div>
+
+                                                                <h5 class="font-weight-bold">Packing:</h5>
+                                                                <p>50 Kg.PP Bags in Containers. </p>
+                                                                <p>We are offering a wide range of Cotton Seed
+                                                                        Cakes
+                                                                        that are
+                                                                        left out after oil are pressed and
+                                                                        extracted
+                                                                        from seeds
+                                                                        of cotton. These Cotton Seed Cakes find
+                                                                        applications in
+                                                                        applications related to feeding of
+                                                                        cattle. Our
+                                                                        range of
+                                                                        Cotton Seed Cakes are available at most
+                                                                        competitive
+                                                                        prices</p>
+                                                                <p>This uniqueness makes the product highly
+                                                                        desirable as
+                                                                        animal
+                                                                        feed in India. The range of cotton seed
+                                                                        cake,
+                                                                        cottonseed
+                                                                        oil cake and cottonseed oil cake offered
+                                                                        by us
+                                                                        is
+                                                                        excellent in quality and can be availed
+                                                                        easily
+                                                                        at any
+                                                                        time. We are devoted in delivering our
+                                                                        products
+                                                                        within
+                                                                        the stipulated time frame. These are
+                                                                        manufactured in
+                                                                        eco-friendly environment and our quality
+                                                                        analyst
+                                                                        who
+                                                                        checks each and every stage of
+                                                                        manufacturing to
+                                                                        till
+                                                                        packaging. All the suggestions are
+                                                                        invited from
+                                                                        clients
+                                                                        and that must be treated as per their
+                                                                        budget.
+                                                                </p>
+                                                                <p>Cotton seed cakes are the semi-solid material
+                                                                        that
+                                                                        remains
+                                                                        after extracting the oil from the cotton
+                                                                        seeds.
+                                                                        We are
+                                                                        widely well reckoned as one of the
+                                                                        leading
+                                                                        cotton seed
+                                                                        cake manufacturers and exporters from
+                                                                        India. Our
+                                                                        cottonseed oil cake contains a large
+                                                                        amount of
+                                                                        protein,
+                                                                        oil which makes it highly desirable for
+                                                                        animal
+                                                                        feed in
+                                                                        India.
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'rapeseed-cake'">
+                                        <div class="brochure-wrapper feed-page7">
+                                                <div class="brochure-header">
+                                                        <div class="header-text">
+                                                                <h4 class="font-weight-bold text-uppercase text-center">
+                                                                        RAPESEED CAKE
+                                                                </h4>
+                                                        </div>
+                                                </div>
+                                                <div class="brochure-content">
+                                                        <div class="text-content">
+                                                                <h5 class="font-weight-bold">Rapeseed Cake:</h5>
+                                                                <p>Rapeseed cake is co-produced with rapeseed
+                                                                        oil in
+                                                                        rapeseed
+                                                                        crushing process. The rapeseed cake
+                                                                        produced
+                                                                        contains
+                                                                        about 7-10% fat after pressing and is
+                                                                        used
+                                                                        primarily as
+                                                                        a raw material for mixed feed in the
+                                                                        animal feed
+                                                                        industry. Each cake is approx.
+                                                                        1”diameter by
+                                                                        5/6” thick
+                                                                        and consists of Rapeseed oil cake and
+                                                                        its
+                                                                        powder. No
+                                                                        bonemeal or any other animal
+                                                                        ingredients.
+                                                                </p>
+                                                                <table class="table table-bordered">
+                                                                        <thead>
+                                                                                <tr>
+                                                                                        <th>Parameter</th>
+                                                                                        <th>Typical Value</th>
+                                                                                </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                                <tr>
+                                                                                        <td>Protien</td>
+                                                                                        <td>Minimum 36.0% </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>Fat/oil</td>
+                                                                                        <td>Basis 2.0%</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>Fibre</td>
+                                                                                        <td>Maximum 12.0% </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>Sand/silica</td>
+                                                                                        <td>Maximum 2.5% </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>Moisture</td>
+                                                                                        <td>Basis 10.0%</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>Ash</td>
+                                                                                        <td>Maximum 9.0%</td>
+                                                                                </tr>
+                                                                        </tbody>
+                                                                </table>
+                                                                <h5 class="font-weight-bold">Terms of Packing:
+                                                                </h5>
                                                                 <ul>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-5' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-6' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-7' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-8' | translate }}</li>
+                                                                        <li>We make the Packing of rapeseed Meal
+                                                                                in
+                                                                                45-50 kg PP
+                                                                                bags.</li>
                                                                 </ul>
-                                                                <h5 class="font-weight-bold">
-                                                                        {{ 'FEED.PAGE-5-HEADER-2' | translate }}</h5>
+                                                                <h5 class="font-weight-bold">Quality:</h5>
+                                                                <div class="row">
+                                                                        <div class="col-md-8">
+                                                                                <ul>
+                                                                                        <li>Appearance Granules
+                                                                                                :
+                                                                                                10-12-14 mm.
+                                                                                        </li>
+                                                                                        <li>Color: from Grey to
+                                                                                                Brown.
+                                                                                        </li>
+                                                                                        <li>Smell :
+                                                                                                characteristic
+                                                                                                of
+                                                                                                fresh
+                                                                                                sunflower oil
+                                                                                                cake.
+                                                                                        </li>
+                                                                                        <li>Moisture and
+                                                                                                volatile
+                                                                                                matter: % -
+                                                                                                6-9.</li>
+                                                                                        <li>Mass fraction of
+                                                                                                Metal
+                                                                                                impurities :
+                                                                                                - no.</li>
+                                                                                        <li>Crude protein, based
+                                                                                                on dry
+                                                                                                substance: % -
+                                                                                                38.</li>
+                                                                                        <li>Crude fat in
+                                                                                                fat-free
+                                                                                                products in
+                                                                                                recalculation on
+                                                                                                dry substance:
+                                                                                                %- 16.
+                                                                                        </li>
+                                                                                        <li>Fat content in the
+                                                                                                recalculated on
+                                                                                                dry substance: %
+                                                                                                - 11.</li>
+                                                                                </ul>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                                <img src="assets/images/rapesed-cake.png"
+                                                                                        class="img-max-width">
+                                                                        </div>
+                                                                </div>
+                                                                <h5 class="font-weight-bold">Usage:</h5>
+                                                                <p>Rapeseed meal is used for feed purposes by
+                                                                        direct
+                                                                        injection
+                                                                        into the diet of the animals and for
+                                                                        feed
+                                                                        production.
+                                                                        The use of rapeseed meal in dairy
+                                                                        farming leads
+                                                                        to an
+                                                                        increase in quantity and quality of the
+                                                                        final
+                                                                        product,
+                                                                        that is increased milk yield and milk
+                                                                        protein
+                                                                        composition.</p>
+                                                        </div>
+                                                </div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
+                                        </div>
+
+                                </div>
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'rapeseed-meal'">
+                                        <div class="brochure-wrapper feed-page7">
+                                                <div class="brochure-header">
+                                                        <div class="header-text">
+                                                                <h4 class="font-weight-bold text-uppercase text-center">
+                                                                        RAPESEED MEAL
+                                                                </h4>
+                                                        </div>
+                                                </div>
+                                                <div class="brochure-content">
+                                                        <div class="text-content">
+                                                                <h5 class="font-weight-bold">Rapeseed Meal:</h5>
+                                                                <p>Rapeseed Meal is a coarse powdery material,
+                                                                        produced
+                                                                        from
+                                                                        rapeseed cake after series of
+                                                                        preparatory
+                                                                        physical
+                                                                        processes followed by multistage
+                                                                        extraction of
+                                                                        oil under
+                                                                        hygienically controlled conditions.
+                                                                </p>
+                                                                <p>Terms of Packing : We make the Packing of
+                                                                        rapeseed
+                                                                        Meal in
+                                                                        45-50 kg PP begs and loos in container
+                                                                        We make
+                                                                        the
+                                                                        delivery of rapeseed meal in CONTENAR
+                                                                        and bulk
+                                                                        vessels.
+                                                                </p>
+                                                                <p>Basis of delivery : EXW, FCA, CPT, DAP, FOB
+                                                                        port
+                                                                        Yeisk, CIF-
+                                                                        Incoterms 2010.</p>
+                                                                <h5 class="font-weight-bold">Quality:</h5>
+                                                                <div class="row">
+                                                                        <div class="col-md-8">
+                                                                                <ul>
+                                                                                        <li>Appearance :In
+                                                                                                granules
+                                                                                                8-10-12-14
+                                                                                                mm.</li>
+                                                                                        <li>Smell :
+                                                                                                characteristic
+                                                                                                of
+                                                                                                fresh rape
+                                                                                                seed cake.</li>
+                                                                                        <li>Color: From light
+                                                                                                brown with
+                                                                                                green
+                                                                                                shading to dark
+                                                                                                brown.</li>
+                                                                                        <li>Crude Protein in
+                                                                                                absolutely
+                                                                                                dry
+                                                                                                matter: 37%.
+                                                                                        </li>
+                                                                                        <li>Mass fraction of
+                                                                                                moisture
+                                                                                                and
+                                                                                                volatile, %, not
+                                                                                                more
+                                                                                                than : 8-12%
+                                                                                        </li>
+                                                                                        <li>Crude Fibre in
+                                                                                                absolutely
+                                                                                                dry
+                                                                                                matter: 16%.
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                                <img src="assets/images/rapesed-meal.png"
+                                                                                        class="img-max-width">
+                                                                        </div>
+                                                                </div>
+
+                                                                <h5 class="font-weight-bold">Usage:</h5>
+                                                                <p>Rapeseed meal (Canola Meal) is used basically
+                                                                        in
+                                                                        animal feed
+                                                                        due to its protein content of 36-38%.
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'guar-meal'">
+                                        <div class="brochure-wrapper feed-page8">
+                                                <div class="brochure-header">
+                                                        <div class="header-text">
+                                                                <h4 class="font-weight-bold text-uppercase text-center">
+                                                                        GUAR
+                                                                        MEAL</h4>
+                                                        </div>
+                                                </div>
+                                                <div class="brochure-content">
+                                                        <div class="text-content">
+                                                                <h4 class="font-weight-bold">Technical
+                                                                        Information:</h4>
+                                                                <p>Processed Guar Meal is a high protein feed
+                                                                        stuff .It
+                                                                        is
+                                                                        widely used as partial substitute of
+                                                                        soya beans
+                                                                        meal. It
+                                                                        is processed by toasting at high
+                                                                        temperature to
+                                                                        remove
+                                                                        natural trypsin inhibitor. Thus
+                                                                        enhancing its
+                                                                        nutritive
+                                                                        value and digestibility.</p>
+                                                                <h4 class="font-weight-bold">Typical Properties:
+                                                                </h4>
+                                                                <table class="table table-bordered">
+                                                                        <thead>
+                                                                                <tr>
+                                                                                        <th>Grade</th>
+                                                                                        <th>Guar Meal 38%</th>
+                                                                                        <th>Guar Meal 40%</th>
+                                                                                </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                                <tr>
+                                                                                        <td>Moisture</td>
+                                                                                        <td>10.0 + 2.0%</td>
+                                                                                        <td>10.0 + 2.0%</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>Crude Protein</td>
+                                                                                        <td>40.0 + 2.0%</td>
+                                                                                        <td>40.0 + 2.0%</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>Oil</td>
+                                                                                        <td>4.0 + 1.0% </td>
+                                                                                        <td>4.0 + 1.0%</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>Fiber</td>
+                                                                                        <td>14 % Max</td>
+                                                                                        <td>14 % Max</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>Ash</td>
+                                                                                        <td>5.0 + 1.0%</td>
+                                                                                        <td>5.0 + 1.0%</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>CHO (NFE)</td>
+                                                                                        <td>40.0 + 2.0%</td>
+                                                                                        <td>40.0 + 2.0%</td>
+                                                                                </tr>
+                                                                        </tbody>
+                                                                </table>
+                                                                <h4 class="font-weight-bold">It’s Advantages:
+                                                                </h4>
                                                                 <ul>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-9' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-10' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-11' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-12' | translate }}</li>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-13' | translate }}</li>
+                                                                        <li>Free From Salmonella & Alfatoxin &
+                                                                                E. Coli
+                                                                        </li>
+                                                                        <li>Free Flowing</li>
+                                                                        <li>Can Be used as a binding agent</li>
+                                                                        <li>100% Non-GMO product</li>
+                                                                        <li>Contains minimum 45% of "0</li>
                                                                 </ul>
-                                                                <h5 class="font-weight-bold">
-                                                                        {{ 'FEED.PAGE-5-HEADER-3' | translate }}</h5>
+                                                                <h4 class="font-weight-bold">Guar Meal 40%:
+                                                                </h4>
+                                                                <p>50 Kg.PP Bags in Containers.</p>
+                                                                <h4 class="font-weight-bold">Guar Meal High
+                                                                        Protein
+                                                                        Natural
+                                                                        Plant for Animal Feed</h4>
+                                                                <p>Processed Guar Meal (Fodder) is a high
+                                                                        protein animal
+                                                                        and
+                                                                        poultry Feed stuff. Guar Meal is the
+                                                                        by-product
+                                                                        obtained
+                                                                        after guar gum is extracted from the
+                                                                        guar seed
+                                                                        (CyamopasisTetragonoloba) of leguminious
+                                                                        plant.
+                                                                        It is
+                                                                        processed by toasting at high
+                                                                        temperature to
+                                                                        remove
+                                                                        natural trypsin inhibitor. This
+                                                                        enhancing its
+                                                                        nutritive
+                                                                        value and digestibility. It is rich in
+                                                                        protein
+                                                                        and
+                                                                        carbohydrates, and is a 100% natural
+                                                                        agricultural
+                                                                        product without the addition of any
+                                                                        hemicals or
+                                                                        presentives, Non-GMO product. Processd
+                                                                        guar meal
+                                                                        (Fodder) can be used either in
+                                                                        conjuction with
+                                                                        other
+                                                                        feed stuffs or by itself, as it is a
+                                                                        complete
+                                                                        nutrional
+                                                                        feed.</p>
+                                                                <h4 class="font-weight-bold">Advantages of
+                                                                        processed
+                                                                        Guar Meal
+                                                                        (FODDER):</h4>
                                                                 <ul>
-                                                                        <li>{{ 'FEED.PAGE-5-TEXT-14' | translate }}</li>
+                                                                        <li>It is free from Salmonella,
+                                                                                Aflatoxine&Ecoli, Which
+                                                                                often infects cottonseed meal.
+                                                                        </li>
+                                                                        <li>It is free flowing and therefore can
+                                                                                be
+                                                                                stored in
+                                                                                silos, and does not create any
+                                                                                problems
+                                                                                in
+                                                                                discharge.</li>
+                                                                        <li>It is completely non-flammable.</li>
+                                                                        <li>It contains average of minimum 45%
+                                                                                ‘O & A
+                                                                                (Oil
+                                                                                &Albuminoid)</li>
+                                                                        <li>It can be used as a binding agent
+                                                                                for
+                                                                                palletizing
+                                                                                other feed compound due to
+                                                                                presence of
+                                                                                residual
+                                                                                gum.</li>
+                                                                        <li>100% Non-GMO product</li>
                                                                 </ul>
+                                                                <h4 class="font-weight-bold">Technical
+                                                                        Information:</h4>
+                                                                <ul>
+                                                                        <li>Processed Guar Meal (Fodder) is a
+                                                                                high
+                                                                                protein feed
+                                                                                stuff.</li>
+                                                                        <li>It is widely used as partial
+                                                                                substitute of
+                                                                                soya
+                                                                                beans meal.</li>
+                                                                </ul>
+                                                                <h4 class="font-weight-bold">It’s Advantages:
+                                                                </h4>
+                                                                <div class="row">
+                                                                        <div class="col-md-8">
+                                                                                <ul>
+                                                                                        <li>Very Good binder,
+                                                                                                give solid
+                                                                                                pallet.
+                                                                                        </li>
+                                                                                        <li>Increase throughput
+                                                                                                > 10%.
+                                                                                        </li>
+                                                                                        <li>High protein meal at
+                                                                                                > 20%
+                                                                                                lower in
+                                                                                                price </li>
+                                                                                        <li>Free From Salmonella
+                                                                                                &Aflatoxine& E
+                                                                                                Coli.</li>
+                                                                                        <li>Free Flowing</li>
+                                                                                        <li>100% Non-GMO product
+                                                                                        </li>
+                                                                                        <li>Contains minimum 45%
+                                                                                                of ‘’ O
+                                                                                                & A ‘’
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                                <img src="assets/images/guar-meal.png"
+                                                                                        class="img-max-width">
+                                                                        </div>
+                                                                </div>
+
+                                                                <h4 class="font-weight-bold">Dosage:</h4>
+                                                                <p>Poultry: 5-7 %</p>
                                                         </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                        <div class="text-center">
-                                                                <img src="assets/images/vin-aqua-1.JPG"  class="img-height-50"/>
-                                                                <img src="assets/images/vin-aqua-2.JPG"  class="img-height-50"/>
-                                                        </div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
                                                 </div>
-                                        </div>
-                                        <div class="brochure-footer">
-                                                <div class="footer-color"></div>
-                                        </div>
-
-                                </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-12">
-                                <div class="brochure-wrapper feed-page6">
-                                        <div class="brochure-header"></div>
-                                        <div class="brochure-content">
-                                                <div class="text-content">
-                                                        <p>We offer cotton seed cakes that remains solid once oil has
-                                                                been extracted and pressed from cotton seeds. These
-                                                                cotton seed cakes are widely used in the industry for
-                                                                feeding cattle. We offer at competitive rates, our
-                                                                cotton seed cakes can be supplied to different parts of
-                                                                the world.
-                                                        </p>
-                                                        <h5 class="font-weight-bold">Product Category:</h5>
-                                                        <ul>
-                                                                <li>Agricultural</li>
-                                                                <li>Animal Feed</li>
-                                                                <li>Cattle Feed</li>
-                                                                <li>Poultry Feed</li>
-                                                        </ul>
-                                                        <h5 class="font-weight-bold">Cotton Seed Cake Specification:
-                                                        </h5>
-                                                        <div class="row">
-                                                                <div class="col-md-8">
-                                                                        <ul>
-                                                                                <li>Protein - 20-22%</li>
-                                                                                <li>Oil7 - 8%</li>
-                                                                                <li>Fibre - 12-14%</li>
-                                                                                <li>Moisure - 10% Max</li>
-                                                                                <li>Sand & Silica - 2.5% Max</li>
-                                                                        </ul>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                        <img src="assets/images/seed-cake.png"
-                                                                                class="img-max-width">
-
-                                                                </div>
-                                                        </div>
-
-                                                        <h5 class="font-weight-bold">Packing:</h5>
-                                                        <p>50 Kg.PP Bags in Containers. </p>
-                                                        <p>We are offering a wide range of Cotton Seed Cakes that are
-                                                                left out after oil are pressed and extracted from seeds
-                                                                of cotton. These Cotton Seed Cakes find applications in
-                                                                applications related to feeding of cattle. Our range of
-                                                                Cotton Seed Cakes are available at most competitive
-                                                                prices</p>
-                                                        <p>This uniqueness makes the product highly desirable as animal
-                                                                feed in India. The range of cotton seed cake, cottonseed
-                                                                oil cake and cottonseed oil cake offered by us is
-                                                                excellent in quality and can be availed easily at any
-                                                                time. We are devoted in delivering our products within
-                                                                the stipulated time frame. These are manufactured in
-                                                                eco-friendly environment and our quality analyst who
-                                                                checks each and every stage of manufacturing to till
-                                                                packaging. All the suggestions are invited from clients
-                                                                and that must be treated as per their budget.
-                                                        </p>
-                                                        <p>Cotton seed cakes are the semi-solid material that remains
-                                                                after extracting the oil from the cotton seeds. We are
-                                                                widely well reckoned as one of the leading cotton seed
-                                                                cake manufacturers and exporters from India. Our
-                                                                cottonseed oil cake contains a large amount of protein,
-                                                                oil which makes it highly desirable for animal feed in
-                                                                India.
-                                                        </p>
-                                                </div>
-                                                <!-- <div class="seed-cake-bg"></div> -->
-                                        </div>
-                                        <div class="brochure-footer">
-                                                <h4 class="font-weight-bold text-uppercase text-center">COTTON SEED CAKE
-                                                </h4>
-                                                <div class="footer-color"></div>
-                                        </div>
-                                </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-12">
-                                <div class="brochure-wrapper feed-page7">
-                                        <div class="brochure-header"></div>
-                                        <div class="brochure-content">
-                                                <div class="text-content">
-                                                        <h5 class="font-weight-bold">Rapeseed Cake:</h5>
-                                                        <p>Rapeseed cake is co-produced with rapeseed oil in rapeseed
-                                                                crushing process. The rapeseed cake produced contains
-                                                                about 7-10% fat after pressing and is used primarily as
-                                                                a raw material for mixed feed in the animal feed
-                                                                industry. Each cake is approx. 1”diameter by 5/6” thick
-                                                                and consists of Rapeseed oil cake and its powder. No
-                                                                bonemeal or any other animal ingredients.
-                                                        </p>
-                                                        <table class="table table-bordered">
-                                                                <thead>
-                                                                        <tr>
-                                                                                <th>Parameter</th>
-                                                                                <th>Typical Value</th>
-                                                                        </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                        <tr>
-                                                                                <td>Protien</td>
-                                                                                <td>Minimum 36.0% </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                <td>Fat/oil</td>
-                                                                                <td>Basis 2.0%</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                <td>Fibre</td>
-                                                                                <td>Maximum 12.0% </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                <td>Sand/silica</td>
-                                                                                <td>Maximum 2.5% </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                <td>Moisture</td>
-                                                                                <td>Basis 10.0%</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                <td>Ash</td>
-                                                                                <td>Maximum 9.0%</td>
-                                                                        </tr>
-                                                                </tbody>
-                                                        </table>
-                                                        <h5 class="font-weight-bold">Terms of Packing:</h5>
-                                                        <ul>
-                                                                <li>We make the Packing of rapeseed Meal in 45-50 kg PP
-                                                                        bags.</li>
-                                                        </ul>
-                                                        <h5 class="font-weight-bold">Quality:</h5>
-                                                        <div class="row">
-                                                                <div class="col-md-8">
-                                                                        <ul>
-                                                                                <li>Appearance Granules : 10-12-14 mm.
-                                                                                </li>
-                                                                                <li>Color: from Grey to Brown.</li>
-                                                                                <li>Smell : characteristic of fresh
-                                                                                        sunflower oil cake.
-                                                                                </li>
-                                                                                <li>Moisture and volatile matter: % -
-                                                                                        6-9.</li>
-                                                                                <li>Mass fraction of Metal impurities :
-                                                                                        - no.</li>
-                                                                                <li>Crude protein, based on dry
-                                                                                        substance: % - 38.</li>
-                                                                                <li>Crude fat in fat-free products in
-                                                                                        recalculation on
-                                                                                        dry substance: %- 16.</li>
-                                                                                <li>Fat content in the recalculated on
-                                                                                        dry substance: %
-                                                                                        - 11.</li>
-                                                                        </ul>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                        <img src="assets/images/rapesed-cake.png"
-                                                                                class="img-max-width">
-                                                                </div>
-                                                        </div>
-                                                        <h5 class="font-weight-bold">Usage:</h5>
-                                                        <p>Rapeseed meal is used for feed purposes by direct injection
-                                                                into the diet of the animals and for feed production.
-                                                                The use of rapeseed meal in dairy farming leads to an
-                                                                increase in quantity and quality of the final product,
-                                                                that is increased milk yield and milk protein
-                                                                composition.</p>
-                                                        <!-- <div class="rapesed-cake-bg"></div> -->
-                                                        <h5 class="font-weight-bold">Rapeseed Meal:</h5>
-                                                        <p>Rapeseed Meal is a coarse powdery material, produced from
-                                                                rapeseed cake after series of preparatory physical
-                                                                processes followed by multistage extraction of oil under
-                                                                hygienically controlled conditions.
-                                                        </p>
-                                                        <p>Terms of Packing : We make the Packing of rapeseed Meal in
-                                                                45-50 kg PP begs and loos in container We make the
-                                                                delivery of rapeseed meal in CONTENAR and bulk vessels.
-                                                        </p>
-                                                        <p>Basis of delivery : EXW, FCA, CPT, DAP, FOB port Yeisk, CIF-
-                                                                Incoterms 2010.</p>
-                                                        <h5 class="font-weight-bold">Quality:</h5>
-                                                        <div class="row">
-                                                                <div class="col-md-8">
-                                                                        <ul>
-                                                                                <li>Appearance :In granules 8-10-12-14
-                                                                                        mm.</li>
-                                                                                <li>Smell : characteristic of fresh rape
-                                                                                        seed cake.</li>
-                                                                                <li>Color: From light brown with green
-                                                                                        shading to dark
-                                                                                        brown.</li>
-                                                                                <li>Crude Protein in absolutely dry
-                                                                                        matter: 37%.</li>
-                                                                                <li>Mass fraction of moisture and
-                                                                                        volatile, %, not more
-                                                                                        than : 8-12%</li>
-                                                                                <li>Crude Fibre in absolutely dry
-                                                                                        matter: 16%.</li>
-                                                                        </ul>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                        <img src="assets/images/rapesed-meal.png"
-                                                                                class="img-max-width">
-                                                                </div>
-                                                        </div>
-
-                                                        <h5 class="font-weight-bold">Usage:</h5>
-                                                        <p>Rapeseed meal (Canola Meal) is used basically in animal feed
-                                                                due to its protein content of 36-38%.</p>
-                                                        <!-- <div class="rapesed-meal-bg"></div> -->
-                                                </div>
-                                        </div>
-                                        <div class="brochure-footer">
-                                                <h4 class="font-weight-bold text-uppercase text-center">RAPESEED</h4>
-                                                <div class="footer-color"></div>
                                         </div>
                                 </div>
 
-                        </div>
-
-                        <div class="col-md-6 col-sm-12">
-                                <div class="brochure-wrapper feed-page8">
-                                        <div class="brochure-header"></div>
-                                        <div class="brochure-content">
-                                                <div class="text-content">
-                                                        <h4 class="font-weight-bold">Technical Information:</h4>
-                                                        <p>Processed Guar Meal is a high protein feed stuff .It is
-                                                                widely used as partial substitute of soya beans meal. It
-                                                                is processed by toasting at high temperature to remove
-                                                                natural trypsin inhibitor. Thus enhancing its nutritive
-                                                                value and digestibility.</p>
-                                                        <h4 class="font-weight-bold">Typical Properties: </h4>
-                                                        <table class="table table-bordered">
-                                                                <thead>
-                                                                        <tr>
-                                                                                <th>Grade</th>
-                                                                                <th>Guar Meal 38%</th>
-                                                                                <th>Guar Meal 40%</th>
-                                                                        </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                        <tr>
-                                                                                <td>Moisture</td>
-                                                                                <td>10.0 + 2.0%</td>
-                                                                                <td>10.0 + 2.0%</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                <td>Crude Protein</td>
-                                                                                <td>40.0 + 2.0%</td>
-                                                                                <td>40.0 + 2.0%</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                <td>Oil</td>
-                                                                                <td>4.0 + 1.0% </td>
-                                                                                <td>4.0 + 1.0%</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                <td>Fiber</td>
-                                                                                <td>14 % Max</td>
-                                                                                <td>14 % Max</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                <td>Ash</td>
-                                                                                <td>5.0 + 1.0%</td>
-                                                                                <td>5.0 + 1.0%</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                <td>CHO (NFE)</td>
-                                                                                <td>40.0 + 2.0%</td>
-                                                                                <td>40.0 + 2.0%</td>
-                                                                        </tr>
-                                                                </tbody>
-                                                        </table>
-                                                        <h4 class="font-weight-bold">It’s Advantages: </h4>
-                                                        <ul>
-                                                                <li>Free From Salmonella & Alfatoxin & E. Coli </li>
-                                                                <li>Free Flowing</li>
-                                                                <li>Can Be used as a binding agent</li>
-                                                                <li>100% Non-GMO product</li>
-                                                                <li>Contains minimum 45% of "0</li>
-                                                        </ul>
-                                                        <h4 class="font-weight-bold">Guar Meal 40%: </h4>
-                                                        <p>50 Kg.PP Bags in Containers.</p>
-                                                        <h4 class="font-weight-bold">Guar Meal High Protein Natural
-                                                                Plant for Animal Feed</h4>
-                                                        <p>Processed Guar Meal (Fodder) is a high protein animal and
-                                                                poultry Feed stuff. Guar Meal is the by-product obtained
-                                                                after guar gum is extracted from the guar seed
-                                                                (CyamopasisTetragonoloba) of leguminious plant. It is
-                                                                processed by toasting at high temperature to remove
-                                                                natural trypsin inhibitor. This enhancing its nutritive
-                                                                value and digestibility. It is rich in protein and
-                                                                carbohydrates, and is a 100% natural agricultural
-                                                                product without the addition of any hemicals or
-                                                                presentives, Non-GMO product. Processd guar meal
-                                                                (Fodder) can be used either in conjuction with other
-                                                                feed stuffs or by itself, as it is a complete nutrional
-                                                                feed.</p>
-                                                        <h4 class="font-weight-bold">Advantages of processed Guar Meal
-                                                                (FODDER):</h4>
-                                                        <ul>
-                                                                <li>It is free from Salmonella, Aflatoxine&Ecoli, Which
-                                                                        often infects cottonseed meal.</li>
-                                                                <li>It is free flowing and therefore can be stored in
-                                                                        silos, and does not create any problems in
-                                                                        discharge.</li>
-                                                                <li>It is completely non-flammable.</li>
-                                                                <li>It contains average of minimum 45% ‘O & A (Oil
-                                                                        &Albuminoid)</li>
-                                                                <li>It can be used as a binding agent for palletizing
-                                                                        other feed compound due to presence of residual
-                                                                        gum.</li>
-                                                                <li>100% Non-GMO product</li>
-                                                        </ul>
-                                                        <h4 class="font-weight-bold">Technical Information:</h4>
-                                                        <ul>
-                                                                <li>Processed Guar Meal (Fodder) is a high protein feed
-                                                                        stuff.</li>
-                                                                <li>It is widely used as partial substitute of soya
-                                                                        beans meal.</li>
-                                                        </ul>
-                                                        <h4 class="font-weight-bold">It’s Advantages:</h4>
-                                                        <div class="row">
-                                                                <div class="col-md-8">
-                                                                        <ul>
-                                                                                <li>Very Good binder, give solid pallet.
-                                                                                </li>
-                                                                                <li>Increase throughput > 10%.</li>
-                                                                                <li>High protein meal at > 20% lower in
-                                                                                        price </li>
-                                                                                <li>Free From Salmonella &Aflatoxine& E
-                                                                                        Coli.</li>
-                                                                                <li>Free Flowing</li>
-                                                                                <li>100% Non-GMO product</li>
-                                                                                <li>Contains minimum 45% of ‘’ O & A ‘’
-                                                                                </li>
-                                                                        </ul>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                        <img src="assets/images/guar-meal.png"
-                                                                                class="img-max-width">
+                                <div class="col-md-12 col-sm-12" *ngSwitchCase="'soya-meal'">
+                                        <div class="brochure-wrapper feed-page1">
+                                                <div class="brochure-header">
+                                                        <div class="header-text">
+                                                                <h4 class="font-weight-bold text-uppercase text-center">
+                                                                        SOYA DOC
+                                                                        / SOYA
+                                                                        MEAL</h4>
+                                                        </div>
+                                                </div>
+                                                <div class="brochure-content">
+                                                        <div class="text-content">
+                                                                <h4 class="font-weight-bold">Introduction:</h4>
+                                                                <p>We produce highly refined Soya Meal suitable
+                                                                        for
+                                                                        Poultry and
+                                                                        other needs. This high protein component
+                                                                        is used
+                                                                        as food
+                                                                        additive in a variety of products
+                                                                        including
+                                                                        Wheat Flour
+                                                                        for increasing protein component. We
+                                                                        also
+                                                                        produce animal
+                                                                        feed grade Soya DOC used as a major
+                                                                        component of
+                                                                        cattle
+                                                                        feed throughout the world.</p>
+                                                                <h4 class="font-weight-bold">Specification Of
+                                                                        Soya Meal
+                                                                        (46%):
+                                                                </h4>
+                                                                <ul>
+                                                                        <li>Moisture - 12% Max</li>
+                                                                        <li>Protein - 46%</li>
+                                                                        <li>Fats - 1.5%</li>
+                                                                        <li>Fibers - 7% Max</li>
+                                                                        <li>Sand Silica - 2.5% Max</li>
+                                                                </ul>
+                                                                <h4 class="font-weight-bold">Specification Of
+                                                                        Soya Meal
+                                                                        (48%):
+                                                                </h4>
+                                                                <ul>
+                                                                        <li>Moisture - 11.5-12% Max</li>
+                                                                        <li>Protein - 47-48%</li>
+                                                                        <li>Fats - 1.5%</li>
+                                                                        <li>Fibers - 7% Max</li>
+                                                                        <li>Sand Silica - 2.0% Max</li>
+                                                                </ul>
+                                                                <h4 class="font-weight-bold">Specification Of
+                                                                        Soya Meal
+                                                                        (Hipro
+                                                                        DOC):
+                                                                </h4>
+                                                                <ul>
+                                                                        <li>Moisture - 11%</li>
+                                                                        <li>Fibers - 3.5%</li>
+                                                                        <li>Fats - 1.5%</li>
+                                                                        <li>Protein - 50-52%</li>
+                                                                        <li>Sand Silica - 0.5%</li>
+                                                                        <li>Total Ash - 6.50%</li>
+                                                                        <li>Urease U/A - 0.30%</li>
+                                                                        <li>PDI - NA</li>
+                                                                        <li>NSI - NA</li>
+                                                                        <li>Particle Size - 90% Pass thr. 4MM
+                                                                        </li>
+                                                                </ul>
+                                                                <div class="side-img-wrapper soya-meal-bg"></div>
+                                                                <div class="mobile-view">
+                                                                        <img src="assets/images/soya-meal.jpg" />
                                                                 </div>
                                                         </div>
-
-                                                        <h4 class="font-weight-bold">Dosage:</h4>
-                                                        <p>Poultry: 5-7 %</p>
-                                                        <!-- <div class="guar-meal-bg"></div> -->
+                                                </div>
+                                                <div class="brochure-footer">
+                                                        <div class="footer-color"></div>
                                                 </div>
                                         </div>
-                                        <div class="brochure-footer">
-                                                <h4 class="font-weight-bold text-uppercase text-center">GUAR MEAL</h4>
-                                                <div class="footer-color"></div>
-                                        </div>
                                 </div>
-                        </div>
+                        </ng-container>
 
-                        <div class="col-md-12 col-sm-12">
-                                <div class="brochure-wrapper feed-page1">
-                                        <div class="brochure-header"></div>
-                                        <div class="brochure-content">
-                                                <div class="text-content">
-                                                        <h4 class="font-weight-bold">Introduction:</h4>
-                                                        <p>We produce highly refined Soya Meal suitable for Poultry and
-                                                                other needs. This high protein component is used as food
-                                                                additive in a variety of products including Wheat Flour
-                                                                for increasing protein component. We also produce animal
-                                                                feed grade Soya DOC used as a major component of cattle
-                                                                feed throughout the world.</p>
-                                                        <h4 class="font-weight-bold">Specification Of Soya Meal (46%):
-                                                        </h4>
-                                                        <ul>
-                                                                <li>Moisture - 12% Max</li>
-                                                                <li>Protein - 46%</li>
-                                                                <li>Fats - 1.5%</li>
-                                                                <li>Fibers - 7% Max</li>
-                                                                <li>Sand Silica - 2.5% Max</li>
-                                                        </ul>
-                                                        <h4 class="font-weight-bold">Specification Of Soya Meal (48%):
-                                                        </h4>
-                                                        <ul>
-                                                                <li>Moisture - 11.5-12% Max</li>
-                                                                <li>Protein - 47-48%</li>
-                                                                <li>Fats - 1.5%</li>
-                                                                <li>Fibers - 7% Max</li>
-                                                                <li>Sand Silica - 2.0% Max</li>
-                                                        </ul>
-                                                        <h4 class="font-weight-bold">Specification Of Soya Meal (Hipro
-                                                                DOC):
-                                                        </h4>
-                                                        <ul>
-                                                                <li>Moisture - 11%</li>
-                                                                <li>Fibers - 3.5%</li>
-                                                                <li>Fats - 1.5%</li>
-                                                                <li>Protein - 50-52%</li>
-                                                                <li>Sand Silica - 0.5%</li>
-                                                                <li>Total Ash - 6.50%</li>
-                                                                <li>Urease U/A - 0.30%</li>
-                                                                <li>PDI - NA</li>
-                                                                <li>NSI - NA</li>
-                                                                <li>Particle Size - 90% Pass thr. 4MM</li>
-                                                        </ul>
-                                                        <div class="side-img-wrapper soya-meal-bg"></div>
-                                                </div>
-                                        </div>
-                                        <div class="brochure-footer">
-                                                <h4 class="font-weight-bold text-uppercase text-center">SOYA DOC / SOYA
-                                                        MEAL</h4>
-                                                <div class="footer-color"></div>
-                                        </div>
-                                </div>
-                        </div>
                 </div>
         </div>
 </div>

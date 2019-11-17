@@ -15,10 +15,10 @@ import {SlideshowModule} from 'ng-simple-slideshow';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { TestComponent } from './test/test.component';
-import { TestViewComponent } from './test-view/test-view.component';
 import { FormsModule } from '@angular/forms';
 import { PipesModule } from '../pipes/pipes.module';
+import { FeedListComponent } from './feed/feed-list/feed-list.component';
+import { AquacultureListComponent } from './aquaculture/aquaculture-list/aquaculture-list.component';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -35,8 +35,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     CaprineOvineComponent,
     CamelComponent,
     EquineComponent,
-    TestComponent,
-    TestViewComponent
+    FeedListComponent,
+    AquacultureListComponent
   ],
   imports: [
     CommonModule,

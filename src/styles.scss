@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+// @import url('https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
 :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "zurich" ;
     font-size: 14px;
     color: #333;
     box-sizing: border-box;
@@ -9,6 +10,10 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  body{
+    font-family: "zurich" !important;
+  }
+  
   h1,
   h2,
   h3,
@@ -38,9 +43,16 @@
     width: 100%;
 }
 
+.header-text{
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  width: 64%;
+}
+
 .brochure-wrapper{
   width: 100%;
-  min-height: 100%;
   border: 1px solid #ccc;
   position: relative;
   margin-bottom: 20px;
@@ -60,7 +72,6 @@
 }
 
 .brochure-wrapper .text-content{
-  font-family:Arial,serif;
   color:rgb(43,41,41);
   font-weight:normal;
   font-style:normal;
@@ -69,7 +80,6 @@
 }
 
 .brochure-wrapper .brochure-footer{
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -84,11 +94,11 @@
 }
 
 .image-header{
-  width:50%;
+  width:35%;
   margin: 0 0 20px 20px;
 }
 
-.img-height-50{
+.img-width-50{
   width:50%
 }
 
@@ -111,6 +121,17 @@
   border-left: 10px solid #fff;
   border-radius: 35px 0 0 35px;
 }
+
+.mobile-view {
+  text-align: center;
+  display: none;
+  img{
+      border: 4px solid #e6e6e6;
+      border-radius: 20px ;
+      width: 250px;
+  }
+}
+
 .corn-bg {
   background-image: url("assets/images/corn.png");
   border-bottom: 15px solid #e4c538;
@@ -119,58 +140,6 @@
 .soya-meal-bg {
   background-image: url("assets/images/soya-meal.png");
   border-bottom: 15px solid #e4c538;
-}
-
-.seed-cake-bg {
-  position: absolute;
-  width: 50%;
-  height: 30%;
-  z-index: 10;
-  background-image: url("assets/images/seed-cake.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 110%;
-  right: 0;
-  top: 155px;
-}
-
-.rapesed-cake-bg {
-  position: absolute;
-  width: 50%;
-  height: 30%;
-  z-index: 10;
-  background-image: url("assets/images/rapesed-cake.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  right: 0;
-  top: 448px;
-  border-radius: 35px;
-}
-
-.rapesed-meal-bg {
-  position: absolute;
-  width: 50%;
-  height: 30%;
-  z-index: 10;
-  background-image: url("assets/images/rapesed-meal.png");
-  background-position: center;
-  background-repeat: no-repeat;  
-  right: -65px;
-  bottom: 0;
-  border-radius: 35px;
-}
-
-.guar-meal-bg {
-  position: absolute;
-  width: 50%;
-  height: 30%;
-  z-index: 10;
-  background-image: url("assets/images/guar-meal.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  right: -0;
-  bottom: 0;
-  border-radius: 35px;
 }
 
 .aqua-sure-bg{
@@ -184,7 +153,7 @@
 }
   
 .groliv-a-bg{
-  background-image: url("assets/images/aquavit.png");
+  background-image: url("assets/images/groliv-a.jpg");
   border-bottom: 15px solid #0b5c93;
 }
 
@@ -277,17 +246,114 @@
   background-image: url("assets/images/mycophx-plr.png");
   border-bottom: 15px solid #e74723;
 }
-  // generate css for phoenix
 
 
-.mobile-view {
-    text-align: center;
-    display: none;
-    img{
-        width: 50%;
+
+/*****************************************/
+.brochure-container .col-md-3{
+  display: flex;
+}
+
+.search-bar{
+  width: 280px;
+  .form-control:focus {
+      box-shadow: none;
     }
 }
-  
+
+
+.card{
+  // height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 17px 0 #e6e6e6;
+  border: 1px solid #ededed;
+  display: flex;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  .card-img-top{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      height: 175px;
+      margin-bottom: 15px;
+      width: 100%;
+      img{
+          width: auto;
+          height: 160px;
+      }
+  }
+  .card-body{
+      padding: 0;
+  }
+  .card-text{
+      font-size: 12px;
+  }
+  .card-title{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #007dc2;
+      margin: 0;
+  }
+  .view-btn{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      background: #fff;
+      display: block;
+      overflow: hidden;
+      transition: height .3s ease;
+      span{
+          margin: 10px 20px;
+          display: inline-block;
+          padding: 4px 16px;
+          font-size: 14px;
+          background: #85c226;
+          color: #fff;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+  }
+  .overlay{
+      opacity: 0;
+      border-radius: 10px;
+      transition: background 0.2s ease;
+      z-index: -1;
+      cursor: initial;
+  }
+  &:hover{
+      .view-btn{
+          height: 50px;
+          z-index: 10;
+      }
+      .overlay{
+          opacity: 1;
+          z-index: 5;
+      }
+  } 
+}
+
+.card:hover .overlay {
+  cursor: initial;
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+  border-radius: 20px;
+}
+/**********************************************/  
 /********** Back To Top ***************/
 .back-to-top{
   position: fixed;
@@ -321,17 +387,36 @@
 // ************************
 
 @media screen and (max-width: 767px) {
+
+  .header-text{
+    width: 100% !important;
+  }
+
+  .brochure-wrapper .brochure-content{
+    position: relative;
+    padding-bottom: 20px !important;
+  }
+
   .mobile-view {
     display: block !important;
   }
 
-  .feed-page1 {
-    .text-content{
-      width: 100% !important;
-    }
-    .side-img-wrapper{
-      display: none !important;
+  .search-bar{
+    width: 100% !important;
+  }
+
+  .view-btn{
+    position: relative !important;
+    height: 40px !important;
+    span{
+      margin: 10px 0 !important;
     }
   }
 
+  .text-content{
+    width: 100% !important;
+  }
+  .side-img-wrapper{
+    display: none !important;
+  }
 }

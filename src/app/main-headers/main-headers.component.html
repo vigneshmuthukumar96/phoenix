@@ -17,10 +17,10 @@
                         <a class="nav-link" [class.active]="curTab=='home'" (click)="route('home')">{{ 'HEADER.HOME' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='feed'">
-                        <a class="nav-link" [class.active]="curTab=='feed'" (click)="route('feed')">{{ 'HEADER.FEED' | translate }}</a>
+                        <a class="nav-link" [class.active]="curTab=='feed'" (click)="route('feed-list')">{{ 'HEADER.FEED' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='aquaculture'">
-                        <a class="nav-link" [class.active]="curTab=='aquaculture'" (click)="route('aquaculture')">{{ 'HEADER.AQUACULTURE' | translate }}</a>
+                        <a class="nav-link" [class.active]="curTab=='aquaculture'" (click)="route('aqua-list')">{{ 'HEADER.AQUACULTURE' | translate }}</a>
                     </li>
                     <li class="nav-item" (click)="curTab='avian'">
                         <a class="nav-link" [class.active]="curTab=='avian'" (click)="route('avian')">{{ 'HEADER.AVIAN' | translate }}</a>
@@ -42,7 +42,8 @@
                     </li> -->
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
+                        <div id="google_translate_element"></div>
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="cursor: pointer;" id="langdropdown"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="lang-name"
                                 class="flag-icon flag-icon-us" [ngClass]="getLangFlag(lang)"> </span>
@@ -52,7 +53,7 @@
                                 (click)="setLang(lang)"><span class="flag-icon" [ngClass]="getLangFlag(lang)"> </span>
                                 {{ getLanguage(lang) }}</a>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </nav>
@@ -60,6 +61,15 @@
     </div>
 </header>
 
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
 <main>
     <router-outlet></router-outlet>
 </main>
