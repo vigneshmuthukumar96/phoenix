@@ -11,7 +11,7 @@ export class BovineListComponent implements OnInit {
   feedJson = [
     { header: 'JEEVAN PRO', url: 'assets/images/jeevan-pro-feed.png',template:'jeevan-pro',text:"Increases milk production, Milk fat and protein,Inhibits pathogenic microbes and prevents from infectious diseases,Stimulates the growth of healthy microflora in rumen." },
     { header: 'LACTOGRO', url: 'assets/images/lactogro-feed.png',template:'lactogro',text:"High Power of calcium for High yielder,Prevents Milk Fever, Rickets & Hematuria ,Improves Skeletal and Muscular Stength ,Promotes Growth, Increase Libido." },
-    { header: 'GRO_LIV', url: 'assets/images/gro-liv-feed.png',template:'gro-liv',text:"Helps in liver regeneration and as an appetizer to stimulant feed intake.It supports the natural Detoxification functions of  Liver and support theraphy after deworming" },
+    { header: 'GRO-LIV', url: 'assets/images/gro-liv-feed.png',template:'gro-liv',text:"Helps in liver regeneration and as an appetizer to stimulant feed intake.It supports the natural Detoxification functions of  Liver and support theraphy after deworming" },
     { header: 'BOVICAL-D', url: 'assets/images/bovical-d-feed.png',template:'bovical-d',text:"Provides optimum calcium, phosphorus, and vitamin D3,Improves milk production in dairy animals,Prevents rickets and Osteomalacia ."  },
     { header: 'PHXLIV-B', url: 'assets/images/phxliv-b-feed.png',template:'phxliv-b',text:"Helps to maintain the proper functioning of the Liver ,Improves Digestion and FCR in Dairy animals,Prevents Liver Damage due to harmful chemicals and toxins ."  },
     
