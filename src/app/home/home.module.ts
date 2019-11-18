@@ -19,6 +19,8 @@ import { FormsModule } from '@angular/forms';
 import { PipesModule } from '../pipes/pipes.module';
 import { FeedListComponent } from './feed/feed-list/feed-list.component';
 import { AquacultureListComponent } from './aquaculture/aquaculture-list/aquaculture-list.component';
+import { AvianListComponent } from './avian/avian-list/avian-list.component';
+import { BovineListComponent } from './bovine/bovine-list/bovine-list.component';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -36,7 +38,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     CamelComponent,
     EquineComponent,
     FeedListComponent,
-    AquacultureListComponent
+    AquacultureListComponent,
+    AvianListComponent,
+    BovineListComponent
   ],
   imports: [
     CommonModule,

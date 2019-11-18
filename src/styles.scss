@@ -226,6 +226,11 @@
   border-bottom: 15px solid #e74723;
 }
 
+.fcr-booster-bg{
+  background-image: url("assets/images/fcr-booster.jpg");
+  border-bottom: 15px solid #e74723;
+}
+
 .phxliv-bg{
   background-image: url("assets/images/phxliv.png");
   border-bottom: 15px solid #e74723;
@@ -252,6 +257,10 @@
 }
 
 
+.jeevan-pro-bg{
+  background-image: url("assets/images/jeevan-pro.jpg");
+  border-bottom: 15px solid #e74723;
+}
 
 /*****************************************/
 .brochure-container .col-md-3{
@@ -286,6 +295,7 @@
       img{
           width: auto;
           height: 160px;
+          max-width: 100%;
       }
   }
   .card-body{

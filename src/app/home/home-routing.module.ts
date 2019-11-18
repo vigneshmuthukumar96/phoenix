@@ -8,6 +8,8 @@ import { BovineComponent } from './bovine/bovine.component';
 import { CaprineOvineComponent } from './caprine-ovine/caprine-ovine.component';
 import { FeedListComponent } from './feed/feed-list/feed-list.component';
 import { AquacultureListComponent } from './aquaculture/aquaculture-list/aquaculture-list.component';
+import { AvianListComponent } from './avian/avian-list/avian-list.component';
+import { BovineListComponent } from './bovine/bovine-list/bovine-list.component';
 
 
 const routes: Routes = [
@@ -20,6 +22,8 @@ const routes: Routes = [
   { path: 'caprine', component: CaprineOvineComponent},
   { path: 'feed-list', component: FeedListComponent},
   { path: 'aqua-list', component: AquacultureListComponent},
+  { path: 'avian-list', component: AvianListComponent},
+  { path: 'bovine-list', component: BovineListComponent},
 ];
 
 @NgModule({
