@@ -21,6 +21,9 @@ import { FeedListComponent } from './feed/feed-list/feed-list.component';
 import { AquacultureListComponent } from './aquaculture/aquaculture-list/aquaculture-list.component';
 import { AvianListComponent } from './avian/avian-list/avian-list.component';
 import { BovineListComponent } from './bovine/bovine-list/bovine-list.component';
+import { CaprineOvineListComponent } from './caprine-ovine/caprine-ovine-list/caprine-ovine-list.component';
+import { CamelListComponent } from './camel/camel-list/camel-list.component';
+import { EquineListComponent } from './equine/equine-list/equine-list.component';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -40,7 +43,10 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     FeedListComponent,
     AquacultureListComponent,
     AvianListComponent,
-    BovineListComponent
+    BovineListComponent,
+    CaprineOvineListComponent,
+    CamelListComponent,
+    EquineListComponent
   ],
   imports: [
     CommonModule,

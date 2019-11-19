@@ -1,0 +1,23 @@
+.camel-page1{
+    .brochure-header{
+        background: #924b31;
+    }
+    .brochure-content{
+        .text-content{
+            width: 64%;
+            .badge-color{
+                color: #fff;
+                background-color: #924b31;
+            }
+            h4,h5{
+                color:#924b31;
+            }
+        }
+    }
+    .brochure-footer{
+        color: #924b31;
+        .footer-color{
+            background:#924b31;
+        }
+    }
+}

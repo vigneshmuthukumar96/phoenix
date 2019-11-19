@@ -25,19 +25,19 @@
                     <li class="nav-item" (click)="curTab='avian'">
                         <a class="nav-link" [class.active]="curTab=='avian'" (click)="route('avian-list')">{{ 'HEADER.AVIAN' | translate }}</a>
                     </li>
-                    <li class="nav-item" (click)="curTab='bovine'">
+                    <!-- <li class="nav-item" (click)="curTab='bovine'">
                         <a class="nav-link" [class.active]="curTab=='bovine'" (click)="route('bovine-list')">{{ 'HEADER.BOVINE' | translate }}</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" [routerLink]="['/caprine']">{{ 'HEADER.CAPRINE' | translate }}
+                    </li> -->
+                    <li class="nav-item" (click)="curTab='caprine'">
+                        <a class="nav-link" [class.active]="curTab=='caprine'" (click)="route('caprine-list')">{{ 'HEADER.CAPRINE' | translate }}
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">{{ 'HEADER.CAMEL' | translate }}
+                    <li class="nav-item" (click)="curTab='camel'">
+                        <a class="nav-link" [class.active]="curTab=='camel'" (click)="route('camel-list')">{{ 'HEADER.CAMEL' | translate }}
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">{{ 'HEADER.EQUINE' | translate }}
+                    <!-- <li class="nav-item" (click)="curTab='equine'">
+                        <a class="nav-link" [class.active]="curTab=='equine'" (click)="route('equine-list')">{{ 'HEADER.EQUINE' | translate }}
                         </a>
                     </li> -->
                 </ul>

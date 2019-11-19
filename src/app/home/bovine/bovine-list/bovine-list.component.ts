@@ -19,7 +19,7 @@ export class BovineListComponent implements OnInit {
     { header: 'VARSHAMIN STRONG', url: 'assets/images/phxcal-d-feed.png',template:'varshamin-strong',text:"As an aid in treatment of certain skin conditions ,To overcome fat soluble vitamin deficiencies,For better health & improved disease resistance."  },
     { header: 'MINERAL MIX', url: 'assets/images/mycophx-plr-feed.png',template:'mineral-mix',text:"To Maintain Overall health of animal & to achieve optimum yields."  },
     { header: 'NUTRIMIX', url: 'assets/images/mycophx-plr-feed.png',template:'nutri-mix',text:"Maximum bio- availability of Minerals ,Improved Fertility ,Healthy Calf ,Improves milk production."  },
-    { header: 'CPC', url: 'assets/images/mycophx-plr-feed.png',template:'cpc',text:"CPC Ensures Thorough Cleansing of Uterus post parturition and ensures Timely Expulsion of Placenta (within 3 to 4 hours post-delivery). "  },
+    { header: 'CPC', url: 'assets/images/cpc-feed.png',template:'cpc',text:"CPC Ensures Thorough Cleansing of Uterus post parturition and ensures Timely Expulsion of Placenta (within 3 to 4 hours post-delivery). "  },
   ]
   constructor(private util:UtilService) { }
 

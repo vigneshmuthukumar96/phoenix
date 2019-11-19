@@ -1,0 +1,23 @@
+.caprine-page1{
+    .brochure-header{
+        background: #e74723;
+    }
+    .brochure-content{
+        .text-content{
+            width: 64%;
+            .badge-color{
+                color: #fff;
+                background-color: #e74723;
+            }
+            h4,h5{
+                color:#e74723;
+            }
+        }
+    }
+    .brochure-footer{
+        color: #e74723;
+        .footer-color{
+            background:#e74723;
+        }
+    }
+}
