@@ -110,22 +110,5 @@
 
         </div>
 
-        <div class="contact-us">
-                <form id="contact" action="" method="post" [formGroup]="contactForm"> 
-                        <h3>Contact US</h3>
-                        <fieldset>
-                                <input placeholder="Your name"  formControlName="userName" type="text" tabindex="1">
-                        </fieldset>
-                        <fieldset>
-                                <input placeholder="Your Email Address"  formControlName="userEmail" type="email" tabindex="2">
-                        </fieldset>
-                        <fieldset>
-                                <textarea  formControlName="query" placeholder="Type your Message Here...." tabindex="5"></textarea>
-                        </fieldset>
-                        <fieldset>
-                                <button name="submit" type="submit"
-                                        data-submit="...Sending" [class.disabled]="contactForm.invalid" (click)="submitForm()">Submit</button>
-                        </fieldset>
-                </form>
-        </div>
+       
 </div>

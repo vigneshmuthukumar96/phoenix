@@ -24,6 +24,7 @@ import { BovineListComponent } from './bovine/bovine-list/bovine-list.component'
 import { CaprineOvineListComponent } from './caprine-ovine/caprine-ovine-list/caprine-ovine-list.component';
 import { CamelListComponent } from './camel/camel-list/camel-list.component';
 import { EquineListComponent } from './equine/equine-list/equine-list.component';
+import { ToastrModule } from 'ngx-toastr';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -57,6 +58,10 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     SlideshowModule,
     PipesModule,
     HttpClientModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true
+    }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { UtilService } from '../services/util.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-main-headers',
@@ -12,7 +16,8 @@ export class MainHeadersComponent implements OnInit {
   curTab: any;
   url: string;
   hide:boolean;
-  constructor(public translate: TranslateService, private util: UtilService,router: Router) {
+  contactForm:FormGroup;
+  constructor(public translate: TranslateService, private util: UtilService,router: Router,private fb:FormBuilder,private http:HttpClient,private toast:ToastrService) {
     this.hide = false;
     window.onpopstate = (e) => {
 
@@ -33,6 +38,11 @@ export class MainHeadersComponent implements OnInit {
   ngOnInit() {
     this.curTab = "home";
     this.backToTopButtonShow();
+    this.contactForm = this.fb.group({
+      userName:['',[Validators.required]],
+      userEmail:['',[Validators.required,Validators.email]],
+      query:['',[Validators.required]]
+    })
   }
 
   setLang(value) {
@@ -46,6 +56,9 @@ export class MainHeadersComponent implements OnInit {
     this.util.setObservable('lang', value)
   }
 
+  toggleClass(){
+    $('#contactUS').toggleClass('open')
+  }
   getLanguage(value) {
     switch (value) {
       case 'en': return "English";
@@ -80,5 +93,26 @@ export class MainHeadersComponent implements OnInit {
     $("#collapsibleNavbar").removeClass('show')
     $(".navbar-toggler").addClass('collapsed')
     this.util.route(url)
+  }
+
+  submitForm(){
+    console.log(this.contactForm.getRawValue())
+    this.postForm().then((res)=>{
+      console.log('saved successfully')
+    })
+  }
+
+  postForm(){
+    return new Promise((resolve,reject)=>{
+      this.toast.success("Thanks for your query,We will reply you shortly.")
+      this.http.post(environment.phoenix_url+'phoenix/send',this.contactForm.getRawValue(),{responseType:'text',observe:'response'}).subscribe((res)=>{
+        this.toast.success("Thanks for your query,We will reply you shortly.")
+        this.toggleClass()
+            resolve(res && res.body ? JSON.parse(res.body): res)
+      },
+      rej=>{
+        console.log(rej);
+      })
+    })
   }
 }

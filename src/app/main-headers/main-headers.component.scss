@@ -1,13 +1,52 @@
 
-.hanging{
-    width: 22%;
-    background: #f1f1f1;
+.parent{
+    width: 280px;
+    margin-left: auto;
     height: 40px;
+}
+
+.hanging{
+    background: #f1f1f1;
     cursor: pointer;
     margin: 0 15px;
     border: 2px solid #f1f1f1;
     border-radius: 14px 14px 0px 0px;
-    margin-left: auto;
+    display: flex;
+    .arrow {
+        width: 20px;
+        height: 20px;
+      transform: rotate(-45deg);
+      position: relative;
+      top: 15px;
+      right: 25px;
+        
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-width: .8vmin .8vmin 0 0;
+            border-style: solid;
+            border-color: #343a40;
+            transition: .2s ease;
+            display: block;
+            transform-origin: 100% 0;
+        }
+    
+        
+        &:after {
+            content: '';
+            float: left;
+            position: relative;
+            top: -100%;
+            width: 100%;
+            height: 100%;
+            border-width: 0 .8vmin 0 0;
+            border-style: solid;
+            border-color: #343a40;
+            transform-origin: 100% 0;
+            transition:.2s ease;
+        }
+    }
     h3{
         padding: 5px 15px;
         margin-left: auto;
