@@ -1,3 +1,21 @@
+
+.hanging{
+    width: 22%;
+    background: #f1f1f1;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 15px;
+    border: 2px solid #f1f1f1;
+    border-radius: 14px 14px 0px 0px;
+    margin-left: auto;
+    h3{
+        padding: 5px 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 .bg-info{
     background-color: #00a4d8 !important;
 }

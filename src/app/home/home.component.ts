@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { IImage } from '../common/slide-show/IImage';
 import { Router } from '@angular/router';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+
 
 @Component({
   selector: 'app-home',
@@ -8,6 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  contactForm:FormGroup;
   imageUrls: (string | IImage)[] = [
     { url: 'assets/images/banner-1.png'},
     { url: 'assets/images/banner-2.png'},
@@ -30,12 +35,34 @@ export class HomeComponent implements OnInit {
     // { url: 'assets/images/19.jpg'},
     // { url: 'assets/images/20.jpg'},
   ];
-  constructor(private router:Router) { }
+  constructor(private router:Router,private fb:FormBuilder,private http:HttpClient) { }
 
   ngOnInit() {
+    this.contactForm = this.fb.group({
+      userName:['',[Validators.required]],
+      userEmail:['',[Validators.required,Validators.email]],
+      query:['',[Validators.required]]
+    })
   }
  
   route(url){
    this.router.navigateByUrl(url)
+  }
+  submitForm(){
+    console.log(this.contactForm.getRawValue())
+    this.postForm().then((res)=>{
+      console.log('saved successfully')
+    })
+  }
+
+  postForm(){
+    return new Promise((resolve,reject)=>{
+      this.http.post(environment.phoenix_url+'phoenix/send',this.contactForm.getRawValue(),{responseType:'text',observe:'response'}).subscribe((res)=>{
+            resolve(res && res.body ? JSON.parse(res.body): res)
+      },
+      rej=>{
+        console.log(rej);
+      })
+    })
   }
 }

@@ -1,6 +1,6 @@
 <div class="banner">
         <slideshow [height]="height" [minHeight]="'525px'" [autoPlay]="true" [showArrows]="true" [showDots]="true"
-                [imageUrls]="imageUrls" [lazyLoad]="imageUrls?.length > 1" [autoPlayWaitForLazyLoad]="true">
+                [imageUrls]="imageUrls" [lazyLoad]="imageUrls?.length > 1" [autoPlayWaitForLazyLoad]="true" >
         </slideshow>
 </div>
 
@@ -111,22 +111,21 @@
         </div>
 
         <div class="contact-us">
-                <form id="contact" action="" method="post">
+                <form id="contact" action="" method="post" [formGroup]="contactForm"> 
                         <h3>Contact US</h3>
                         <fieldset>
-                                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                                <input placeholder="Your name"  formControlName="userName" type="text" tabindex="1">
                         </fieldset>
                         <fieldset>
-                                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                                <input placeholder="Your Email Address"  formControlName="userEmail" type="email" tabindex="2">
                         </fieldset>
                         <fieldset>
-                                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                <textarea  formControlName="query" placeholder="Type your Message Here...." tabindex="5"></textarea>
                         </fieldset>
                         <fieldset>
-                                <button name="submit" type="submit" id="contact-submit"
-                                        data-submit="...Sending">Submit</button>
+                                <button name="submit" type="submit"
+                                        data-submit="...Sending" [class.disabled]="contactForm.invalid" (click)="submitForm()">Submit</button>
                         </fieldset>
                 </form>
-                s
         </div>
 </div>

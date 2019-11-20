@@ -42,7 +42,7 @@
                     </li> -->
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                        <div id="google_translate_element"></div>
+                        <!-- <div id="google_translate_element"></div> -->
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="cursor: pointer;" id="langdropdown"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="lang-name"
@@ -75,6 +75,9 @@
 </main>
 
 <!-- Footer -->
+<!-- <diV class="hanging">
+        <h3>Contact US</h3>
+</diV> -->
 <footer class="page-footer font-small mdb-color pt-4">
 
     <!-- Footer Links -->
@@ -188,7 +191,7 @@
 
 
     <!-- Social buttons -->
-    <ul class="list-unstyled list-inline text-center">
+    <ul class="list-unstyled list-inline text-center" *ngIf="hide">
         <li class="list-inline-item">
             <a class="btn-floating btn-fb mx-1 waves-effect waves-light">
                 <i class="fa fa-facebook-f"> </i>
@@ -213,7 +216,7 @@
     <!-- Social buttons -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <div class="footer-copyright text-center py-3" *ngIf="hide">© 2019 Copyright:
         <a>www.phoenixu.co.uk</a>
     </div>
     <!-- Copyright -->

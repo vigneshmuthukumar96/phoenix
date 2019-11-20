@@ -11,8 +11,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class MainHeadersComponent implements OnInit {
   curTab: any;
   url: string;
+  hide:boolean;
   constructor(public translate: TranslateService, private util: UtilService,router: Router) {
-
+    this.hide = false;
     window.onpopstate = (e) => {
 
       setTimeout(() => {

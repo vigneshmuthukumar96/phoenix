@@ -15,7 +15,7 @@ import {SlideshowModule} from 'ng-simple-slideshow';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PipesModule } from '../pipes/pipes.module';
 import { FeedListComponent } from './feed/feed-list/feed-list.component';
 import { AquacultureListComponent } from './aquaculture/aquaculture-list/aquaculture-list.component';
@@ -51,6 +51,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     HomeRoutingModule,
     SlideshowModule,
     PipesModule,
