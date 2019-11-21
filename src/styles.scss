@@ -583,4 +583,16 @@ color:#888;
   .side-img-wrapper{
     display: none !important;
   }
+  .banner{
+    height: 150px !important;
+  }
+  .slideshow-container{
+    .slick-dots{
+      display: none !important;
+    }
+    .arrow-container .arrow{
+      width: 18px !important;
+      height: 18px !important;
+    }
+  } 
 }
