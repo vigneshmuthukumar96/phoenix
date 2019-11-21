@@ -552,6 +552,12 @@ color:#888;
 
 @media screen and (max-width: 767px) {
 
+  .sample-wrapper{
+    h5{
+      font-size: 20px !important;
+    }
+  }
+
   .header-text{
     width: 100% !important;
   }
@@ -569,6 +575,10 @@ color:#888;
     width: 100% !important;
   }
 
+  .card:hover .overlay {
+   opacity: 0 !important;
+  }
+  
   .view-btn{
     position: relative !important;
     height: 40px !important;
@@ -583,4 +593,16 @@ color:#888;
   .side-img-wrapper{
     display: none !important;
   }
+  .banner{
+    height: 150px !important;
+  }
+  .slideshow-container{
+    .slick-dots{
+      display: none !important;
+    }
+    .arrow-container .arrow{
+      width: 18px !important;
+      height: 18px !important;
+    }
+  } 
 }
