@@ -104,9 +104,10 @@ export class MainHeadersComponent implements OnInit {
 
   postForm(){
     return new Promise((resolve,reject)=>{
-      this.toast.success("Thanks for your query,We will reply you shortly.")
       this.http.post(environment.phoenix_url+'phoenix/send',this.contactForm.getRawValue(),{responseType:'text',observe:'response'}).subscribe((res)=>{
-        this.toast.success("Thanks for your query,We will reply you shortly.")
+        this.toast.success("Thanks for your query,We will reply you shortly.","",{
+          timeOut:3000
+        })
         this.toggleClass()
             resolve(res && res.body ? JSON.parse(res.body): res)
       },
