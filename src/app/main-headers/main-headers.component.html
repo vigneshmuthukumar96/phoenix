@@ -81,18 +81,19 @@
 </main>
 
 <!-- Footer -->
-<div class="parent">
-    <diV class="hanging" (click)="toggleClass()">
-        <h3>contact us</h3>
-        <div class="arrow"></div>
-    </diV>
-
-    <div class="contact-us" id="contactUS">
+<div class="rounded-query-wrapper">
+    <div class="enquiry-us" id="contactUS">
         <form id="contact" action="" method="post" [formGroup]="contactForm">
-            <div class="close-icon text-right" id="closeStats" (click)="toggleClass()">
-                <span><img src="assets/images/Close.svg" alt="close_icon.svg"></span>
+            <div style="display: flex;">
+                <div>
+                        <h4>Contact us</h4>
+                </div>
+                <div class="close-icon text-right" id="closeStats" (click)="toggleClass()">
+                    <span><img src="assets/images/Close.svg" alt="close_icon.svg"></span>
+                </div>
             </div>
-             <h4>Contact us</h4>
+
+         
             <fieldset>
                 <input placeholder="Your name" formControlName="userName" type="text" tabindex="1">
             </fieldset>
@@ -108,7 +109,39 @@
             </fieldset>
         </form>
     </div>
+    <div class='rounded-query' id="query-btn" (click)="toggleClass()">
+        <button><img src="assets/images/conversation.png"></button>
+    </div>
 </div>
+
+<!-- <div class="parent">
+    <diV class="hanging" (click)="toggleClass()">
+        <h3>contact us</h3>
+        <div class="arrow"></div>
+    </diV>
+
+    <div class="contact-us" id="contactUS">
+        <form id="contact" action="" method="post" [formGroup]="contactForm">
+            <div class="close-icon text-right" id="closeStats" (click)="toggleClass()">
+                <span><img src="assets/images/Close.svg" alt="close_icon.svg"></span>
+            </div>
+            <h4>Contact us</h4>
+            <fieldset>
+                <input placeholder="Your name" formControlName="userName" type="text" tabindex="1">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" formControlName="userEmail" type="email" tabindex="2">
+            </fieldset>
+            <fieldset>
+                <textarea formControlName="query" placeholder="Type your Message Here...." tabindex="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" data-submit="...Sending" [class.disabled]="contactForm.invalid"
+                    (click)="submitForm()">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</div> -->
 
 <footer class="page-footer font-small mdb-color pt-4">
 
@@ -205,10 +238,11 @@
                 </p>
                 <p>
                     <i
-                        class="fa fa-phone mr-3"></i>+60-12-2103639<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+60-12-2382686<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+60-16-2683044<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-98840 70652
+                        class="fa fa-phone mr-3"></i>+60-12-2103639<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+60-12-2382686<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+60-16-2683044<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-98840
+                    70652
                 </p>
                 <p>
-                      <i class="fa fa-print mr-3"></i>Telefax- +60-358822813</p> 
+                    <i class="fa fa-print mr-3"></i>Telefax- +60-358822813</p>
             </div>
             <!-- Grid column -->
 

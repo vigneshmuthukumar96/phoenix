@@ -408,7 +408,7 @@
 .back-to-top{
   position: fixed;
   right: 40px;
-  bottom: 40px;
+  bottom: 20px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -460,10 +460,15 @@ padding:25px;
 margin:0 ;
 }
 
+#contact .close-icon{
+  margin-left: auto;
+}
+
 #contact .close-icon span{
+  font-size: 27px;
   cursor: pointer;
   img{
-    width: 10px;
+    width: 15px;
   }
 }
 
@@ -477,7 +482,7 @@ font-weight: 400;
 #contact h4 {
 margin:5px 0 15px;
 display:block;
-font-size:13px;
+font-size:30px;
 }
 
 fieldset {

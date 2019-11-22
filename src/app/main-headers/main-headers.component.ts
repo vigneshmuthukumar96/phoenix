@@ -58,6 +58,7 @@ export class MainHeadersComponent implements OnInit {
 
   toggleClass(){
     $('#contactUS').toggleClass('open')
+    $("#query-btn").toggleClass('hide')
   }
   getLanguage(value) {
     switch (value) {
