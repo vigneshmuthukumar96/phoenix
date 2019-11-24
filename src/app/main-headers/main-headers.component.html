@@ -1,55 +1,55 @@
 <header>
-    <div class="top-header">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">
-                <!-- <span class="font-weight-bold text-uppercase">PHOENIX</span>
+  <div class="top-header">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">
+        <!-- <span class="font-weight-bold text-uppercase">PHOENIX</span>
                 <span style="font-size: 5px;display: block;" >P H O E N I X &nbsp; H C &nbsp; I N N O V A T I O N S</span> -->
-                <img class="mb-1" src="assets/images/phoenix-logo.png" alt="Logo" style="width:200px;">
-                <span class="ml-1" style="font-size: 10px;display: block;">P H O E N I X &nbsp; H C &nbsp; I N N O V A T
-                    I O N S</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav navbar-left">
-                    <li class="nav-item" (click)="curTab='home'">
-                        <a class="nav-link" [class.active]="curTab=='home'"
-                            (click)="route('home')">{{ 'HEADER.HOME' | translate }}</a>
-                    </li>
-                    <li class="nav-item" (click)="curTab='feed'">
-                        <a class="nav-link" [class.active]="curTab=='feed'"
-                            (click)="route('feed-list')">{{ 'HEADER.FEED' | translate }}</a>
-                    </li>
-                    <li class="nav-item" (click)="curTab='aquaculture'">
-                        <a class="nav-link" [class.active]="curTab=='aquaculture'"
-                            (click)="route('aqua-list')">{{ 'HEADER.AQUACULTURE' | translate }}</a>
-                    </li>
-                    <li class="nav-item" (click)="curTab='avian'">
-                        <a class="nav-link" [class.active]="curTab=='avian'"
-                            (click)="route('avian-list')">{{ 'HEADER.AVIAN' | translate }}</a>
-                    </li>
-                    <!-- <li class="nav-item" (click)="curTab='bovine'">
+        <img class="mb-1" src="assets/images/phoenix-logo.png" alt="Logo" style="width:200px;">
+        <span class="ml-1" style="font-size: 10px;display: block;">P H O E N I X &nbsp; H C &nbsp; I N N O V A T
+          I O N S</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav navbar-left">
+          <li class="nav-item" (click)="curTab='home'">
+            <a class="nav-link" [class.active]="curTab=='home'"
+              (click)="route('home')">{{ 'HEADER.HOME' | translate }}</a>
+          </li>
+          <li class="nav-item" (click)="curTab='feed'">
+            <a class="nav-link" [class.active]="curTab=='feed'"
+              (click)="route('feed-list')">{{ 'HEADER.FEED' | translate }}</a>
+          </li>
+          <li class="nav-item" (click)="curTab='aquaculture'">
+            <a class="nav-link" [class.active]="curTab=='aquaculture'"
+              (click)="route('aqua-list')">{{ 'HEADER.AQUACULTURE' | translate }}</a>
+          </li>
+          <li class="nav-item" (click)="curTab='avian'">
+            <a class="nav-link" [class.active]="curTab=='avian'"
+              (click)="route('avian-list')">{{ 'HEADER.AVIAN' | translate }}</a>
+          </li>
+          <!-- <li class="nav-item" (click)="curTab='bovine'">
                         <a class="nav-link" [class.active]="curTab=='bovine'" (click)="route('bovine-list')">{{ 'HEADER.BOVINE' | translate }}</a>
                     </li> -->
-                    <li class="nav-item" (click)="curTab='caprine'">
-                        <a class="nav-link" [class.active]="curTab=='caprine'"
-                            (click)="route('caprine-list')">{{ 'HEADER.CAPRINE' | translate }}
-                        </a>
-                    </li>
-                    <li class="nav-item" (click)="curTab='camel'">
-                        <a class="nav-link" [class.active]="curTab=='camel'"
-                            (click)="route('camel-list')">{{ 'HEADER.CAMEL' | translate }}
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item" (click)="curTab='equine'">
+          <li class="nav-item" (click)="curTab='caprine'">
+            <a class="nav-link" [class.active]="curTab=='caprine'"
+              (click)="route('caprine-list')">{{ 'HEADER.CAPRINE' | translate }}
+            </a>
+          </li>
+          <li class="nav-item" (click)="curTab='camel'">
+            <a class="nav-link" [class.active]="curTab=='camel'"
+              (click)="route('camel-list')">{{ 'HEADER.CAMEL' | translate }}
+            </a>
+          </li>
+          <!-- <li class="nav-item" (click)="curTab='equine'">
                         <a class="nav-link" [class.active]="curTab=='equine'" (click)="route('equine-list')">{{ 'HEADER.EQUINE' | translate }}
                         </a>
                     </li> -->
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <!-- <div id="google_translate_element"></div> -->
-                    <!-- <li class="nav-item dropdown">
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <!-- <div id="google_translate_element"></div> -->
+          <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="cursor: pointer;" id="langdropdown"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="lang-name"
                                 class="flag-icon flag-icon-us" [ngClass]="getLangFlag(lang)"> </span>
@@ -60,58 +60,61 @@
                                 {{ getLanguage(lang) }}</a>
                         </div>
                     </li> -->
-                </ul>
-            </div>
-        </nav>
+        </ul>
+      </div>
+    </nav>
 
-    </div>
+  </div>
 </header>
 
 <script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-    }
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en'
+    }, 'google_translate_element');
+  }
+
 </script>
 
-<script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 
 <main>
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </main>
 
 <!-- Footer -->
 <div class="rounded-query-wrapper">
-    <div class="enquiry-us" id="contactUS">
-        <form id="contact" action="" method="post" [formGroup]="contactForm">
-            <div style="display: flex;">
-                <div>
-                        <h4>Contact us</h4>
-                </div>
-                <div class="close-icon text-right" id="closeStats" (click)="toggleClass()">
-                    <span><img src="assets/images/Close.svg" alt="close_icon.svg"></span>
-                </div>
-            </div>
+  <div class="enquiry-us" id="contactUS">
+    <form id="contact" action="" method="post" [formGroup]="contactForm">
+      <div style="display: flex;">
+        <div>
+          <h4>Contact us</h4>
+        </div>
+        <div class="close-icon text-right" id="closeStats" (click)="toggleClass()">
+          <span><img src="assets/images/Close.svg" alt="close_icon.svg"></span>
+        </div>
+      </div>
 
-         
-            <fieldset>
-                <input placeholder="Your name" formControlName="userName" type="text" tabindex="1">
-            </fieldset>
-            <fieldset>
-                <input placeholder="Your Email Address" formControlName="userEmail" type="email" tabindex="2">
-            </fieldset>
-            <fieldset>
-                <textarea formControlName="query" placeholder="Type your Message Here...." tabindex="5"></textarea>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" data-submit="...Sending" [class.disabled]="contactForm.invalid"
-                    (click)="submitForm()">Submit</button>
-            </fieldset>
-        </form>
-    </div>
-    <div class='rounded-query' id="query-btn" (click)="toggleClass()">
-        <button><img src="assets/images/conversation.png"></button>
-    </div>
+
+      <fieldset>
+        <input placeholder="Your name" formControlName="userName" type="text" tabindex="1">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" formControlName="userEmail" type="email" tabindex="2">
+      </fieldset>
+      <fieldset>
+        <textarea formControlName="query" placeholder="Type your Message Here...." tabindex="5"></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" data-submit="...Sending" [class.disabled]="contactForm.invalid"
+          (click)="submitForm()">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+  <div class='rounded-query' id="query-btn" (click)="toggleClass()">
+    <button><img src="assets/images/conversation.png"></button>
+  </div>
 </div>
 
 <!-- <div class="parent">
@@ -145,153 +148,155 @@
 
 <footer class="page-footer font-small mdb-color pt-4">
 
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
 
-        <!-- Grid row -->
-        <div class="row">
+    <!-- Grid row -->
+    <div class="row">
 
-            <!-- Grid column -->
-            <div class="col-md-3 mx-auto">
-                <img class="mb-1" src="assets/images/phoenix-logo.png" alt="Logo" style="width:200px;">
-                <span class="ml-1 mb-2" style="font-size: 10px;display: block;">P H O E N I X &nbsp; H C &nbsp; I N N O
-                    V A T
-                    I O N S</span>
-                <!-- <span class="font-weight-bold text-uppercase" style="font-size: 35px;">PHOENIX</span>
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+        <img class="mb-1" src="assets/images/phoenix-logo.png" alt="Logo" style="width:200px;">
+        <span class="ml-1 mb-2" style="font-size: 10px;display: block;">P H O E N I X &nbsp; H C &nbsp; I N N O
+          V A T
+          I O N S</span>
+        <!-- <span class="font-weight-bold text-uppercase" style="font-size: 35px;">PHOENIX</span>
                     <span style="font-size: 9px;display: block;margin-bottom: 20px;" >P H O E N I X &nbsp; H C &nbsp; I N N O V A T I O N S</span> -->
-                <address>
-                    Authorized Channel Partner <br>
-                    VINZ GLOBAL SDN BHD<br>
-                    No.27 Jalan Aman Perdana,<br>
-                    6E / Ku5 Aman Perdanan,<br>
-                    41050 Klang Selangor, <br>
-                    Malaysia.
-                </address>
+        <address>
+          Authorized Channel Partner <br>
+          <br>
+          <strong>VINZ GLOBAL SDN BHD</strong><br>
+          18-2F Jalan Setia Perdana,<br>
+          BE U13/BE Setia Alam,<br>
+          40170 Shah Alam, <br>
+          Malaysia.
+        </address>
 
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">INTERNATIONAL PRESENCE </h5>
+        <div class="text-center text-md-left">
+          <div class="row">
+            <div class="col-md-6">
+              <address>
+                <strong>Phoenix Healthcare Private Limited</strong> <br>
+                150 Imperial Court Exchange <br>
+                St.East <br>
+                Liverpool-L23AB United kingdom.
+              </address>
             </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none">
-
-            <!-- Grid column -->
-            <div class="col-md-6 mx-auto">
-
-                <!-- Links -->
-                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">INTERNATIONAL PRESENCE </h5>
-                <div class="text-center text-md-left">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <address>
-                                Phoenix Healthcare Private Limited <br>
-                                150 Imperial Court Exchange <br>
-                                St.East <br>
-                                Liverpool-L23AB United kingdom.
-                            </address>
-                        </div>
-                        <div class="col-md-6">
-                            <address>
-                                Phoenix HC Innovations <br>
-                                #66 Jawaharlal Nehru Road<br>
-                                V.G.N Shanthi Nagar <br>
-                                Ambattur Chennai-600 058 Tamilnadu INDIA.
-                            </address>
-                        </div>
-                        <div class="col-md-6">
-                            <address>
-                                Phoenix Healthcare Systems Inc <br>
-                                #201 Rogers Office Building <br>
-                                Edwin Wallace <br>
-                                Rey Drive George Hill Anguilla
-                            </address>
-                        </div>
-                        <div class="col-md-6">
-                            <address>
-                                Phoenix Healthcare Systems Limited <br>
-                                501 Silver Side Road <br>
-                                Wilmington <br>
-                                New Castle Delaware 19809 U.S.A
-                            </address>
-                        </div>
-                        <div class="col-md-6">
-                            <address>
-                                Phoenix Healthcare Wll <br>
-                                Barwa Towers #1/6th Floor Suhaim Ben Hamad Street C-ring road <br>
-                                Al Sadd area Doha Qatar
-                            </address>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="col-md-6">
+              <address>
+                <strong>Phoenix HC Innovations</strong> <br>
+                #66 Jawaharlal Nehru Road<br>
+                V.G.N Shanthi Nagar <br>
+                Ambattur Chennai-600 058 Tamilnadu INDIA.
+              </address>
             </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none">
-
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p>
-                    <i class="fa fa-home mr-3"></i>41050 Klang Selangor, Malaysia.</p>
-                <p>
-                    <i
-                        class="fa fa-envelope mr-3"></i>marketing@vinzglobal.com.my<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mail@phci.in
-                </p>
-                <p>
-                    <i
-                        class="fa fa-phone mr-3"></i>+60-12-2103639<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+60-12-2382686<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+60-16-2683044<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-98840
-                    70652
-                </p>
-                <p>
-                    <i class="fa fa-print mr-3"></i>Telefax- +60-358822813</p>
+            <div class="col-md-6">
+              <address>
+                <strong>Phoenix Healthcare Systems Inc</strong> <br>
+                #201 Rogers Office Building <br>
+                Edwin Wallace <br>
+                Rey Drive George Hill Anguilla<br>
+                British West Indies
+              </address>
             </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none">
-
-
-
+            <div class="col-md-6">
+              <address>
+                <strong>Phoenix Healthcare Systems Limited</strong> <br>
+                501 Silver Side Road <br>
+                Wilmington <br>
+                New Castle Delaware 19809 U.S.A
+              </address>
+            </div>
+            <div class="col-md-6">
+              <address>
+                <strong> Phoenix Healthcare Wll </strong><br>
+                Barwa Towers #1/6th Floor Suhaim Ben Hamad Street <br> C-ring road
+                Al Sadd area Doha Qatar
+              </address>
+            </div>
+          </div>
         </div>
-        <!-- Grid row -->
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <i class="fa fa-home mr-3"></i>41050 Klang Selangor, Malaysia.</p>
+        <p>
+          <i
+            class="fa fa-envelope mr-3"></i>marketing@vinzglobal.com.my<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mail@phci.in
+        </p>
+        <p>
+          <i
+            class="fa fa-phone mr-3"></i>+60-12-2103639<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+60-12-2382686<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+60-16-2683044<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-98840
+          70652
+        </p>
+        <p>
+          <i class="fa fa-print mr-3"></i>Telefax- +60-358822813</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+
 
     </div>
-    <!-- Footer Links -->
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
 
 
-    <!-- Social buttons -->
-    <ul class="list-unstyled list-inline text-center" *ngIf="hide">
-        <li class="list-inline-item">
-            <a class="btn-floating btn-fb mx-1 waves-effect waves-light">
-                <i class="fa fa-facebook-f"> </i>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a class="btn-floating btn-tw mx-1">
-                <i class="fa fa-twitter"> </i>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a class="btn-floating btn-gplus mx-1">
-                <i class="fa fa-google-plus"> </i>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a class="btn-floating btn-li mx-1">
-                <i class="fa fa-linkedin"> </i>
-            </a>
-        </li>
-    </ul>
-    <!-- Social buttons -->
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center" *ngIf="hide">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1 waves-effect waves-light">
+        <i class="fa fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fa fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fa fa-google-plus"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fa fa-linkedin"> </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3" *ngIf="hide">© 2019 Copyright:
-        <a>www.phoenixu.co.uk</a>
-    </div>
-    <!-- Copyright -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" *ngIf="hide">© 2019 Copyright:
+    <a>www.phoenixu.co.uk</a>
+  </div>
+  <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
 
 <div class="back-to-top">
-    <img src="assets/images/chevron-up.svg" />
-    <!-- <span>back</span> -->
+  <img src="assets/images/chevron-up.svg" />
+  <!-- <span>back</span> -->
 </div>
