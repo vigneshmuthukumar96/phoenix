@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
       <a class="navbar-brand" href="#">
         <!-- <span class="font-weight-bold text-uppercase">PHOENIX</span>
-                <span style="font-size: 5px;display: block;" >P H O E N I X &nbsp; H C &nbsp; I N N O V A T I O N S</span> -->
+<span style="font-size: 5px;display: block;" >P H O E N I X &nbsp; H C &nbsp; I N N O V A T I O N S</span> -->
         <img class="mb-1" src="assets/images/phoenix-logo.png" alt="Logo" style="width:200px;">
         <span class="ml-1" style="font-size: 10px;display: block;">P H O E N I X &nbsp; H C &nbsp; I N N O V A T
           I O N S</span>
@@ -30,8 +30,8 @@
               (click)="route('avian-list')">{{ 'HEADER.AVIAN' | translate }}</a>
           </li>
           <!-- <li class="nav-item" (click)="curTab='bovine'">
-                        <a class="nav-link" [class.active]="curTab=='bovine'" (click)="route('bovine-list')">{{ 'HEADER.BOVINE' | translate }}</a>
-                    </li> -->
+<a class="nav-link" [class.active]="curTab=='bovine'" (click)="route('bovine-list')">{{ 'HEADER.BOVINE' | translate }}</a>
+</li> -->
           <li class="nav-item" (click)="curTab='caprine'">
             <a class="nav-link" [class.active]="curTab=='caprine'"
               (click)="route('caprine-list')">{{ 'HEADER.CAPRINE' | translate }}
@@ -43,23 +43,23 @@
             </a>
           </li>
           <!-- <li class="nav-item" (click)="curTab='equine'">
-                        <a class="nav-link" [class.active]="curTab=='equine'" (click)="route('equine-list')">{{ 'HEADER.EQUINE' | translate }}
-                        </a>
-                    </li> -->
+<a class="nav-link" [class.active]="curTab=='equine'" (click)="route('equine-list')">{{ 'HEADER.EQUINE' | translate }}
+</a>
+</li> -->
         </ul>
         <ul class="navbar-nav ml-auto">
           <!-- <div id="google_translate_element"></div> -->
           <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" style="cursor: pointer;" id="langdropdown"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="lang-name"
-                                class="flag-icon flag-icon-us" [ngClass]="getLangFlag(lang)"> </span>
-                            {{getLanguage(translate.currentLang)}}</a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langdropdown">
-                            <a class="dropdown-item" style="cursor: pointer;" *ngFor="let lang of translate.getLangs()"
-                                (click)="setLang(lang)"><span class="flag-icon" [ngClass]="getLangFlag(lang)"> </span>
-                                {{ getLanguage(lang) }}</a>
-                        </div>
-                    </li> -->
+<a class="nav-link dropdown-toggle" style="cursor: pointer;" id="langdropdown"
+data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="lang-name"
+class="flag-icon flag-icon-us" [ngClass]="getLangFlag(lang)"> </span>
+{{getLanguage(translate.currentLang)}}</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="langdropdown">
+<a class="dropdown-item" style="cursor: pointer;" *ngFor="let lang of translate.getLangs()"
+(click)="setLang(lang)"><span class="flag-icon" [ngClass]="getLangFlag(lang)"> </span>
+{{ getLanguage(lang) }}</a>
+</div>
+</li> -->
         </ul>
       </div>
     </nav>
@@ -84,7 +84,7 @@
 </main>
 
 <!-- Footer -->
-<div class="rounded-query-wrapper">
+<div style="font-family: zurich;" class="rounded-query-wrapper">
   <div class="enquiry-us" id="contactUS">
     <form id="contact" action="" method="post" [formGroup]="contactForm">
       <div style="display: flex;">
@@ -118,32 +118,32 @@
 </div>
 
 <!-- <div class="parent">
-    <diV class="hanging" (click)="toggleClass()">
-        <h3>contact us</h3>
-        <div class="arrow"></div>
-    </diV>
+<diV class="hanging" (click)="toggleClass()">
+<h3>contact us</h3>
+<div class="arrow"></div>
+</diV>
 
-    <div class="contact-us" id="contactUS">
-        <form id="contact" action="" method="post" [formGroup]="contactForm">
-            <div class="close-icon text-right" id="closeStats" (click)="toggleClass()">
-                <span><img src="assets/images/Close.svg" alt="close_icon.svg"></span>
-            </div>
-            <h4>Contact us</h4>
-            <fieldset>
-                <input placeholder="Your name" formControlName="userName" type="text" tabindex="1">
-            </fieldset>
-            <fieldset>
-                <input placeholder="Your Email Address" formControlName="userEmail" type="email" tabindex="2">
-            </fieldset>
-            <fieldset>
-                <textarea formControlName="query" placeholder="Type your Message Here...." tabindex="5"></textarea>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" data-submit="...Sending" [class.disabled]="contactForm.invalid"
-                    (click)="submitForm()">Submit</button>
-            </fieldset>
-        </form>
-    </div>
+<div class="contact-us" id="contactUS">
+<form id="contact" action="" method="post" [formGroup]="contactForm">
+<div class="close-icon text-right" id="closeStats" (click)="toggleClass()">
+<span><img src="assets/images/Close.svg" alt="close_icon.svg"></span>
+</div>
+<h4>Contact us</h4>
+<fieldset>
+<input placeholder="Your name" formControlName="userName" type="text" tabindex="1">
+</fieldset>
+<fieldset>
+<input placeholder="Your Email Address" formControlName="userEmail" type="email" tabindex="2">
+</fieldset>
+<fieldset>
+<textarea formControlName="query" placeholder="Type your Message Here...." tabindex="5"></textarea>
+</fieldset>
+<fieldset>
+<button name="submit" type="submit" data-submit="...Sending" [class.disabled]="contactForm.invalid"
+(click)="submitForm()">Submit</button>
+</fieldset>
+</form>
+</div>
 </div> -->
 
 <footer class="page-footer font-small mdb-color pt-4">
@@ -152,19 +152,20 @@
   <div class="container text-center text-md-left">
 
     <!-- Grid row -->
-    <div class="row">
+    <div style="font-family: zurich;" class="row">
 
       <!-- Grid column -->
       <div class="col-md-3 mx-auto">
-        <img class="mb-1" src="assets/images/phoenix-logo.png" alt="Logo" style="width:200px;">
-        <span class="ml-1 mb-2" style="font-size: 10px;display: block;">P H O E N I X &nbsp; H C &nbsp; I N N O
-          V A T
-          I O N S</span>
+        <!--   <img class="mb-1" src="assets/images/phoenix-logo.png" alt="Logo" style="width:200px;">
+<span class="ml-1 mb-2" style="font-size: 10px;display: block;">P H O E N I X &nbsp; H C &nbsp; I N N O
+  V A T
+  I O N S</span> -->
         <!-- <span class="font-weight-bold text-uppercase" style="font-size: 35px;">PHOENIX</span>
-                    <span style="font-size: 9px;display: block;margin-bottom: 20px;" >P H O E N I X &nbsp; H C &nbsp; I N N O V A T I O N S</span> -->
+<span style="font-size: 9px;display: block;margin-bottom: 20px;" >P H O E N I X &nbsp; H C &nbsp; I N N O V A T I O N S</span> -->
+
+        <h5 style="font-family: zurich;color: #007dc2;" class="font-weight-bold text-uppercase mt-3 mb-4">AUTHORIZED
+          PARTNER</h5>
         <address>
-          Authorized Channel Partner <br>
-          <br>
           <strong>VINZ GLOBAL SDN BHD</strong><br>
           18-2F Jalan Setia Perdana,<br>
           BE U13/BE Setia Alam,<br>
@@ -178,12 +179,13 @@
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-md-6 mx-auto">
+      <div style="font-family: zurich;" class="col-md-6 mx-auto">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">INTERNATIONAL PRESENCE </h5>
+        <h5 style="font-family: zurich;
+color: #007dc2;" class="font-weight-bold text-uppercase mt-3 mb-4">INTERNATIONAL PRESENCE </h5>
         <div class="text-center text-md-left">
-          <div class="row">
+          <div style="font-family: zurich;" class="row">
             <div class="col-md-6">
               <address>
                 <strong>Phoenix Healthcare Private Limited</strong> <br>
@@ -219,7 +221,7 @@
             </div>
             <div class="col-md-6">
               <address>
-                <strong> Phoenix Healthcare Wll </strong><br>
+                <strong>PHOENIX HEALTHCARE WLL</strong><br>
                 Barwa Towers #1/6th Floor Suhaim Ben Hamad Street <br> C-ring road
                 Al Sadd area Doha Qatar
               </address>
@@ -233,13 +235,13 @@
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+      <div style="font-family: zurich;" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 style="font-family: zurich;color: #007dc2;" class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <!--  <p>
+  <i class="fa fa-home mr-3"></i>41050 Klang Selangor, Malaysia.</p> -->
         <p>
-          <i class="fa fa-home mr-3"></i>41050 Klang Selangor, Malaysia.</p>
-        <p>
-          <i
-            class="fa fa-envelope mr-3"></i>marketing@vinzglobal.com.my<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mail@phci.in
+          <i class="fa fa-envelope mr-3"></i>marketing@vinzglobal.com.my<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          mail@phci.in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vinzglobal@mail.com
         </p>
         <p>
           <i
@@ -252,7 +254,6 @@
       <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none">
-
 
 
     </div>
@@ -289,7 +290,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3" *ngIf="hide">© 2019 Copyright:
-    <a>www.phoenixu.co.uk</a>
+    <a>www.phoenix.in</a>
   </div>
   <!-- Copyright -->
 
