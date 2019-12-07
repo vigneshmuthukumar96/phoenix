@@ -597,6 +597,54 @@ color:#888;
 /**************************/
 
 
+// *********************** Home Css *********************//
+.sample-wrapper{
+  margin-top: 20px;
+  h5{
+      margin-bottom: 20px;
+      font-family: zurich;
+      color: #007dc2;
+  }
+  ul{
+      font-family: zurich;
+      color: #007dc2;
+      display: flex;
+      li{
+          margin-left: 30px;
+      }
+  }
+  .card{
+      border-radius: 1.25em;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 100%;
+      .card-img-top{
+          border-radius:1.25em ;
+          height: 200px;
+      }
+  }
+}
+
+.banner{
+  margin-top: 82px;
+  height: 650px;
+}
+
+.company-details{
+  .company-img{
+      text-align: center;
+      margin: 20px 0;
+  }
+  h6{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #007dc2;
+      margin-bottom: 10px;
+      font-weight: 700;
+  }
+}
+
+// *********************** Home Css *********************//
 // ************************
 
 @media screen and (max-width: 767px) {
@@ -604,6 +652,12 @@ color:#888;
   .sample-wrapper{
     h5{
       font-size: 20px !important;
+    }
+    ul{
+      display: grid;
+      li{
+        margin-left: 10px;
+      }
     }
   }
 
