@@ -147,6 +147,16 @@
   }
 }
 
+.border-list{
+  ul{
+    list-style: none;
+    border-bottom: 3px solid #f5cc11;
+    li:last-child{
+      margin-bottom: 10px;
+    }
+  }
+}
+
 .corn-bg {
   background-image: url("assets/images/corn.png");
   border-bottom: 15px solid #e4c538;
@@ -267,12 +277,6 @@
   border-bottom: 15px solid #e74723;
 }
 
-
-.jeevan-pro-bg{
-  background-image: url("assets/images/jeevan-pro.jpg");
-  border-bottom: 15px solid #e74723;
-}
-
 .jeevan-jr-pro-bg{
   background-image: url("assets/images/jeevan-jr-pro.jpg");
   border-bottom: 15px solid #e74723;
@@ -295,7 +299,47 @@
 
 .cam-dtox-bg{
   background-image: url("assets/images/cam-dtox.jpg");
-  border-bottom: 15px solid #e74723;
+  border-bottom: 15px solid #924b31;
+}
+
+.jeevan-pro-bg{
+  background-image: url("assets/images/jeevan-pro.jpg");
+  border-bottom: 15px solid #8eb317;
+}
+
+.groliv-bg{
+  background-image: url("assets/images/gro-liv.jpg");
+  border-bottom: 15px solid #8eb317;
+}
+
+.bovical-d-bg{
+  background-image: url("assets/images/bovical-d.png");
+  border-bottom: 15px solid #8eb317;
+}
+
+.phxliv-b-bg{
+  background-image: url("assets/images/phxliv-b.jpg");
+  border-bottom: 15px solid #8eb317;
+}
+
+.bovimin-forte-bg{
+  background-image: url("assets/images/bovimin-forte.jpg");
+  border-bottom: 15px solid #8eb317;
+}
+
+.varshamin-strong-bg{
+  background-image: url("assets/images/varshamin-strong.jpg");
+  border-bottom: 15px solid #8eb317;
+}
+
+.nutrimix-bg{
+  background-image: url("assets/images/nutri-mix.jpg");
+  border-bottom: 15px solid #8eb317;
+}
+
+.cpc-bg{
+  background-image: url("assets/images/cpc-animal.jpg");
+  border-bottom: 15px solid #8eb317;
 }
 
 /*****************************************/

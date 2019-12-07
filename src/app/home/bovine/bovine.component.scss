@@ -1,0 +1,23 @@
+.avian-page1{
+    .brochure-header{
+        background: #8eb317;
+    }
+    .brochure-content{
+        .text-content{
+            width: 64%;
+            .badge-color{
+                color: #fff;
+                background-color: #8eb317;
+            }
+            h4,h5{
+                color:#8eb317;
+            }
+        }
+    }
+    .brochure-footer{
+        color: #8eb317;
+        .footer-color{
+            background:#8eb317;
+        }
+    }
+}
