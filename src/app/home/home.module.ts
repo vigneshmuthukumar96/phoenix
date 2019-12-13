@@ -25,6 +25,7 @@ import { CaprineOvineListComponent } from './caprine-ovine/caprine-ovine-list/ca
 import { CamelListComponent } from './camel/camel-list/camel-list.component';
 import { EquineListComponent } from './equine/equine-list/equine-list.component';
 import { ToastrModule } from 'ngx-toastr';
+import { DisinfectantListComponent } from './disinfectant/disinfectant-list/disinfectant-list.component';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -47,7 +48,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     BovineListComponent,
     CaprineOvineListComponent,
     CamelListComponent,
-    EquineListComponent
+    EquineListComponent,
+    DisinfectantListComponent
   ],
   imports: [
     CommonModule,

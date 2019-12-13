@@ -15,6 +15,8 @@ import { CamelListComponent } from './camel/camel-list/camel-list.component';
 import { CamelComponent } from './camel/camel.component';
 import { EquineListComponent } from './equine/equine-list/equine-list.component';
 import { EquineComponent } from './equine/equine.component';
+import { DisinfectantListComponent } from './disinfectant/disinfectant-list/disinfectant-list.component';
+import { DisinfectantComponent } from './disinfectant/disinfectant.component';
 
 
 const routes: Routes = [
@@ -34,6 +36,8 @@ const routes: Routes = [
   { path: 'caprine-list', component: CaprineOvineListComponent},
   { path: 'camel-list', component: CamelListComponent},
   { path: 'equine-list', component: EquineListComponent},
+  { path: 'disinfectant-list', component: DisinfectantListComponent},
+  { path: 'disinfectant', component: DisinfectantComponent},
 ];
 
 @NgModule({
