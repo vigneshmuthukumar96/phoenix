@@ -1,4 +1,27 @@
-.avian-page1{
+.disinfectant-page1{
+    .brochure-header{
+        background: #403383;
+    }
+    .brochure-content{
+        .text-content{
+            .badge-color{
+                color: #fff;
+                background-color: #403383;
+            }
+            h4,h5{
+                color:#403383;
+            }
+        }
+    }
+    .brochure-footer{
+        color: #403383;
+        .footer-color{
+            background:#403383;
+        }
+    }
+}
+
+.disinfectant-page2{
     .brochure-header{
         background: #403383;
     }

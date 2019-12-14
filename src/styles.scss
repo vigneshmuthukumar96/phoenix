@@ -61,6 +61,16 @@
   }
 }
 
+.grouped-tag{
+  text-transform: uppercase;
+  h4{
+    margin: 0;
+  }
+  span{
+    font-size: 12px;
+  }
+}
+
 .brochure-wrapper{
   width: 100%;
   border: 1px solid #ccc;
@@ -340,6 +350,21 @@
 .cpc-bg{
   background-image: url("assets/images/cpc-animal.jpg");
   border-bottom: 15px solid #8eb317;
+}
+
+.p3dex-bg{
+  background-image: url("assets/images/p3dex.JPG");
+  border-bottom: 15px solid #403383;
+}
+
+.opti-cio2-bg{
+  background-image: url("assets/images/opti-cio2.JPG");
+  border-bottom: 15px solid #403383;
+}
+
+.obaco-bg{
+  background-image: url("assets/images/obaco.JPG");
+  border-bottom: 15px solid #403383;
 }
 
 /*****************************************/
@@ -697,7 +722,7 @@ color:#888;
     display: none !important;
   }
   .banner{
-    height: 150px !important;
+    height: 125px !important;
   }
   .slideshow-container{
     .slick-dots{
