@@ -2,785 +2,785 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 // @import url('https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
 :host {
-    font-family: "zurich" ;
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  body{
-    font-family: "zurich" !important;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .full-width{
-    width: 100% !important;
-  }
-
-  .brochure-container {
-    margin-top: 110px;
-    margin-left: 12px;
-    padding-bottom: 40px;
-    min-height: 400px;
-  }
-
-  .spacer {
-    flex: 1;
-  }
-
-
-  .img-responsive{
-    width: 100%;
-}
-
-.width-100{
-  width: 100%;
-}
-
-.height-25{
-  height: 25%;
-}
-
-.height-33{
-  height: 33%;
-}
-
-.height-100{
-  height: 100%;
-}
-
-.header-text{
-  padding: 30px;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  width: 64%;
-  h4{
-    margin: 0;
-  }
-  span{
-    font-size: 12px;
-  }
-}
-
-.grouped-tag{
-  text-transform: uppercase;
-  // text-align: center;
-  h4,h6{
-    margin: 0;
-  }
-  span{
-    font-size: 12px;
-  }
-}
-
-.pharma-group{
-  display: flex;
-  // width: 75%;
-  margin: 10px;
-  align-items: center;
-  .grouped-tag{
-    width: 45%;
-  }
-  span{
-    width: 25%;
-    font-size: 12px;
-  }
-  .line{
-    display: flex;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    align-items: center;
-    width: 30%;
-    hr{
-      width: 100%;
-      border-top: 1px solid #343a40;
-    }
-  }
-  .dot {
-    height: 15px;
-    width: 15px;
-    background-color: #403383;
-    border-radius: 50%;
-    display: inline-block;
-  }
-}
-
-.brochure-wrapper{
-  width: 100%;
-  border: 1px solid #ccc;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.brochure-wrapper .brochure-header{
-  border-bottom: 1px solid #ccc;
-  position: relative;
-  top: 0;
-  width: 100%;
-  min-height: 100px;
-}
-
-.brochure-wrapper .brochure-content{
-  position: relative;
-  padding-bottom: 50px;
-}
-
-.brochure-wrapper .text-content{
-  color:rgb(43,41,41);
-  font-weight:normal;
-  font-style:normal;
-  text-decoration: none;
-  padding:15px 15px;
-}
-
-.brochure-wrapper .brochure-footer{
-  bottom: 0;
-  width: 100%;
-}
-
-.brochure-wrapper .footer-color{
-  width: 100%;
-  height: 20px;
-}
-
-.brochure-container .col-md-6{
-  margin-bottom: 20px;
-}
-
-.disabled{
-  pointer-events: none !important;
-  background: #c1c1c1 !important;
-}
-
-.image-header{
-  width:35%;
-  margin: 0 0 20px 20px;
-}
-
-.img-width-50{
-  width:50%
-}
-
-.img-max-width{
-  max-width: 100%;
-}
-
-.side-img-wrapper{
-  position: absolute;
-  width: 36%;
-  height: 93%;
-  display: inline-block;
-  z-index: 10;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  right: 0;
-  top: -30px;
-  border-top: 15px solid #fff;
-  border-left: 10px solid #fff;
-  border-radius: 35px 0 0 35px;
-}
-
-.mobile-view {
-  text-align: center;
-  display: none;
-  img{
-      border: 4px solid #e6e6e6;
-      border-radius: 20px ;
-      width: 250px;
-  }
-}
-
-.border-list{
-  ul{
-    list-style: none;
-    border-bottom: 3px solid #f5cc11;
-    li:last-child{
-      margin-bottom: 10px;
-    }
-  }
-}
-
-.corn-bg {
-  background-image: url("assets/images/corn.png");
-  border-bottom: 15px solid #e4c538;
-}
-
-.soya-meal-bg {
-  background-image: url("assets/images/soya-meal.png");
-  border-bottom: 15px solid #e4c538;
-}
-
-.aqua-sure-bg{
-  background-image: url("assets/images/aqua-sure.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.aquavit-bg{
-  background-image: url("assets/images/aquavit.png");
-  border-bottom: 15px solid #0b5c93;
-}
-  
-.groliv-a-bg{
-  background-image: url("assets/images/groliv-a.jpg");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.calgro-a-bg{
-  background-image: url("assets/images/calgro-a.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.fish-care-bg{
-  background-image: url("assets/images/fish-care.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.panacea-bg{
-  background-image: url("assets/images/panacea.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.hull-bg{
-  background-image: url("assets/images/hull.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.boon-bg{
-  background-image: url("assets/images/boon.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.booster-bg{
-  background-image: url("assets/images/booster.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.oph-bg{
-  background-image: url("assets/images/oph.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.protect-bg{
-  background-image: url("assets/images/protect.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.randmin-bg{
-  background-image: url("assets/images/randmin.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.oammonia-bg{
-  background-image: url("assets/images/oammonia.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.multipro-bg{
-  background-image: url("assets/images/multipro.png");
-  border-bottom: 15px solid #0b5c93;
-}
-
-.avilyte-bg{
-  background-image: url("assets/images/avilyte.png");
-  border-bottom: 15px solid #e74723;
-}
-
-.astromin-bg{
-  background-image: url("assets/images/astromin.png");
-  border-bottom: 15px solid #e74723;
-}
-
-.fcr-booster-bg{
-  background-image: url("assets/images/fcr-booster.jpg");
-  border-bottom: 15px solid #e74723;
-}
-
-.phxliv-bg{
-  background-image: url("assets/images/phxliv.png");
-  border-bottom: 15px solid #e74723;
-}
-
-.pcomplex-bg{
-  background-image: url("assets/images/pcomplex.png");
-  border-bottom: 15px solid #e74723;
-}
-
-.tricophx-bg{
-  background-image: url("assets/images/tricophx.png");
-  border-bottom: 15px solid #e74723;
-}
-
-.phxcal-d-bg{
-  background-image: url("assets/images/phxcal-d.png");
-  border-bottom: 15px solid #e74723;
-}
-
-.mycophx-plr-bg{
-  background-image: url("assets/images/mycophx-plr.png");
-  border-bottom: 15px solid #e74723;
-}
-
-.jeevan-jr-pro-bg{
-  background-image: url("assets/images/jeevan-jr-pro.jpg");
-  border-bottom: 15px solid #e74723;
-}
-
-.capromin-bg{
-  background-image: url("assets/images/capromin.jpg");
-  border-bottom: 15px solid #e74723;
-}
-
-.ovicol-bg{
-  background-image: url("assets/images/ovicol.jpg");
-  border-bottom: 15px solid #e74723;
-}
-
-.immunivit-bg{
-  background-image: url("assets/images/immunivit.jpg");
-  border-bottom: 15px solid #e74723;
-}
-
-.cam-dtox-bg{
-  background-image: url("assets/images/cam-dtox.jpg");
-  border-bottom: 15px solid #924b31;
-}
-
-.jeevan-pro-bg{
-  background-image: url("assets/images/jeevan-pro.jpg");
-  border-bottom: 15px solid #8eb317;
-}
-
-.groliv-bg{
-  background-image: url("assets/images/gro-liv.jpg");
-  border-bottom: 15px solid #8eb317;
-}
-
-.bovical-d-bg{
-  background-image: url("assets/images/bovical-d.png");
-  border-bottom: 15px solid #8eb317;
-}
-
-.phxliv-b-bg{
-  background-image: url("assets/images/phxliv-b.jpg");
-  border-bottom: 15px solid #8eb317;
-}
-
-.bovimin-forte-bg{
-  background-image: url("assets/images/bovimin-forte.jpg");
-  border-bottom: 15px solid #8eb317;
-}
-
-.varshamin-strong-bg{
-  background-image: url("assets/images/varshamin-strong.jpg");
-  border-bottom: 15px solid #8eb317;
-}
-
-.nutrimix-bg{
-  background-image: url("assets/images/nutri-mix.jpg");
-  border-bottom: 15px solid #8eb317;
-}
-
-.cpc-bg{
-  background-image: url("assets/images/cpc-animal.jpg");
-  border-bottom: 15px solid #8eb317;
-}
-
-.p3dex-bg{
-  background-image: url("assets/images/p3dex.JPG");
-  border-bottom: 15px solid #403383;
-}
-
-.opti-cio2-bg{
-  background-image: url("assets/images/opti-cio2.JPG");
-  border-bottom: 15px solid #403383;
-}
-
-.obaco-bg{
-  background-image: url("assets/images/obaco.JPG");
-  border-bottom: 15px solid #403383;
-}
-
-/*****************************************/
-.brochure-container .col-md-3{
-  display: flex;
-}
-
-.search-bar{
-  width: 280px;
-  .form-control:focus {
-      box-shadow: none;
-    }
-}
-
-
-.brochure-container .card{
-  // height: 250px;
-  border-radius: 10px;
-  box-shadow: 0 2px 17px 0 #e6e6e6;
-  border: 1px solid #ededed;
-  display: flex;
-  background: #fff;
-  padding: 15px;
-  margin-bottom: 20px;
-  width: 100%;
-  .card-img-top{
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      height: 175px;
-      margin-bottom: 15px;
-      width: 100%;
-      img{
-          width: auto;
-          height: 160px;
-          max-width: 100%;
-      }
-  }
-  .card-body{
-      padding: 0;
-  }
-  .card-text{
-      font-size: 12px;
-  }
-  .card-title{
-      font-size: 16px;
-      text-transform: capitalize;
-      color: #007dc2;
-      margin: 0;
-  }
-  .view-btn{
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 0;
-      background: #fff;
-      display: block;
-      overflow: hidden;
-      transition: height .3s ease;
-      span{
-          margin: 10px 20px;
-          display: inline-block;
-          padding: 4px 16px;
-          font-size: 14px;
-          background: #85c226;
-          color: #fff;
-          border-radius: 4px;
-          cursor: pointer;
-      }
-  }
-  .overlay{
-      opacity: 0;
-      border-radius: 10px;
-      transition: background 0.2s ease;
-      z-index: -1;
-      cursor: initial;
-  }
-  &:hover{
-      .view-btn{
-          height: 50px;
-          z-index: 10;
-      }
-      .overlay{
-          opacity: 1;
-          z-index: 5;
-      }
-  } 
-}
-
-.card:hover .overlay {
-  cursor: initial;
-  display: block;
-  background: rgba(0, 0, 0, .3);
-}
-
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.5s ease;
-  border-radius: 20px;
-}
-/**********************************************/  
-/********** Back To Top ***************/
-.back-to-top{
-  position: fixed;
-  right: 40px;
-  bottom: 20px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background: #007dc2;
-  text-align: center;
-  line-height: 25px;
-  cursor: pointer;
-  z-index: 99;
-  display: none; 
-  opacity: .4; 
-  img{
-    transition: all .3s ease;
-    width: 20px;
-  }
-  &:hover{
-    opacity: 1;
-    img{
-      padding-bottom: 4px;
-    }
-  }
-}
-/************** End ****************/
-
-/***********************************/
-// contact-us
-
-.contact-us{
-  max-width:600px;
-  width:100%;
-  margin:0 auto;
-  position:relative;
-  // transition: .5s cubic-bezier(0, 1, 0.5, 1);
-  opacity: 0;
-  z-index: 10;
-}
-
-.contact-us.open{
-  opacity: 1;
-  transition: .5s cubic-bezier(0, 1, 0.5, 1);
-  transform: translate(0%, -105%)
-}
-
-
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
-
-#contact {
-background:#F9F9F9;
-padding:25px;
-margin:0 ;
-}
-
-#contact .close-icon{
-  margin-left: auto;
-}
-
-#contact .close-icon span{
-  font-size: 27px;
-  cursor: pointer;
-  img{
-    width: 15px;
-  }
-}
-
-#contact h3 {
-// color: #F96;
-display: block;
-font-size: 30px;
-font-weight: 400;
-}
-
-#contact h4 {
-margin:5px 0 15px;
-display:block;
-font-size:30px;
-}
-
-fieldset {
-border: medium none !important;
-margin: 0 0 10px;
-min-width: 100%;
-padding: 0;
-width: 100%;
-}
-
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-width:100%;
-border:1px solid #CCC;
-background:#FFF;
-margin:0 0 5px;
-padding:10px;
-}
-
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
--webkit-transition:border-color 0.3s ease-in-out;
--moz-transition:border-color 0.3s ease-in-out;
-transition:border-color 0.3s ease-in-out;
-border:1px solid #AAA;
-}
-
-#contact textarea {
-height:100px;
-max-width:100%;
-resize:none;
-}
-
-#contact button {
-cursor:pointer;
-width:100%;
-border:none;
-background:#0CF;
-color:#FFF;
-margin:0 0 5px;
-padding:10px;
-font-size:15px;
-}
-
-#contact button[type="submit"]:hover {
-background:#09C;
--webkit-transition:background 0.3s ease-in-out;
--moz-transition:background 0.3s ease-in-out;
-transition:background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
-
-#contact input:focus, #contact textarea:focus {
-outline:0;
-border:1px solid #999;
-}
-::-webkit-input-placeholder {
-color:#888;
-}
-:-moz-placeholder {
-color:#888;
-}
-::-moz-placeholder {
-color:#888;
-}
-:-ms-input-placeholder {
-color:#888;
-}
-/**************************/
-
-
-// *********************** Home Css *********************//
+	    font-family: "zurich" ;
+	        font-size: 14px;
+		    color: #333;
+		        box-sizing: border-box;
+			    -webkit-font-smoothing: antialiased;
+			        -moz-osx-font-smoothing: grayscale;
+				  }
+
+				    body{
+					        font-family: "zurich" !important;
+						  }
+						    
+						    h1,
+						      h2,
+						        h3,
+							  h4,
+							    h5,
+							      h6 {
+								          margin: 8px 0;
+									    }
+
+									      p {
+										          margin: 0;
+											    }
+
+											      .full-width{
+												          width: 100% !important;
+													    }
+
+													      .brochure-container {
+														          margin-top: 110px;
+															      margin-left: 12px;
+															          padding-bottom: 40px;
+																      min-height: 400px;
+																        }
+
+																	  .spacer {
+																		      flex: 1;
+																		        }
+
+
+																			  .img-responsive{
+																				      width: 100%;
+																			      }
+
+																			      .width-100{
+																				        width: 100%;
+																				}
+
+																				.height-25{
+																					  height: 25%;
+																				  }
+
+																				  .height-33{
+																					    height: 33%;
+																				    }
+
+																				    .height-100{
+																					      height: 100%;
+																				      }
+
+																				      .header-text{
+																					        padding: 30px;
+																						  text-align: center;
+																						    color: #fff;
+																						      text-transform: uppercase;
+																						        width: 64%;
+																							  h4{
+																								      margin: 0;
+																								        }
+																									  span{
+																										      font-size: 12px;
+																										        }
+																										}
+
+																										.grouped-tag{
+																											  text-transform: uppercase;
+																											    // text-align: center;
+																											      h4,h6{
+																												          margin: 0;
+																													    }
+																													      span{
+																														          font-size: 12px;
+																															    }
+																														    }
+
+																														    .pharma-group{
+																															      display: flex;
+																															        // width: 75%;
+																																  margin: 10px;
+																																    align-items: center;
+																																      .grouped-tag{
+																																	          width: 45%;
+																																		    }
+																																		      span{
+																																			          width: 25%;
+																																				      font-size: 12px;
+																																				        }
+																																					  .line{
+																																						      display: flex;
+																																						          margin-right: 1rem;
+																																							      margin-left: 1rem;
+																																							          align-items: center;
+																																								      width: 30%;
+																																								          hr{
+																																										        width: 100%;
+																																											      border-top: 1px solid #343a40;
+																																											          }
+																																												    }
+																																												      .dot {
+																																													          height: 15px;
+																																														      width: 15px;
+																																														          background-color: #403383;
+																																															      border-radius: 50%;
+																																															          display: inline-block;
+																																																    }
+																																															    }
+
+																																															    .brochure-wrapper{
+																																																      width: 100%;
+																																																        border: 1px solid #ccc;
+																																																	  position: relative;
+																																																	    margin-bottom: 20px;
+																																																    }
+
+																																																    .brochure-wrapper .brochure-header{
+																																																	      border-bottom: 1px solid #ccc;
+																																																	        position: relative;
+																																																		  top: 0;
+																																																		    width: 100%;
+																																																		      min-height: 100px;
+																																																	      }
+
+																																																	      .brochure-wrapper .brochure-content{
+																																																		        position: relative;
+																																																			  padding-bottom: 50px;
+																																																		  }
+
+																																																		  .brochure-wrapper .text-content{
+																																																			    color:rgb(43,41,41);
+																																																			      font-weight:normal;
+																																																			        font-style:normal;
+																																																				  text-decoration: none;
+																																																				    padding:15px 15px;
+																																																			    }
+
+																																																			    .brochure-wrapper .brochure-footer{
+																																																				      bottom: 0;
+																																																				        width: 100%;
+																																																				}
+
+																																																				.brochure-wrapper .footer-color{
+																																																					  width: 100%;
+																																																					    height: 20px;
+																																																				    }
+
+																																																				    .brochure-container .col-md-6{
+																																																					      margin-bottom: 20px;
+																																																				      }
+
+																																																				      .disabled{
+																																																					        pointer-events: none !important;
+																																																						  background: #c1c1c1 !important;
+																																																					  }
+
+																																																					  .image-header{
+																																																						    width:35%;
+																																																						      margin: 0 0 20px 20px;
+																																																					      }
+
+																																																					      .img-width-50{
+																																																						        width:50%
+																																																						}
+
+																																																						.img-max-width{
+																																																							  max-width: 100%;
+																																																						  }
+
+																																																						  .side-img-wrapper{
+																																																							    position: absolute;
+																																																							      width: 36%;
+																																																							        height: 93%;
+																																																								  display: inline-block;
+																																																								    z-index: 10;
+																																																								      background-position: center;
+																																																								        background-repeat: no-repeat;
+																																																									  background-size: 100% 100%;
+																																																									    right: 0;
+																																																									      top: -30px;
+																																																									        border-top: 15px solid #fff;
+																																																										  border-left: 10px solid #fff;
+																																																										    border-radius: 35px 0 0 35px;
+																																																									    }
+
+																																																									    .mobile-view {
+																																																										      text-align: center;
+																																																										        display: none;
+																																																											  img{
+																																																												        border: 4px solid #e6e6e6;
+																																																													      border-radius: 20px ;
+																																																													            width: 250px;
+																																																														      }
+																																																													      }
+
+																																																													      .border-list{
+																																																														        ul{
+																																																																    list-style: none;
+																																																																        border-bottom: 3px solid #f5cc11;
+																																																																	    li:last-child{
+																																																																		          margin-bottom: 10px;
+																																																																			      }
+																																																																			        }
+																																																																			}
+
+																																																																			.corn-bg {
+																																																																				  background-image: url("assets/images/corn.png");
+																																																																				    border-bottom: 15px solid #e4c538;
+																																																																			    }
+
+																																																																			    .soya-meal-bg {
+																																																																				      background-image: url("assets/images/soya-meal.png");
+																																																																				        border-bottom: 15px solid #e4c538;
+																																																																				}
+
+																																																																				.aqua-sure-bg{
+																																																																					  background-image: url("assets/images/aqua-sure.png");
+																																																																					    border-bottom: 15px solid #0b5c93;
+																																																																				    }
+
+																																																																				    .aquavit-bg{
+																																																																					      background-image: url("assets/images/aquavit.png");
+																																																																					        border-bottom: 15px solid #0b5c93;
+																																																																					}
+																																																																					  
+																																																																					.groliv-a-bg{
+																																																																						  background-image: url("assets/images/groliv-a.jpg");
+																																																																						    border-bottom: 15px solid #0b5c93;
+																																																																					    }
+
+																																																																					    .calgro-a-bg{
+																																																																						      background-image: url("assets/images/calgro-a.png");
+																																																																						        border-bottom: 15px solid #0b5c93;
+																																																																						}
+
+																																																																						.fish-care-bg{
+																																																																							  background-image: url("assets/images/fish-care.png");
+																																																																							    border-bottom: 15px solid #0b5c93;
+																																																																						    }
+
+																																																																						    .panacea-bg{
+																																																																							      background-image: url("assets/images/panacea.png");
+																																																																							        border-bottom: 15px solid #0b5c93;
+																																																																							}
+
+																																																																							.hull-bg{
+																																																																								  background-image: url("assets/images/hull.png");
+																																																																								    border-bottom: 15px solid #0b5c93;
+																																																																							    }
+
+																																																																							    .boon-bg{
+																																																																								      background-image: url("assets/images/boon.png");
+																																																																								        border-bottom: 15px solid #0b5c93;
+																																																																								}
+
+																																																																								.booster-bg{
+																																																																									  background-image: url("assets/images/booster.png");
+																																																																									    border-bottom: 15px solid #0b5c93;
+																																																																								    }
+
+																																																																								    .oph-bg{
+																																																																									      background-image: url("assets/images/oph.png");
+																																																																									        border-bottom: 15px solid #0b5c93;
+																																																																									}
+
+																																																																									.protect-bg{
+																																																																										  background-image: url("assets/images/protect.png");
+																																																																										    border-bottom: 15px solid #0b5c93;
+																																																																									    }
+
+																																																																									    .randmin-bg{
+																																																																										      background-image: url("assets/images/randmin.png");
+																																																																										        border-bottom: 15px solid #0b5c93;
+																																																																										}
+
+																																																																										.oammonia-bg{
+																																																																											  background-image: url("assets/images/oammonia.png");
+																																																																											    border-bottom: 15px solid #0b5c93;
+																																																																										    }
+
+																																																																										    .multipro-bg{
+																																																																											      background-image: url("assets/images/multipro.png");
+																																																																											        border-bottom: 15px solid #0b5c93;
+																																																																											}
+
+																																																																											.avilyte-bg{
+																																																																												  background-image: url("assets/images/avilyte.png");
+																																																																												    border-bottom: 15px solid #e74723;
+																																																																											    }
+
+																																																																											    .astromin-bg{
+																																																																												      background-image: url("assets/images/astromin.png");
+																																																																												        border-bottom: 15px solid #e74723;
+																																																																												}
+
+																																																																												.fcr-booster-bg{
+																																																																													  background-image: url("assets/images/fcr-booster.jpg");
+																																																																													    border-bottom: 15px solid #e74723;
+																																																																												    }
+
+																																																																												    .phxliv-bg{
+																																																																													      background-image: url("assets/images/phxliv.png");
+																																																																													        border-bottom: 15px solid #e74723;
+																																																																													}
+
+																																																																													.pcomplex-bg{
+																																																																														  background-image: url("assets/images/pcomplex.png");
+																																																																														    border-bottom: 15px solid #e74723;
+																																																																													    }
+
+																																																																													    .tricophx-bg{
+																																																																														      background-image: url("assets/images/tricophx.png");
+																																																																														        border-bottom: 15px solid #e74723;
+																																																																														}
+
+																																																																														.phxcal-d-bg{
+																																																																															  background-image: url("assets/images/phxcal-d.png");
+																																																																															    border-bottom: 15px solid #e74723;
+																																																																														    }
+
+																																																																														    .mycophx-plr-bg{
+																																																																															      background-image: url("assets/images/mycophx-plr.png");
+																																																																															        border-bottom: 15px solid #e74723;
+																																																																															}
+
+																																																																															.jeevan-jr-pro-bg{
+																																																																																  background-image: url("assets/images/jeevan-jr-pro.jpg");
+																																																																																    border-bottom: 15px solid #e74723;
+																																																																															    }
+
+																																																																															    .capromin-bg{
+																																																																																      background-image: url("assets/images/capromin.jpg");
+																																																																																        border-bottom: 15px solid #e74723;
+																																																																																}
+
+																																																																																.ovicol-bg{
+																																																																																	  background-image: url("assets/images/ovicol.jpg");
+																																																																																	    border-bottom: 15px solid #e74723;
+																																																																																    }
+
+																																																																																    .immunivit-bg{
+																																																																																	      background-image: url("assets/images/immunivit.jpg");
+																																																																																	        border-bottom: 15px solid #e74723;
+																																																																																	}
+
+																																																																																	.cam-dtox-bg{
+																																																																																		  background-image: url("assets/images/cam-dtox.jpg");
+																																																																																		    border-bottom: 15px solid #924b31;
+																																																																																	    }
+
+																																																																																	    .jeevan-pro-bg{
+																																																																																		      background-image: url("assets/images/jeevan-pro.jpg");
+																																																																																		        border-bottom: 15px solid #8eb317;
+																																																																																		}
+
+																																																																																		.groliv-bg{
+																																																																																			  background-image: url("assets/images/gro-liv.jpg");
+																																																																																			    border-bottom: 15px solid #8eb317;
+																																																																																		    }
+
+																																																																																		    .bovical-d-bg{
+																																																																																			      background-image: url("assets/images/bovical-d.png");
+																																																																																			        border-bottom: 15px solid #8eb317;
+																																																																																			}
+
+																																																																																			.phxliv-b-bg{
+																																																																																				  background-image: url("assets/images/phxliv-b.jpg");
+																																																																																				    border-bottom: 15px solid #8eb317;
+																																																																																			    }
+
+																																																																																			    .bovimin-forte-bg{
+																																																																																				      background-image: url("assets/images/bovimin-forte.jpg");
+																																																																																				        border-bottom: 15px solid #8eb317;
+																																																																																				}
+
+																																																																																				.varshamin-strong-bg{
+																																																																																					  background-image: url("assets/images/varshamin-strong.jpg");
+																																																																																					    border-bottom: 15px solid #8eb317;
+																																																																																				    }
+
+																																																																																				    .nutrimix-bg{
+																																																																																					      background-image: url("assets/images/nutri-mix.jpg");
+																																																																																					        border-bottom: 15px solid #8eb317;
+																																																																																					}
+
+																																																																																					.cpc-bg{
+																																																																																						  background-image: url("assets/images/cpc-animal.jpg");
+																																																																																						    border-bottom: 15px solid #8eb317;
+																																																																																					    }
+
+																																																																																					    .p3dex-bg{
+																																																																																						      background-image: url("assets/images/p3dex.jpg");
+																																																																																						        border-bottom: 15px solid #403383;
+																																																																																						}
+
+																																																																																						.opti-cio2-bg{
+																																																																																							  background-image: url("assets/images/opti-cio2.jpg");
+																																																																																							    border-bottom: 15px solid #403383;
+																																																																																						    }
+
+																																																																																						    .obaco-bg{
+																																																																																							      background-image: url("assets/images/obaco.jpg");
+																																																																																							        border-bottom: 15px solid #403383;
+																																																																																							}
+
+																																																																																							/*****************************************/
+																																																																																							.brochure-container .col-md-3{
+																																																																																								  display: flex;
+																																																																																							  }
+
+																																																																																							  .search-bar{
+																																																																																								    width: 280px;
+																																																																																								      .form-control:focus {
+																																																																																									            box-shadow: none;
+																																																																																										        }
+																																																																																										}
+
+
+																																																																																										.brochure-container .card{
+																																																																																											  // height: 250px;
+																																																																																											    border-radius: 10px;
+																																																																																											      box-shadow: 0 2px 17px 0 #e6e6e6;
+																																																																																											        border: 1px solid #ededed;
+																																																																																												  display: flex;
+																																																																																												    background: #fff;
+																																																																																												      padding: 15px;
+																																																																																												        margin-bottom: 20px;
+																																																																																													  width: 100%;
+																																																																																													    .card-img-top{
+																																																																																														          display: flex;
+																																																																																															        align-content: center;
+																																																																																																      justify-content: center;
+																																																																																																            height: 175px;
+																																																																																																	          margin-bottom: 15px;
+																																																																																																		        width: 100%;
+																																																																																																			      img{
+																																																																																																				                width: auto;
+																																																																																																						          height: 160px;
+																																																																																																							            max-width: 100%;
+																																																																																																								          }
+																																																																																																									    }
+																																																																																																									      .card-body{
+																																																																																																										            padding: 0;
+																																																																																																											      }
+																																																																																																											        .card-text{
+																																																																																																													      font-size: 12px;
+																																																																																																													        }
+																																																																																																														  .card-title{
+																																																																																																															        font-size: 16px;
+																																																																																																																      text-transform: capitalize;
+																																																																																																																            color: #007dc2;
+																																																																																																																	          margin: 0;
+																																																																																																																		    }
+																																																																																																																		      .view-btn{
+																																																																																																																			            position: absolute;
+																																																																																																																				          left: 0;
+																																																																																																																					        bottom: 0;
+																																																																																																																						      width: 100%;
+																																																																																																																						            height: 0;
+																																																																																																																							          background: #fff;
+																																																																																																																								        display: block;
+																																																																																																																									      overflow: hidden;
+																																																																																																																									            transition: height .3s ease;
+																																																																																																																										          span{
+																																																																																																																												            margin: 10px 20px;
+																																																																																																																													              display: inline-block;
+																																																																																																																														                padding: 4px 16px;
+																																																																																																																																          font-size: 14px;
+																																																																																																																																	            background: #85c226;
+																																																																																																																																		              color: #fff;
+																																																																																																																																			                border-radius: 4px;
+																																																																																																																																					          cursor: pointer;
+																																																																																																																																						        }
+																																																																																																																																							  }
+																																																																																																																																							    .overlay{
+																																																																																																																																								          opacity: 0;
+																																																																																																																																									        border-radius: 10px;
+																																																																																																																																										      transition: background 0.2s ease;
+																																																																																																																																										            z-index: -1;
+																																																																																																																																											          cursor: initial;
+																																																																																																																																												    }
+																																																																																																																																												      &:hover{
+																																																																																																																																													            .view-btn{
+																																																																																																																																															              height: 50px;
+																																																																																																																																																                z-index: 10;
+																																																																																																																																																		      }
+																																																																																																																																																		            .overlay{
+																																																																																																																																																				              opacity: 1;
+																																																																																																																																																					                z-index: 5;
+																																																																																																																																																							      }
+																																																																																																																																																							        } 
+																																																																																																																																																							}
+
+																																																																																																																																																							.card:hover .overlay {
+																																																																																																																																																								  cursor: initial;
+																																																																																																																																																								    display: block;
+																																																																																																																																																								      background: rgba(0, 0, 0, .3);
+																																																																																																																																																							      }
+
+
+																																																																																																																																																							      .overlay {
+																																																																																																																																																								        position: absolute;
+																																																																																																																																																									  top: 0;
+																																																																																																																																																									    left: 0;
+																																																																																																																																																									      width: 100%;
+																																																																																																																																																									        height: 100%;
+																																																																																																																																																										  background: rgba(0, 0, 0, 0);
+																																																																																																																																																										    transition: background 0.5s ease;
+																																																																																																																																																										      border-radius: 20px;
+																																																																																																																																																									      }
+																																																																																																																																																									      /**********************************************/  
+																																																																																																																																																									      /********** Back To Top ***************/
+																																																																																																																																																									      .back-to-top{
+																																																																																																																																																										        position: fixed;
+																																																																																																																																																											  right: 40px;
+																																																																																																																																																											    bottom: 20px;
+																																																																																																																																																											      width: 35px;
+																																																																																																																																																											        height: 35px;
+																																																																																																																																																												  border-radius: 50%;
+																																																																																																																																																												    background: #007dc2;
+																																																																																																																																																												      text-align: center;
+																																																																																																																																																												        line-height: 25px;
+																																																																																																																																																													  cursor: pointer;
+																																																																																																																																																													    z-index: 99;
+																																																																																																																																																													      display: none; 
+																																																																																																																																																													        opacity: .4; 
+																																																																																																																																																														  img{
+																																																																																																																																																															      transition: all .3s ease;
+																																																																																																																																																															          width: 20px;
+																																																																																																																																																																    }
+																																																																																																																																																																      &:hover{
+																																																																																																																																																																	          opacity: 1;
+																																																																																																																																																																		      img{
+																																																																																																																																																																			            padding-bottom: 4px;
+																																																																																																																																																																				        }
+																																																																																																																																																																					  }
+																																																																																																																																																																				  }
+																																																																																																																																																																				  /************** End ****************/
+
+																																																																																																																																																																				  /***********************************/
+																																																																																																																																																																				  // contact-us
+
+																																																																																																																																																																				  .contact-us{
+																																																																																																																																																																					    max-width:600px;
+																																																																																																																																																																					      width:100%;
+																																																																																																																																																																					        margin:0 auto;
+																																																																																																																																																																						  position:relative;
+																																																																																																																																																																						    // transition: .5s cubic-bezier(0, 1, 0.5, 1);
+																																																																																																																																																																						      opacity: 0;
+																																																																																																																																																																						        z-index: 10;
+																																																																																																																																																																						}
+
+																																																																																																																																																																						.contact-us.open{
+																																																																																																																																																																							  opacity: 1;
+																																																																																																																																																																							    transition: .5s cubic-bezier(0, 1, 0.5, 1);
+																																																																																																																																																																							      transform: translate(0%, -105%)
+																																																																																																																																																																						      }
+
+
+																																																																																																																																																																						      #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+																																																																																																																																																																						      #contact {
+																																																																																																																																																																							      background:#F9F9F9;
+																																																																																																																																																																							      padding:25px;
+																																																																																																																																																																							      margin:0 ;
+																																																																																																																																																																						      }
+
+																																																																																																																																																																						      #contact .close-icon{
+																																																																																																																																																																							        margin-left: auto;
+																																																																																																																																																																							}
+
+																																																																																																																																																																							#contact .close-icon span{
+																																																																																																																																																																								  font-size: 27px;
+																																																																																																																																																																								    cursor: pointer;
+																																																																																																																																																																								      img{
+																																																																																																																																																																									          width: 15px;
+																																																																																																																																																																										    }
+																																																																																																																																																																									    }
+
+																																																																																																																																																																									    #contact h3 {
+																																																																																																																																																																										    // color: #F96;
+																																																																																																																																																																										    display: block;
+																																																																																																																																																																										    font-size: 30px;
+																																																																																																																																																																										    font-weight: 400;
+																																																																																																																																																																									    }
+
+																																																																																																																																																																									    #contact h4 {
+																																																																																																																																																																										    margin:5px 0 15px;
+																																																																																																																																																																										    display:block;
+																																																																																																																																																																										    font-size:30px;
+																																																																																																																																																																									    }
+
+																																																																																																																																																																									    fieldset {
+																																																																																																																																																																										    border: medium none !important;
+																																																																																																																																																																										    margin: 0 0 10px;
+																																																																																																																																																																										    min-width: 100%;
+																																																																																																																																																																										    padding: 0;
+																																																																																																																																																																										    width: 100%;
+																																																																																																																																																																									    }
+
+																																																																																																																																																																									    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+																																																																																																																																																																										    width:100%;
+																																																																																																																																																																										    border:1px solid #CCC;
+																																																																																																																																																																										    background:#FFF;
+																																																																																																																																																																										    margin:0 0 5px;
+																																																																																																																																																																										    padding:10px;
+																																																																																																																																																																									    }
+
+																																																																																																																																																																									    #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+																																																																																																																																																																										    -webkit-transition:border-color 0.3s ease-in-out;
+																																																																																																																																																																										    -moz-transition:border-color 0.3s ease-in-out;
+																																																																																																																																																																										    transition:border-color 0.3s ease-in-out;
+																																																																																																																																																																										    border:1px solid #AAA;
+																																																																																																																																																																									    }
+
+																																																																																																																																																																									    #contact textarea {
+																																																																																																																																																																										    height:100px;
+																																																																																																																																																																										    max-width:100%;
+																																																																																																																																																																										    resize:none;
+																																																																																																																																																																									    }
+
+																																																																																																																																																																									    #contact button {
+																																																																																																																																																																										    cursor:pointer;
+																																																																																																																																																																										    width:100%;
+																																																																																																																																																																										    border:none;
+																																																																																																																																																																										    background:#0CF;
+																																																																																																																																																																										    color:#FFF;
+																																																																																																																																																																										    margin:0 0 5px;
+																																																																																																																																																																										    padding:10px;
+																																																																																																																																																																										    font-size:15px;
+																																																																																																																																																																									    }
+
+																																																																																																																																																																									    #contact button[type="submit"]:hover {
+																																																																																																																																																																										    background:#09C;
+																																																																																																																																																																										    -webkit-transition:background 0.3s ease-in-out;
+																																																																																																																																																																										    -moz-transition:background 0.3s ease-in-out;
+																																																																																																																																																																										    transition:background-color 0.3s ease-in-out;
+																																																																																																																																																																									    }
+
+																																																																																																																																																																									    #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+																																																																																																																																																																									    #contact input:focus, #contact textarea:focus {
+																																																																																																																																																																										    outline:0;
+																																																																																																																																																																										    border:1px solid #999;
+																																																																																																																																																																									    }
+																																																																																																																																																																									    ::-webkit-input-placeholder {
+																																																																																																																																																																										    color:#888;
+																																																																																																																																																																									    }
+																																																																																																																																																																									    :-moz-placeholder {
+																																																																																																																																																																										    color:#888;
+																																																																																																																																																																									    }
+																																																																																																																																																																									    ::-moz-placeholder {
+																																																																																																																																																																										    color:#888;
+																																																																																																																																																																									    }
+																																																																																																																																																																									    :-ms-input-placeholder {
+																																																																																																																																																																										    color:#888;
+																																																																																																																																																																									    }
+																																																																																																																																																																									    /**************************/
+
+
+																																																																																																																																																																									    // *********************** Home Css *********************//
 .sample-wrapper{
-  margin-top: 20px;
-  h5{
-      margin-bottom: 20px;
-      font-family: zurich;
-      color: #007dc2;
-  }
-  ul{
-      font-family: zurich;
-      color: #007dc2;
-      display: flex;
-      li{
-          margin-left: 30px;
-      }
-  }
-  .card{
-      border-radius: 1.25em;
-      margin-bottom: 20px;
-      width: 100%;
-      max-width: 100%;
-      .card-img-top{
-          border-radius:1.25em ;
-          height: 200px;
-      }
-  }
-}
+	  margin-top: 20px;
+	    h5{
+		          margin-bottom: 20px;
+			        font-family: zurich;
+				      color: #007dc2;
+				        }
+					  ul{
+						        font-family: zurich;
+							      color: #007dc2;
+							            display: flex;
+								          li{
+										            margin-left: 30px;
+											          }
+												    }
+												      .card{
+													            border-radius: 1.25em;
+														          margin-bottom: 20px;
+															        width: 100%;
+																      max-width: 100%;
+																            .card-img-top{
+																		              border-radius:1.25em ;
+																			                height: 200px;
+																					      }
+																					        }
+																					}
 
-.banner{
-  margin-top: 82px;
-  height: 480px;
-}
+																					.banner{
+																						  margin-top: 82px;
+																						    height: 480px;
+																					    }
 
-.company-details{
-  .company-img{
-      text-align: center;
-      margin: 20px 0;
-  }
-  h6{
-      font-size: 16px;
-      text-transform: capitalize;
-      color: #007dc2;
-      margin-bottom: 10px;
-      font-weight: 700;
-  }
-}
+																					    .company-details{
+																						      .company-img{
+																							            text-align: center;
+																								          margin: 20px 0;
+																									    }
+																									      h6{
+																										            font-size: 16px;
+																											          text-transform: capitalize;
+																												        color: #007dc2;
+																													      margin-bottom: 10px;
+																													            font-weight: 700;
+																														      }
+																													      }
 
-// *********************** Home Css *********************//
+																													      // *********************** Home Css *********************//
 // ************************
 
 @media screen and (max-width: 767px) {
 
-  .sample-wrapper{
-    h5{
-      font-size: 20px !important;
-    }
-    ul{
-      display: grid;
-      li{
-        margin-left: 10px;
-      }
-    }
-  }
+	  .sample-wrapper{
+		      h5{
+			            font-size: 20px !important;
+				        }
+					    ul{
+						          display: grid;
+							        li{
+									        margin-left: 10px;
+										      }
+										          }
+											    }
 
-  .header-text{
-    width: 100% !important;
-  }
+											      .header-text{
+												          width: 100% !important;
+													    }
 
-  .brochure-wrapper .brochure-content{
-    position: relative;
-    padding-bottom: 20px !important;
-  }
+													      .brochure-wrapper .brochure-content{
+														          position: relative;
+															      padding-bottom: 20px !important;
+															        }
 
-  .mobile-view {
-    display: block !important;
-  }
+																  .mobile-view {
+																	      display: block !important;
+																	        }
 
-  .search-bar{
-    width: 100% !important;
-  }
+																		  .search-bar{
+																			      width: 100% !important;
+																			        }
 
-  .card:hover .overlay {
-   opacity: 0 !important;
-  }
-  
-  .view-btn{
-    position: relative !important;
-    height: 40px !important;
-    span{
-      margin: 10px 0 !important;
-    }
-  }
+																				  .card:hover .overlay {
+																					     opacity: 0 !important;
+																					       }
+																					         
+																					         .view-btn{
+																							     position: relative !important;
+																							         height: 40px !important;
+																								     span{
+																									           margin: 10px 0 !important;
+																										       }
+																										         }
 
-  .text-content{
-    overflow: auto;
-    width: 100% !important;
-  }
-  .side-img-wrapper{
-    display: none !important;
-  }
-  .banner{
-    height: 125px !important;
-  }
-  .slideshow-container{
-    .slick-dots{
-      display: none !important;
-    }
-    .arrow-container .arrow{
-      width: 18px !important;
-      height: 18px !important;
-    }
-  } 
-}
+																											   .text-content{
+																												       overflow: auto;
+																												           width: 100% !important;
+																													     }
+																													       .side-img-wrapper{
+																														           display: none !important;
+																															     }
+																															       .banner{
+																																           height: 125px !important;
+																																	     }
+																																	       .slideshow-container{
+																																		           .slick-dots{
+																																				         display: none !important;
+																																					     }
+																																					         .arrow-container .arrow{
+																																							       width: 18px !important;
+																																							             height: 18px !important;
+																																								         }
+																																									   } 
+																																								   }
