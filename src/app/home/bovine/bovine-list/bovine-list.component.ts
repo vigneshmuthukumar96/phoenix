@@ -15,10 +15,10 @@ export class BovineListComponent implements OnInit {
     { header: 'BOVICAL-D', url: 'assets/images/bovical-d-feed.png',template:'bovical-d',text:"Provides optimum calcium, phosphorus, and vitamin D3,Improves milk production in dairy animals,Prevents rickets and Osteomalacia ."  },
     { header: 'PHXLIV-B', url: 'assets/images/phxliv-b-feed.png',template:'phxliv-b',text:"Helps to maintain the proper functioning of the Liver ,Improves Digestion and FCR in Dairy animals,Prevents Liver Damage due to harmful chemicals and toxins ."  },
     
-    { header: 'BOVIMIN FORTE', url: 'assets/images/bovimin-forte.jpg',template:'bovimin-forte',text:"An Ultimate mineral mixture for Cattle ,Improves the level of macro and micro minerals,Contains bypass amino acids for better bio availability of protein ."  },
-    { header: 'VARSHAMIN STRONG', url: 'assets/images/varshamin-strong.jpg',template:'varshamin-strong',text:"As an aid in treatment of certain skin conditions ,To overcome fat soluble vitamin deficiencies,For better health & improved disease resistance."  },
-    { header: 'MINERAL MIX', url: 'assets/images/phxliv-b.jpg',template:'mineral-mix',text:"To Maintain Overall health of animal & to achieve optimum yields."  },
-    { header: 'NUTRIMIX', url: 'assets/images/nutri-mix.jpg',template:'nutri-mix',text:"Maximum bio- availability of Minerals ,Improved Fertility ,Healthy Calf ,Improves milk production."  },
+    { header: 'BOVIMIN FORTE', url: 'assets/images/bovimin-forte-outer.jpg',template:'bovimin-forte',text:"An Ultimate mineral mixture for Cattle ,Improves the level of macro and micro minerals,Contains bypass amino acids for better bio availability of protein ."  },
+    { header: 'VARSHAMIN STRONG', url: 'assets/images/varshamin-strong-outer.jpg',template:'varshamin-strong',text:"As an aid in treatment of certain skin conditions ,To overcome fat soluble vitamin deficiencies,For better health & improved disease resistance."  },
+    { header: 'MINERAL MIX', url: 'assets/images/mineral-mix-outer.jpg',template:'mineral-mix',text:"To Maintain Overall health of animal & to achieve optimum yields."  },
+    { header: 'NUTRIMIX', url: 'assets/images/varshamin-strong-outer.jpg',template:'nutri-mix',text:"Maximum bio- availability of Minerals ,Improved Fertility ,Healthy Calf ,Improves milk production."  },
     { header: 'CPC', url: 'assets/images/cpc-bovine-feed.png',template:'cpc',text:"CPC Ensures Thorough Cleansing of Uterus post parturition and ensures Timely Expulsion of Placenta (within 3 to 4 hours post-delivery). "  },
   ]
   constructor(private util:UtilService) { }
