@@ -17,6 +17,7 @@ export class MainHeadersComponent implements OnInit {
   url: string;
   hide:boolean;
   contactForm:FormGroup;
+  currentLang: any;
   constructor(public translate: TranslateService, private util: UtilService,router: Router,private fb:FormBuilder,private http:HttpClient,private toast:ToastrService) {
     this.hide = false;
     window.onpopstate = (e) => {
@@ -37,6 +38,7 @@ export class MainHeadersComponent implements OnInit {
 
   ngOnInit() {
     this.curTab = "home";
+    this.currentLang = 'en';
     this.backToTopButtonShow();
     this.contactForm = this.fb.group({
       userName:['',[Validators.required]],
@@ -46,6 +48,7 @@ export class MainHeadersComponent implements OnInit {
   }
 
   setLang(value) {
+    this.currentLang = value;
     this.translate.use(value)
     $("#lang-name").removeClass()
     switch (value) {
