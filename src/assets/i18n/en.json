@@ -11,6 +11,26 @@
       "EQUINE":"Equine",
       "DISINFECTANT":"Disinfectant"
     },
+    "HOME":{
+      "TEXT-1":"FEED",
+      "TEXT-2":"PHARMACEUTICAL",
+      "TEXT-3":"DISINFECTANT",
+      "TEXT-4":"SUPPLEMENTS",
+      "HEADER-1":"We care for Animal Health & Wellness",
+      "HEADER-2":"Why Us:",
+      "TEXT-5":"You are always seeking quality products and services to best meet the needs of your customers. You need areliable partner with a broad portfolio and Industry standards. This could be the best reason for you to choose PHOENIX HEALTHCARE GROUP, We as a company directly associated with Leading Manufacturers across India and Globally. Phoenix healthcare provides you anunique range of single and multipurpose hospital disposables, surgical disposables to ensure your totalmedical needs. We are one of the emerging companies involved with Animal feed & supplements, Veterinary needs, Nutraceuticals&Disinfectants",
+      "TEXT-6":"We, PHOENIX HEALTHCARE are continuing to expand our current product lines worldwide. Indeed, we are looking forward to support and working with our partners, distributors & Channel Partners in their respective territories. Our optimistic commitment allows us to meet and exceed our customer’s requirement and is committed to meet our customer’s need.",
+      "HEADER-3":"Who we are:",
+      "TEXT-7":">Phoenix Healthcare started in the year 1995 originally from Abu Dhabi (United Arab Emirates) as a Distribution house with importand Export activities; Over the 2 decades in business we have Diversified and established ourselves into Distribution of :",
+      "TEXT-8":"Surgical Disposables",
+      "TEXT-9":"Hospital Consumables",
+      "TEXT-10":"Animal Feed & Supplements",
+      "TEXT-11":"Aquaculture Equipment Accessories Feed & Supplements",
+      "TEXT-12":"Pond Management Supplies",
+      "TEXT-13":"Poultry Feed & Supplements Equipment and Accessories",
+      "TEXT-14":"Veterinary Surgical Supplies",
+      "TEXT-15":"Over these years we have established & equipped ourselves with a strong Infrastructure to develop sales and marketing with distribution network, this has become a culture for us and a way of living. Our dedication towards a job remains optimistic and realistic."
+    },
     "FEED":{
         "PAGE-1-TEXT-1":"We offer Indian yellow corn, which is procured from the hinterland of India.With uniform grain sizes our corn variety has excellent resistant to blight.Our maize are used as livestock feed, forage, silage etc",
         "PAGE-1-HEADER-1":"Product Category:",
@@ -30,11 +50,13 @@
         "PAGE-1-HEADER-4":"Packing:",
         "PAGE-1-TEXT-13":"40 kg pp bags",
         "PAGE-1-FOOTER-1":"YELLOW CORN & CORN SILAGE",
+        
         "PAGE-2-TEXT-1":"Bypass protein, Bypass fat and Vitamin AD3 enriched pellet which is recommended for high yielding cows like HF,Jersey,Etc.,",
         "PAGE-2-TEXT-2":"It improves good milk yield, Fat and SNF.",
         "PAGE-2-TEXT-3":"Live yeast in it will help improves quality of milk by reducing Somatic Cell Counts in milk.",
         "PAGE-2-TEXT-4":"Helps in digestibility of the animal by preventing it from Rumen acidosis.",
         "PAGE-2-TEXT-5":"It helps cow reproductive ability",
+        
         "PAGE-3-HEADER-1":"Gold-Special Hi Pro Pellets:",
         "PAGE-3-TEXT-1":"High protein pellet which is recommended for good yielding cows.",
         "PAGE-3-TEXT-2":"It improves good milk yield, Fat and SNF.",
@@ -69,8 +91,23 @@
         "PAGE-5-TEXT-12":"Ensures good FCR ",
         "PAGE-5-TEXT-13":"Reduced water pollution",
         "PAGE-5-HEADER-3":"Feeding advise:",
-        "PAGE-5-TEXT-14":"Feed fish for 2 to 3 times as per the aqua culture expert advice for better FCR."
+        "PAGE-5-TEXT-14":"Feed fish for 2 to 3 times as per the aqua culture expert advice for better FCR.",
 
-        
+        "PAGE-6-TITLE":"SHELLBY-3000",
+        "PAGE-6-SUBTITLE":"Vitamin rich feed for layers",
+        "PAGE-6-TEXT-1":"Broiler pre starter",
+        "PAGE-6-TEXT-2":"Broiler starter",
+        "PAGE-6-TEXT-3":"Broiler finisher",
+        "PAGE-6-TEXT-4":"We use Soya doc, Maize , Rice DDGS, Rice polish, Rice bran oil, DORB.",
+        "PAGE-6-HEADER-1":"We have following specifications in our feed",
+        "PAGE-6-TEXT-5":"Broiler pre starter : 21 to 23 CP and 2800 to 3000 kilo calories",
+        "PAGE-6-TEXT-6":"Broiler starter : 20 to 21 CP and 2900 to 3100 kilo calories",
+        "PAGE-6-TEXT-7":"Broiler finisher : 18 to 20 CP and 3100 to 3300 kilo calories",
+        "PAGE-6-TEXT-8":"Chicks crumbs : 20 to 21 CP 2900 kilo calories",
+        "PAGE-6-TEXT-9":"Grower crumbs : 17 to 18 CP 2600 kilo calories",
+        "PAGE-6-TEXT-10":"Layer phase 1 : 16 to 17 CP 2500 kilo calories",
+        "PAGE-6-TEXT-11":"Layer phase 2 : 16 to 17 CP 2500 kilo calories",
+        "PAGE-6-TEXT-12":"Layer phase 3 : 15 to 16 CP 2500 kilo calories",
+        "PAGE-6-HEADER-2":"We also make customized feed for broiler and layers according to customers need."
     }
   }

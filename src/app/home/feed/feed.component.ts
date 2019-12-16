@@ -22,7 +22,6 @@ export class FeedComponent implements OnInit {
   }
 
   ngOnInit() {
-    
   }
 
 }
