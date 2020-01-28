@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilService } from '../../../services/util.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-disinfectant-list',
@@ -18,7 +19,11 @@ export class DisinfectantListComponent implements OnInit {
     { header: 'PHARMACEUTICALS  ', url: 'assets/images/pharma-2.jpg',template:'pharmaceuticals',text:"" },
     
   ]
-  constructor(private util:UtilService) { }
+  constructor(private util:UtilService,public translate: TranslateService) {
+    this.util.lang.subscribe(value => {
+      if (value) translate.use(value);
+    });
+   }
 
   ngOnInit() {
   }

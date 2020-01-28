@@ -1,8 +1,8 @@
 <div class="brochure-container">
 	<div class="container">
 		<div class="row">
-			<ng-container [ngswitch]="template">
-			<div class="col-md-12 col-sm-12" *ngswitchcase="'cam-dtox'">
+			<ng-container [ngSwitch]="template">
+			<div class="col-md-12 col-sm-12" *ngSwitchCase="'cam-dtox'">
 				<div class="brochure-wrapper camel-page1">
 					<div class="brochure-header">
 						<div class="header-text">
@@ -46,7 +46,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 col-sm-12" *ngswitchcase="'cpc'">
+			<div class="col-md-12 col-sm-12" *ngSwitchCase="'cpc'">
 				<div class="brochure-wrapper camel-page1">
 					<div class="brochure-header">
 						<div class="header-text">
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 col-sm-12" *ngswitchcase="'cambiotics'">
+			<div class="col-md-12 col-sm-12" *ngSwitchCase="'cambiotics'">
 				<div class="brochure-wrapper camel-page1">
 					<div class="brochure-header">
 						<div class="header-text">

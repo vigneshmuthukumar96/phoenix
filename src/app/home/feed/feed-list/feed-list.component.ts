@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilService } from 'src/app/services/util.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-feed-list',
@@ -26,7 +27,11 @@ export class FeedListComponent implements OnInit {
     { header: 'GUAR MEAL', url: 'assets/images/guar-meal.png',template:'guar-meal',text:"Processed Guar Meal is a high protein feed stuff .It is widely used as partial substitute of soya beans meal. It is processed by toasting at high temperature to remove natural trypsin inhibitor. Thus enhancing its nutritive value and digestibility."  },
     { header: 'SOYA DOC / SOYA MEAL', url: 'assets/images/bean.jpg',template:'soya-meal',text:"We produce highly refined Soya Meal suitable for Poultry and other needs. This high protein component is used as food additive in a variety of products including Wheat Flour for increasing protein component. We also produce animal feed grade Soya DOC used as a major component of cattle feed throughout the world."  },
   ]
-  constructor(private util:UtilService) { }
+  constructor(private util:UtilService,public translate: TranslateService) {
+    this.util.lang.subscribe(value=>{
+      if(value) translate.use(value)
+    })
+   }
 
   ngOnInit() {
   }

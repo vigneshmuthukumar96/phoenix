@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilService } from '../../../services/util.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-camel-list',
@@ -13,7 +14,11 @@ export class CamelListComponent implements OnInit {
     { header: 'CPC', url: 'assets/images/cpc-camel-feed.png',template:'cpc',text:"CPC helps Uterus involution and restores milk production associated with uterine disorders.The product has ISO, GMPcertification; Our CPC for cattle is well accepted in the Indian Veterinary Market" },
     { header: 'Cambiotics', url: 'assets/images/cambiotics-feed.png',template:'cambiotics',text:"Improves Efficacy in protein utilization,Prevents mineral and vitamin deficiency,Acts as energy booster before any physical activity." },
   ]
-  constructor(private util:UtilService) { }
+  constructor(private util:UtilService,public translate: TranslateService) { 
+    this.util.lang.subscribe(value => {
+      if (value) translate.use(value);
+    });
+  }
 
   ngOnInit() {
   }

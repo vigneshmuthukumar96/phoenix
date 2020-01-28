@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilService } from '../../../services/util.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-aquaculture-list',
@@ -24,7 +25,11 @@ export class AquacultureListComponent implements OnInit {
     { header: 'O AMMONIA', url: 'assets/images/o-ammonia.jpg',template:'o-ammonia',text:"0 Ammonia makes Rand Aqua pride in the way it is designed and formulated. It effectively works in pond water and removes Ammonia and Nitrites. Ammonia will be controlled within 72 hours with guaranteed results and gradually removes Nitrites from pond water."  },
     { header: 'MULTIPRO PS+', url: 'assets/images/multipro.jpg',template:'multipro-ps+',text:"Multipro PS+ is a water and soil probiotic solution for Shrimp and Fish. It is the combination of selected probiotic strains like Rhodobacter, Rhodococcus, Bascillus, Paracoccus and few which makes it world class at its best."  },
   ]
-  constructor(private util:UtilService) { }
+  constructor(private util:UtilService,public translate: TranslateService) { 
+    this.util.lang.subscribe(value => {
+      if (value) translate.use(value);
+    });
+  }
 
   ngOnInit() {
   }

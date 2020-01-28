@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilService } from '../../../services/util.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-caprine-ovine-list',
@@ -15,7 +16,11 @@ export class CaprineOvineListComponent implements OnInit {
     { header: 'IMMUNIVIT', url: 'assets/images/immunivit-feed.png',template:'immunivit',text:"It improves the skin and fur quality and increase the milk and maintain thickness and improves the immunity in transportation."  },
   
   ]
-  constructor(private util:UtilService) { }
+  constructor(private util:UtilService,public translate: TranslateService) {
+    this.util.lang.subscribe(value => {
+      if (value) translate.use(value);
+    });
+   }
 
   ngOnInit() {
   }

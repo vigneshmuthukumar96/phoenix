@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilService } from 'src/app/services/util.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-equine-list',
@@ -12,7 +13,11 @@ export class EquineListComponent implements OnInit {
     { header: 'SEA BISCUIT', url: 'assets/images/sea-biscuit-feed.png',template:'sea-biscuit',text:"Natural and Pure Cereal Whole Grain Mix of Oats, Corn, Soyabean,Flax seed, Beet Root, Psyllium Husk, Flaxseed Oil, Rice Bran Oil, Peanuts, Peas, Molasses & Sunflower Seeds etc. " },
     
   ]
-  constructor(private util:UtilService) { }
+  constructor(private util:UtilService,public translate: TranslateService) { 
+    this.util.lang.subscribe(value => {
+      if (value) translate.use(value);
+    });
+  }
 
   ngOnInit() {
   }

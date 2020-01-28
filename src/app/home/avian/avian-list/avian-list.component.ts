@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilService } from '../../../services/util.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-avian-list',
@@ -18,7 +19,11 @@ export class AvianListComponent implements OnInit {
     { header: 'PHXCAL-D', url: 'assets/images/phxcal-d-feed.png',template:'phxcal-d',text:"For Sturdy bones & Thick Shells in birds.Prevents stunted growth lameness.Improves egg production."  },
     { header: 'MYCOPHX-PLR', url: 'assets/images/mycophx-plr-feed.png',template:'mycophx-plr',text:"MYCOPHX-PLR can be sprayed or poured in feed or drinking water as per the recommendation of poultry consultant or by veterinarian."  },
   ]
-  constructor(private util:UtilService) { }
+  constructor(private util:UtilService,public translate: TranslateService) {
+    this.util.lang.subscribe(value => {
+      if (value) translate.use(value);
+    });
+   }
 
   ngOnInit() {
   }
