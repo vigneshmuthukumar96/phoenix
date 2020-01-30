@@ -66,7 +66,7 @@ export class MainHeadersComponent implements OnInit {
   getLanguage(value) {
     switch (value) {
       case 'en': return "English";
-      case 'malay': return "Malaysian"
+      case 'malay': return "Malay"
       default: return "English"
     }
   }
