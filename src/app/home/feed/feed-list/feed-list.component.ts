@@ -34,8 +34,6 @@ export class FeedListComponent implements OnInit {
    }
 
   ngOnInit() {
-    console.log('hiii')
-    console.log(this.translate.instant('FEED.LIST-TEXT-16'))
   }
 
   route(template){
