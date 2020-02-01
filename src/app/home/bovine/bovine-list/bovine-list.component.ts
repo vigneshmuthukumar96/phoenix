@@ -10,17 +10,17 @@ import { TranslateService } from '@ngx-translate/core';
 export class BovineListComponent implements OnInit {
   searchKey: any;
   feedJson = [
-    { header: 'JEEVAN PRO', url: 'assets/images/jeevan-pro-feed.png',template:'jeevan-pro',text:"Increases milk production, Milk fat and protein,Inhibits pathogenic microbes and prevents from infectious diseases,Stimulates the growth of healthy microflora in rumen." },
-    { header: 'LACTOGRO', url: 'assets/images/lactogro-feed.png',template:'lactogro',text:"High Power of calcium for High yielder,Prevents Milk Fever, Rickets & Hematuria ,Improves Skeletal and Muscular Stength ,Promotes Growth, Increase Libido." },
-    { header: 'GRO-LIV', url: 'assets/images/gro-liv-feed.png',template:'gro-liv',text:"Helps in liver regeneration and as an appetizer to stimulant feed intake.It supports the natural Detoxification functions of  Liver and support theraphy after deworming" },
-    { header: 'BOVICAL-D', url: 'assets/images/bovical-d-feed.png',template:'bovical-d',text:"Provides optimum calcium, phosphorus, and vitamin D3,Improves milk production in dairy animals,Prevents rickets and Osteomalacia ."  },
-    { header: 'PHXLIV-B', url: 'assets/images/phxliv-b-feed.png',template:'phxliv-b',text:"Helps to maintain the proper functioning of the Liver ,Improves Digestion and FCR in Dairy animals,Prevents Liver Damage due to harmful chemicals and toxins ."  },
+    { header: 'BOVINE.LIST-HEADER-1', url: 'assets/images/jeevan-pro-feed.png',template:'jeevan-pro',text:"BOVINE.LIST-TEXT-1" },
+    { header: 'BOVINE.LIST-HEADER-2', url: 'assets/images/lactogro-feed.png',template:'lactogro',text:"BOVINE.LIST-TEXT-2" },
+    { header: 'BOVINE.LIST-HEADER-3', url: 'assets/images/gro-liv-feed.png',template:'gro-liv',text:"BOVINE.LIST-TEXT-3" },
+    { header: 'BOVINE.LIST-HEADER-4', url: 'assets/images/bovical-d-feed.png',template:'bovical-d',text:"BOVINE.LIST-TEXT-4"  },
+    { header: 'BOVINE.LIST-HEADER-5', url: 'assets/images/phxliv-b-feed.png',template:'phxliv-b',text:"BOVINE.LIST-TEXT-5"  },
     
-    { header: 'BOVIMIN FORTE', url: 'assets/images/bovimin-forte-outer.jpg',template:'bovimin-forte',text:"An Ultimate mineral mixture for Cattle ,Improves the level of macro and micro minerals,Contains bypass amino acids for better bio availability of protein ."  },
-    { header: 'VARSHAMIN STRONG', url: 'assets/images/varshamin-strong-outer.jpg',template:'varshamin-strong',text:"As an aid in treatment of certain skin conditions ,To overcome fat soluble vitamin deficiencies,For better health & improved disease resistance."  },
-    { header: 'MINERAL MIX', url: 'assets/images/mineral-mix-outer.jpg',template:'mineral-mix',text:"To Maintain Overall health of animal & to achieve optimum yields."  },
-    { header: 'NUTRIMIX', url: 'assets/images/varshamin-strong-outer.jpg',template:'nutri-mix',text:"Maximum bio- availability of Minerals ,Improved Fertility ,Healthy Calf ,Improves milk production."  },
-    { header: 'CPC', url: 'assets/images/cpc-bovine-feed.png',template:'cpc',text:"CPC Ensures Thorough Cleansing of Uterus post parturition and ensures Timely Expulsion of Placenta (within 3 to 4 hours post-delivery). "  },
+    { header: 'BOVINE.LIST-HEADER-6', url: 'assets/images/bovimin-forte-outer.jpg',template:'bovimin-forte',text:"BOVINE.LIST-TEXT-6"  },
+    { header: 'BOVINE.LIST-HEADER-7', url: 'assets/images/varshamin-strong-outer.jpg',template:'varshamin-strong',text:"BOVINE.LIST-TEXT-7"  },
+    { header: 'BOVINE.LIST-HEADER-8', url: 'assets/images/mineral-mix-outer.jpg',template:'mineral-mix',text:"BOVINE.LIST-TEXT-8"  },
+    { header: 'BOVINE.LIST-HEADER-9', url: 'assets/images/varshamin-strong-outer.jpg',template:'nutri-mix',text:"BOVINE.LIST-TEXT-9"  },
+    { header: 'BOVINE.LIST-HEADER-10', url: 'assets/images/cpc-bovine-feed.png',template:'cpc',text:"BOVINE.LIST-TEXT-10"  },
   ]
   constructor(private util:UtilService,public translate: TranslateService) {
     this.util.lang.subscribe(value => {
