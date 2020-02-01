@@ -20,8 +20,8 @@
                         <img src="{{value.url}}" alt="Card image">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">{{value.header | titlecase}}</h4>
-                        <p class="card-text mt-1">{{value.text | titlecase}}</p>
+                        <h4 class="card-title">{{value.header | translate | titlecase}}</h4>
+                        <p class="card-text mt-1">{{value.text | translate | titlecase}}</p>
                     </div>
                     <div class="overlay"></div>
                     <div class="view-btn"><span (click)="route(value.template)">View</span></div>

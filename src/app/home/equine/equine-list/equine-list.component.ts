@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class EquineListComponent implements OnInit {
   searchKey: any;
   feedJson = [
-    { header: 'SEA BISCUIT', url: 'assets/images/sea-biscuit-feed.png',template:'sea-biscuit',text:"Natural and Pure Cereal Whole Grain Mix of Oats, Corn, Soyabean,Flax seed, Beet Root, Psyllium Husk, Flaxseed Oil, Rice Bran Oil, Peanuts, Peas, Molasses & Sunflower Seeds etc. " },
+    { header: 'EQUINE.LIST-HEADER-1', url: 'assets/images/sea-biscuit-feed.png',template:'sea-biscuit',text:"EQUINE.LIST-TEXT-1" },
     
   ]
   constructor(private util:UtilService,public translate: TranslateService) { 
